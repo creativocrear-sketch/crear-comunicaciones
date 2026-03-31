@@ -242,12 +242,9 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="bg-pearl py-20 lg:py-28" id="servicios">
         <div className="container" ref={servicesReveal.ref}>
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={servicesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
-            className="relative overflow-hidden rounded-[28px] bg-navy mb-10 sm:mb-12"
-          >
+          <div className="relative overflow-hidden rounded-[28px] border border-coral/20 bg-navy mb-10 sm:mb-12 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,60,49,0.34),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.06),transparent_58%)]" />
+            <div className="absolute inset-y-0 left-0 w-2 bg-coral" />
             <div className="relative flex flex-col gap-6 px-6 py-7 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
               <div className="max-w-3xl">
                 <span className="inline-flex items-center gap-2 rounded-full border border-coral/30 bg-coral/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-coral-light">
@@ -283,7 +280,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           <div className="text-center max-w-2xl mx-auto mb-14">
             <motion.span
