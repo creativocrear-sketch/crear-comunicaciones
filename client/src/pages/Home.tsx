@@ -1,8 +1,8 @@
-/*
- * Home — Crear Comunicaciones
- * Design: "Ondas de Comunicación" — Orgánico-Tecnológico
+﻿/*
+ * Home â€” Crear Comunicaciones
+ * Design: "Ondas de ComunicaciÃ³n" â€” OrgÃ¡nico-TecnolÃ³gico
  * Paleta: Navy (#0F2044), Coral (#E03C31), Blanco, Gris perla (#E8ECF1)
- * Tipografía: Outfit
+ * TipografÃ­a: Outfit
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -37,14 +37,14 @@ const services = [
   {
     icon: Bot,
     title: "ChatBot",
-    desc: "Automatiza la atención al cliente con bots inteligentes en WhatsApp, Messenger, Telegram e Instagram.",
+    desc: "Automatiza la atenciÃ³n al cliente con bots inteligentes en WhatsApp, Messenger, Telegram e Instagram.",
     href: "/servicios/chatbot",
     color: "bg-blue-mid/15 text-blue-mid",
   },
   {
     icon: Brain,
     title: "IA para WhatsApp",
-    desc: "Potencia tu WhatsApp Business con inteligencia artificial para respuestas contextuales y automatización avanzada.",
+    desc: "Potencia tu WhatsApp Business con inteligencia artificial para respuestas contextuales y automatizaciÃ³n avanzada.",
     href: "/servicios/ia-whatsapp",
     color: "bg-coral/15 text-coral",
   },
@@ -58,70 +58,70 @@ const services = [
   {
     icon: Layers,
     title: "Omnicanalidad",
-    desc: "Unifica todos tus canales de comunicación en una sola plataforma con acompañamiento completo.",
+    desc: "Unifica todos tus canales de comunicaciÃ³n en una sola plataforma con acompaÃ±amiento completo.",
     href: "/servicios/omnicanalidad",
     color: "bg-coral/15 text-coral",
   },
   {
     icon: ShoppingCart,
-    title: "Catálogos de Productos",
-    desc: "Conecta el catálogo de Meta con WhatsApp API para que tus clientes compren directamente desde el chat.",
+    title: "CatÃ¡logos de Productos",
+    desc: "Conecta el catÃ¡logo de Meta con WhatsApp API para que tus clientes compren directamente desde el chat.",
     href: "/servicios/catalogos-whatsapp",
     color: "bg-blue-mid/15 text-blue-mid",
   },
   {
     icon: MessageSquare,
     title: "SMS Masivos",
-    desc: "Envía miles de mensajes de texto con alta tasa de apertura. SMS estándar, doble vía y hasta 1120 caracteres.",
+    desc: "EnvÃ­a miles de mensajes de texto con alta tasa de apertura. SMS estÃ¡ndar, doble vÃ­a y hasta 1120 caracteres.",
     href: "/sms",
     color: "bg-coral/15 text-coral",
   },
   {
     icon: Mail,
     title: "Email Masivos",
-    desc: "Campañas de email marketing interactivas con seguimiento, métricas y personalización avanzada.",
+    desc: "CampaÃ±as de email marketing interactivas con seguimiento, mÃ©tricas y personalizaciÃ³n avanzada.",
     href: "/email",
     color: "bg-blue-mid/15 text-blue-mid",
   },
   {
     icon: Mic,
     title: "SMS de Voz Masivos",
-    desc: "Mensajes de voz automatizados para cobranza, recordatorios, convocatorias y campañas masivas.",
+    desc: "Mensajes de voz automatizados para cobranza, recordatorios, convocatorias y campaÃ±as masivas.",
     href: "/voz",
     color: "bg-coral/15 text-coral",
   },
   {
     icon: Headphones,
     title: "Contact Center",
-    desc: "Solución completa de centro de contacto con acompañamiento integral para tu operación.",
+    desc: "SoluciÃ³n completa de centro de contacto con acompaÃ±amiento integral para tu operaciÃ³n.",
     href: "/servicios/contact-center",
     color: "bg-blue-mid/15 text-blue-mid",
   },
   {
     icon: Send,
-    title: "Mensajería Masiva",
-    desc: "Plataforma completa para envíos masivos de SMS, Email y Voz con altas tasas de entrega y reportes en tiempo real.",
+    title: "MensajerÃ­a Masiva",
+    desc: "Plataforma completa para envÃ­os masivos de SMS, Email y Voz con altas tasas de entrega y reportes en tiempo real.",
     href: "/servicios/mensajeria-masiva",
     color: "bg-coral/15 text-coral",
   },
   {
     icon: Settings,
-    title: "Consultoría de Automatización",
-    desc: "Diseñamos e implementamos estrategias de marketing automatizado con acompañamiento integral para tu empresa.",
+    title: "ConsultorÃ­a de AutomatizaciÃ³n",
+    desc: "DiseÃ±amos e implementamos estrategias de marketing automatizado con acompaÃ±amiento integral para tu empresa.",
     href: "/servicios/automatizacion",
     color: "bg-blue-mid/15 text-blue-mid",
   },
   {
     icon: Megaphone,
-    title: "Asesoría en Comunicación Masiva",
-    desc: "Te asesoramos en campañas multicanal (SMS, Voz, Email, WhatsApp), organización de bases de datos y estrategia de envíos. Tus datos siempre son tuyos.",
+    title: "AsesorÃ­a en ComunicaciÃ³n Masiva",
+    desc: "Te asesoramos en campaÃ±as multicanal (SMS, Voz, Email, WhatsApp), organizaciÃ³n de bases de datos y estrategia de envÃ­os. Tus datos siempre son tuyos.",
     href: "/servicios/asesoria-comunicacion",
     color: "bg-coral/15 text-coral",
   },
 ];
 
 const stats = [
-  { value: "30+", label: "Años de experiencia", icon: Globe },
+  { value: "30+", label: "AÃ±os de experiencia", icon: Globe },
   { value: "1000+", label: "Clientes satisfechos", icon: Users },
   { value: "12", label: "Soluciones digitales", icon: Zap },
 ];
@@ -136,9 +136,9 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* ═══════════════════════════════════════════
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           HERO SECTION
-      ═══════════════════════════════════════════ */}
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section className="relative min-h-[90vh] flex items-center bg-navy overflow-hidden">
         {/* Background image with overlay */}
         <div className="absolute inset-0">
@@ -187,7 +187,7 @@ export default function Home() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             >
               Somos su puente de{" "}
-              <span className="text-coral">comunicación</span> con el mundo
+              <span className="text-coral">comunicaciÃ³n</span> con el mundo
             </motion.h1>
 
             <motion.p
@@ -196,9 +196,9 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="text-lg sm:text-xl text-white/70 leading-relaxed mb-8 max-w-2xl"
             >
-              Soluciones de comunicación digital para empresas: ChatBots, WhatsApp
-              API, Omnicanalidad, envíos masivos y mucho más. Todo el
-              acompañamiento que necesitas.
+              Soluciones de comunicaciÃ³n digital para empresas: ChatBots, WhatsApp
+              API, Omnicanalidad, envÃ­os masivos y mucho mÃ¡s. Todo el
+              acompaÃ±amiento que necesitas.
             </motion.p>
 
             <motion.div
@@ -227,12 +227,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wave divider hero → services */}
+      {/* Wave divider hero â†’ services */}
       <WaveDivider from="#0F2044" to="#F8F9FA" />
 
-      {/* ═══════════════════════════════════════════
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           SERVICES SECTION
-      ═══════════════════════════════════════════ */}
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section className="bg-pearl py-20 lg:py-28" id="servicios">
         <div className="container" ref={servicesReveal.ref}>
           <div className="relative overflow-hidden rounded-[28px] border border-coral/20 bg-navy mb-10 sm:mb-12 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
@@ -245,13 +245,13 @@ export default function Home() {
                   Servicio destacado
                 </span>
                 <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
-                  Consultoría para automatizar tu negocio con WhatsApp Business
+                  ConsultorÃ­a para automatizar tu negocio con WhatsApp Business
                   API
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
-                  Te ayudamos a diseñar flujos, integraciones y procesos de
+                  Te ayudamos a diseÃ±ar flujos, integraciones y procesos de
                   venta, soporte y seguimiento para convertir WhatsApp en un
-                  canal real de automatización comercial.
+                  canal real de automatizaciÃ³n comercial.
                 </p>
               </div>
 
@@ -260,7 +260,7 @@ export default function Home() {
                   href="/servicios/automatizacion"
                   className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
                 >
-                  Ver consultoría
+                  Ver consultorÃ­a
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
@@ -301,7 +301,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-lg"
             >
-              Desde chatbots inteligentes hasta campañas masivas, tenemos todo lo
+              Desde chatbots inteligentes hasta campaÃ±as masivas, tenemos todo lo
               que necesitas para conectar con tus clientes.
             </motion.p>
           </div>
@@ -332,7 +332,7 @@ export default function Home() {
                     {service.desc}
                   </p>
                   <div className="mt-4 flex items-center gap-1 text-coral text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    Conocer más <ArrowRight className="w-3.5 h-3.5" />
+                    Conocer mÃ¡s <ArrowRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
               </motion.div>
@@ -341,14 +341,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wave divider services → about */}
+      {/* Wave divider services â†’ about */}
       <div className="bg-pearl">
         <WaveDivider from="#F8F9FA" to="#0F2044" />
       </div>
 
-      {/* ═══════════════════════════════════════════
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           ABOUT / STATS SECTION
-      ═══════════════════════════════════════════ */}
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section className="bg-navy py-20 lg:py-28">
         <div className="container" ref={aboutReveal.ref}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -361,25 +361,25 @@ export default function Home() {
                 Sobre Nosotros
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Más de 30 años creando puentes de comunicación
+                MÃ¡s de 30 aÃ±os creando puentes de comunicaciÃ³n
               </h2>
               <p className="text-white/60 leading-relaxed mb-5">
                 Somos una agencia dedicada al marketing digital en todas sus
                 formas. Hacemos parte del mercado desde 1993, buscando ayudar
-                personas, emprendedores, pequeñas y grandes empresas a conseguir
+                personas, emprendedores, pequeÃ±as y grandes empresas a conseguir
                 lo que quieren.
               </p>
               <p className="text-white/60 leading-relaxed mb-8">
-                A través de estos años hemos avanzado para entregarles lo mejor:
+                A travÃ©s de estos aÃ±os hemos avanzado para entregarles lo mejor:
                 en 2009 emergimos en telecomunicaciones, en 2015 comenzamos a
-                diseñar apps, y en 2021 iniciamos la producción de bots. Todo
-                para ofrecerles nuevos servicios que permitan llegar a más
+                diseÃ±ar apps, y en 2021 iniciamos la producciÃ³n de bots. Todo
+                para ofrecerles nuevos servicios que permitan llegar a mÃ¡s
                 personas.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Acompañamiento integral en cada proyecto",
-                  "Tecnología de punta en comunicaciones",
+                  "AcompaÃ±amiento integral en cada proyecto",
+                  "TecnologÃ­a de punta en comunicaciones",
                   "Equipo experto en marketing digital",
                   "Soluciones personalizadas para cada negocio",
                 ].map((item) => (
@@ -420,12 +420,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wave divider about → CTA */}
+      {/* Wave divider about â†’ CTA */}
       <WaveDivider from="#0F2044" to="#FFFFFF" />
 
-      {/* ═══════════════════════════════════════════
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           CTA / CONTACT SECTION
-      ═══════════════════════════════════════════ */}
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section className="bg-white py-20 lg:py-28" id="contacto">
         <div className="container" ref={ctaReveal.ref}>
           <motion.div
@@ -434,15 +434,13 @@ export default function Home() {
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-              Comienza hoy
+              Comience hoy
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-black mb-5">
-              Reclame su primera asesoría virtual gratis
+              Su primera asesoría virtual.
             </h2>
-            <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-              Cuéntenos sobre su empresa y sus necesidades de comunicación.
-              Nuestro equipo le diseñará una solución personalizada sin ningún
-              compromiso.
+                        <p className="text-gray-600 text-lg mb-10 leading-relaxed">
+              Nuestro equipo le diseñará una solución personalizada.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -473,15 +471,15 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600">
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-coral" />
-                Asesoría gratuita
+                Automatización
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-coral" />
-                Sin compromiso
+                IA
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-coral" />
-                Respuesta en 24h
+                Programación
               </span>
             </div>
           </motion.div>
