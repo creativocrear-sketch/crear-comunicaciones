@@ -242,6 +242,49 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section className="bg-pearl py-20 lg:py-28" id="servicios">
         <div className="container" ref={servicesReveal.ref}>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={servicesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
+            className="relative overflow-hidden rounded-[28px] bg-navy mb-10 sm:mb-12"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,60,49,0.34),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.06),transparent_58%)]" />
+            <div className="relative flex flex-col gap-6 px-6 py-7 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+              <div className="max-w-3xl">
+                <span className="inline-flex items-center gap-2 rounded-full border border-coral/30 bg-coral/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-coral-light">
+                  <Settings className="w-3.5 h-3.5" />
+                  Nuevo servicio destacado
+                </span>
+                <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
+                  Consultoría para automatizar tu negocio con WhatsApp Business
+                  API
+                </h3>
+                <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
+                  Te ayudamos a diseñar flujos, integraciones y procesos de
+                  venta, soporte y seguimiento para convertir WhatsApp en un
+                  canal real de automatización comercial.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/servicios/automatizacion"
+                  className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
+                >
+                  Ver consultoría
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a
+                  href="https://wa.me/573105317126"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/8 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/12"
+                >
+                  Hablar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
           <div className="text-center max-w-2xl mx-auto mb-14">
             <motion.span
               initial={{ opacity: 0 }}
