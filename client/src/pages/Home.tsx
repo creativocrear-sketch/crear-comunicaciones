@@ -222,13 +222,6 @@ export default function Home() {
                 </svg>
                 Hablar con un asesor
               </a>
-              <Link
-                href="/precios"
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white px-7 py-3.5 rounded-xl text-base font-semibold transition-all border border-white/15 hover:-translate-y-0.5"
-              >
-                Ver planes y precios
-                <ArrowRight className="w-4 h-4" />
-              </Link>
             </motion.div>
           </div>
         </div>
