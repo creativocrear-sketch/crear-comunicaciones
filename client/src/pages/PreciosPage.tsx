@@ -1,5 +1,5 @@
 /*
- * PreciosPage — Página de planes y precios para envíos masivos
+ * PreciosPage - Página de planes y precios para envíos masivos
  * SMS, Email y SMS de Voz
  */
 import { Link } from "wouter";
@@ -20,7 +20,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const massiveServices = [
   {
     icon: MessageSquare,
-    title: "SMS Masivos",
+    title: "SMS masivos",
     description:
       "Envía mensajes de texto masivos con alta tasa de apertura. Disponible en tres modalidades: SMS estándar, SMS doble vía y SMS de hasta 1120 caracteres.",
     features: [
@@ -37,7 +37,7 @@ const massiveServices = [
   },
   {
     icon: Mail,
-    title: "Email Masivos",
+    title: "Email masivos",
     description:
       "Campañas de email marketing interactivas con diseño profesional, seguimiento avanzado y métricas detalladas para optimizar tus resultados.",
     features: [
@@ -54,7 +54,7 @@ const massiveServices = [
   },
   {
     icon: Mic,
-    title: "SMS de Voz Masivos",
+    title: "SMS de voz masivos",
     description:
       "Mensajes de voz automatizados para cobranza, recordatorios, convocatorias y campañas masivas. Tu mensaje llega directamente como una llamada de voz.",
     features: [
@@ -106,7 +106,7 @@ export default function PreciosPage() {
             className="max-w-3xl"
           >
             <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-              Planes y Precios
+              Planes y precios
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
               Envíos masivos para tu empresa

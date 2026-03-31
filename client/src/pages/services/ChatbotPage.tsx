@@ -6,7 +6,7 @@ const HERO_IMG =
 export default function ChatbotPage() {
   return (
     <ServiceLayout
-      title="ChatBot Inteligente"
+      title="Chatbot inteligente"
       subtitle="Automatización conversacional"
       description="Diseñamos y desarrollamos chatbots personalizados para los principales canales de comunicación de tu empresa: WhatsApp, Messenger, Telegram e Instagram. Automatiza la atención al cliente, genera leads y cierra ventas las 24 horas del día, los 7 días de la semana."
       heroImage={HERO_IMG}
@@ -52,11 +52,11 @@ export default function ChatbotPage() {
         "Libera a tu equipo para tareas de mayor valor",
         "Implementación rápida y sin complicaciones técnicas",
       ]}
-      ctaText="Solicitar mi ChatBot"
+      ctaText="Solicitar mi Chatbot"
       relatedServices={[
         { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
         { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-        { name: "APP's con WhatsApp", href: "/servicios/apps-whatsapp" },
+        { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
       ]}
     />
   );

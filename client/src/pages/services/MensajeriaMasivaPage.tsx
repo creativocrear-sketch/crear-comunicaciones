@@ -1,5 +1,5 @@
 /*
- * MensajeriaMasivaPage — Página interna de Mensajería Masiva
+ * MensajeriaMasivaPage  Pgina interna de Mensajer?a masiva
  * Contenido basado en crearcomunicaciones.net/servicio-sms/
  */
 import { Link } from "wouter";
@@ -23,21 +23,21 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const smsTypes = [
   {
-    title: "SMS Estándar",
+    title: "SMS Est?ndar",
     description:
       "Mensajes de texto de hasta 160 caracteres. Ideal para notificaciones, alertas, confirmaciones y comunicaciones directas con alta tasa de apertura.",
     icon: MessageSquare,
   },
   {
-    title: "SMS Doble Vía",
+    title: "SMS doble vía",
     description:
-      "Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicación bidireccional con tu audiencia.",
+      "Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicaci?n bidireccional con tu audiencia.",
     icon: ArrowRight,
   },
   {
     title: "SMS de hasta 1120 Caracteres",
     description:
-      "Mensajes extendidos para cuando necesitas comunicar más información. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.",
+      "Mensajes extendidos para cuando necesitas comunicar m?s informacin. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.",
     icon: Zap,
   },
 ];
@@ -47,45 +47,45 @@ const features = [
     icon: Zap,
     title: "Motor de entrega eficaz",
     description:
-      "Nuestra solución asegura una entrega eficaz de la comunicación masiva. Llega a más clientes con un servicio de SMS más rápido y confiable.",
+      "Nuestra soluci?n asegura una entrega eficaz de la comunicaci?n masiva. Llega a m?s clientes con un servicio de SMS m?s rpido y confiable.",
   },
   {
     icon: Shield,
     title: "Altas tasas de entrega",
     description:
-      "Acuerdos comerciales con los operadores locales garantizan un alto impacto de su mensaje en el móvil del destinatario. Entregas cuando entre en cobertura o se encienda.",
+      "Acuerdos comerciales con los operadores locales garantizan un alto impacto de su mensaje en el m?vil del destinatario. Entregas cuando entre en cobertura o se encienda.",
   },
   {
     icon: BarChart3,
-    title: "Estadísticas en detalle",
+    title: "Estadsticas en detalle",
     description:
-      "Sigue en detalle las estadísticas del envío y el impacto sobre tu audiencia. Controla el presupuesto, ajusta los cambios y lanza de nuevo otras campañas.",
+      "Sigue en detalle las estadsticas del envo y el impacto sobre tu audiencia. Controla el presupuesto, ajusta los cambios y lanza de nuevo otras campa?as.",
   },
   {
     icon: Link2,
-    title: "Vínculos inteligentes",
+    title: "Vnculos inteligentes",
     description:
-      "Vincula redes sociales, páginas web, números de WhatsApp y mucho más en el mensaje de texto. Llega de forma personalizada a cada uno de tus clientes.",
+      "Vincula redes sociales, pginas web, nmeros de WhatsApp y mucho m?s en el mensaje de texto. Llega de forma personalizada a cada uno de tus clientes.",
   },
   {
     icon: Clock,
-    title: "Programación de campañas",
+    title: "Programacin de campa?as",
     description:
-      "Programa las campañas desde nuestra plataforma web para que las envíes de forma inmediata o posterior. Hasta 72 horas de espera para entrega en cobertura.",
+      "Programa las campa?as desde nuestra plataforma web para que las enves de forma inmediata o posterior. Hasta 72 horas de espera para entrega en cobertura.",
   },
   {
     icon: Smartphone,
-    title: "Código corto dedicado",
+    title: "Cdigo corto dedicado",
     description:
-      "Los mensajes se envían a través de un código corto programado. Administra tus propias campañas de envío desde una plataforma web de fácil uso e intuitiva.",
+      "Los mensajes se env?an a trav?s de un cdigo corto programado. Administra tus propias campa?as de envo desde una plataforma web de fcil uso e intuitiva.",
   },
 ];
 
 const pricingLinks = [
   { name: "Precios SMS", href: "/sms" },
-  { name: "Precios Email", href: "/email" },
-  { name: "Precios Voz", href: "/voz" },
-  { name: "Validación de Correos", href: "/validacioncorreos" },
+  { name: "Precios de email", href: "/email" },
+  { name: "Precios de voz", href: "/voz" },
+  { name: "Validaci?n de correos", href: "/validacioncorreos" },
 ];
 
 export default function MensajeriaMasivaPage() {
@@ -125,10 +125,10 @@ export default function MensajeriaMasivaPage() {
             className="max-w-3xl"
           >
             <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-              Expertos en comunicación masiva
+              Expertos en comunicaci?n masiva
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
-              Mensajería Masiva
+              Mensajer?a masiva
             </h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-2xl">
               Lleva tus mensajes al siguiente nivel con una plataforma creada
@@ -149,9 +149,9 @@ export default function MensajeriaMasivaPage() {
               Tipos de SMS disponibles
             </h2>
             <p className="text-navy/55">
-              Estos servicios se hacen desde una plataforma web de fácil uso e
+              Estos servicios se hacen desde una plataforma web de fcil uso e
               intuitiva que te permite enviar mensajes de texto a todos los
-              móviles que desees.
+              m?viles que desees.
             </p>
           </div>
 
@@ -187,11 +187,11 @@ export default function MensajeriaMasivaPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Nuestra plataforma de envíos
+              Nuestra plataforma de env?os
             </h2>
             <p className="text-white/55">
               Segmenta tu mercado de acuerdo a las necesidades de marketing de tu
-              negocio y alcanza a tu audiencia con precisión.
+              negocio y alcanza a tu audiencia con precisin.
             </p>
           </div>
 
@@ -230,7 +230,7 @@ export default function MensajeriaMasivaPage() {
             </h2>
             <p className="text-navy/55 mb-10">
               Tenemos planes adaptados a cada necesidad. Consulta las tarifas de
-              cada servicio o solicita una cotización personalizada.
+              cada servicio o solicita una cotizacin personalizada.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -269,7 +269,7 @@ export default function MensajeriaMasivaPage() {
               >
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              Solicitar cotización personalizada
+              Solicitar cotizacin personalizada
             </a>
           </div>
         </div>

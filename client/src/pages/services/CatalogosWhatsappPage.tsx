@@ -6,7 +6,7 @@ const HERO_IMG =
 export default function CatalogosWhatsappPage() {
   return (
     <ServiceLayout
-      title="Catálogos de Productos — WhatsApp"
+      title="Catálogos de productos — WhatsApp"
       subtitle="Tu tienda dentro de WhatsApp"
       description="Conectamos el catálogo de productos de Meta con la API de WhatsApp Business para que tus clientes puedan explorar tu inventario, seleccionar productos y realizar pedidos directamente desde la conversación de WhatsApp. Una experiencia de compra fluida sin salir del chat."
       heroImage={HERO_IMG}
@@ -55,8 +55,8 @@ export default function CatalogosWhatsappPage() {
       ctaText="Activar mi catálogo"
       relatedServices={[
         { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-        { name: "APP's con WhatsApp", href: "/servicios/apps-whatsapp" },
-        { name: "ChatBot", href: "/servicios/chatbot" },
+        { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
+        { name: "Chatbot", href: "/servicios/chatbot" },
       ]}
     />
   );

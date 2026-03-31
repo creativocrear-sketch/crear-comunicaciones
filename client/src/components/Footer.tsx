@@ -6,18 +6,18 @@ import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const serviceLinks = [
-  { name: "ChatBot", href: "/servicios/chatbot" },
+  { name: "Chatbot", href: "/servicios/chatbot" },
   { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-  { name: "APP's con WhatsApp", href: "/servicios/apps-whatsapp" },
+  { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
   { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-  { name: "Catálogos WhatsApp", href: "/servicios/catalogos-whatsapp" },
+  { name: "Catálogos de WhatsApp", href: "/servicios/catalogos-whatsapp" },
   { name: "Contact Center", href: "/servicios/contact-center" },
 ];
 
 const massiveLinks = [
-  { name: "SMS Masivos", href: "/precios" },
-  { name: "Email Masivos", href: "/precios" },
-  { name: "SMS de Voz Masivos", href: "/precios" },
+  { name: "SMS masivos", href: "/precios" },
+  { name: "Email masivos", href: "/precios" },
+  { name: "SMS de voz masivos", href: "/precios" },
 ];
 
 export default function Footer() {
@@ -105,10 +105,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Envíos Masivos */}
+          {/* Envíos masivos */}
           <div>
             <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
-              Envíos Masivos
+              Envíos masivos
             </h4>
             <ul className="space-y-2.5">
               {massiveLinks.map((link) => (

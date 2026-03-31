@@ -54,9 +54,9 @@ export default function IAWhatsappPage() {
       ]}
       ctaText="Activar IA en mi WhatsApp"
       relatedServices={[
-        { name: "ChatBot", href: "/servicios/chatbot" },
-        { name: "APP's con WhatsApp", href: "/servicios/apps-whatsapp" },
-        { name: "Catálogos WhatsApp", href: "/servicios/catalogos-whatsapp" },
+        { name: "Chatbot", href: "/servicios/chatbot" },
+        { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
+        { name: "Catálogos de WhatsApp", href: "/servicios/catalogos-whatsapp" },
       ]}
     />
   );

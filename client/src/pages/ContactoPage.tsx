@@ -87,7 +87,7 @@ export default function ContactoPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/573105317126?text=Hola%20Alexander%2C%20me%20gustaría%20agendar%20una%20cita%20contigo"
+                href="https://wa.me/573105317126?text=Hola%20Alexander%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20contigo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-coral hover:bg-coral-light text-white px-7 py-3.5 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5"
@@ -121,7 +121,7 @@ export default function ContactoPage() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Agenda tu Cita
+                Agenda tu cita
               </a>
             </div>
           </motion.div>

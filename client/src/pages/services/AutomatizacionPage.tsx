@@ -55,9 +55,9 @@ export default function AutomatizacionPage() {
       ctaText="Solicitar consultoría"
       relatedServices={[
         { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-        { name: "ChatBot", href: "/servicios/chatbot" },
+        { name: "Chatbot", href: "/servicios/chatbot" },
         { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-        { name: "Mensajería Masiva", href: "/servicios/mensajeria-masiva" },
+        { name: "Mensajería masiva", href: "/servicios/mensajeria-masiva" },
       ]}
     />
   );

@@ -6,9 +6,9 @@ const HERO_IMG =
 export default function AsesoriaComunicacionPage() {
   return (
     <ServiceLayout
-      title="Asesoría en Comunicación Masiva"
+      title="Asesoría en comunicación masiva"
       subtitle="Estrategia multicanal para tu empresa"
-      description="Te asesoramos en el diseño y ejecución de campañas de comunicación masiva a través de múltiples canales: SMS, Mensajes de Voz, Email y WhatsApp. Organizamos tus bases de datos, definimos la estrategia por canal y te acompañamos en cada envío. Tus datos de contacto siempre son tuyos — nosotros solo te ayudamos a usarlos de forma inteligente."
+      description="Te asesor?amos en el diseño y ejecución de campañas de comunicación masiva a través de múltiples canales: SMS, Mensajes de Voz, Email y WhatsApp. Organizamos tus bases de datos, definimos la estrategia por canal y te acompañamos en cada envío. Tus datos de contacto siempre son tuyos — nosotros solo te ayudamos a usarlos de forma inteligente."
       heroImage={HERO_IMG}
       features={[
         {
@@ -54,8 +54,8 @@ export default function AsesoriaComunicacionPage() {
       ]}
       ctaText="Solicitar asesoría"
       relatedServices={[
-        { name: "Mensajería Masiva", href: "/servicios/mensajeria-masiva" },
-        { name: "Consultoría de Automatización", href: "/servicios/automatizacion" },
+        { name: "Mensajería masiva", href: "/servicios/mensajeria-masiva" },
+        { name: "Consultoría de automatización", href: "/servicios/automatizacion" },
         { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
         { name: "Contact Center", href: "/servicios/contact-center" },
       ]}

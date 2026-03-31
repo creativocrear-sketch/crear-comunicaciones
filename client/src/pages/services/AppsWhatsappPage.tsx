@@ -6,7 +6,7 @@ const HERO_IMG =
 export default function AppsWhatsappPage() {
   return (
     <ServiceLayout
-      title="APP's con WhatsApp"
+      title="Apps con WhatsApp"
       subtitle="Desarrollo de aplicaciones integradas"
       description="Desarrollamos aplicaciones móviles y web personalizadas que se integran directamente con la API de WhatsApp Business. Desde sistemas de reservas hasta plataformas de e-commerce, llevamos el poder de WhatsApp a tu aplicación empresarial."
       heroImage={HERO_IMG}
@@ -55,8 +55,8 @@ export default function AppsWhatsappPage() {
       ctaText="Cotizar mi aplicación"
       relatedServices={[
         { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-        { name: "ChatBot", href: "/servicios/chatbot" },
-        { name: "Catálogos WhatsApp", href: "/servicios/catalogos-whatsapp" },
+        { name: "Chatbot", href: "/servicios/chatbot" },
+        { name: "Catálogos de WhatsApp", href: "/servicios/catalogos-whatsapp" },
       ]}
     />
   );
