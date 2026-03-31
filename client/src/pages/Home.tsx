@@ -242,7 +242,7 @@ export default function Home() {
               <div className="max-w-3xl">
                 <span className="inline-flex items-center gap-2 rounded-full border border-coral/30 bg-coral/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-coral-light">
                   <Settings className="w-3.5 h-3.5" />
-                  Nuevo servicio destacado
+                  Servicio destacado
                 </span>
                 <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
                   Consultoría para automatizar tu negocio con WhatsApp Business
