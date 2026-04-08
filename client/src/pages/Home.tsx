@@ -222,6 +222,21 @@ export default function Home() {
                 </svg>
                 Hablar con un asesor
               </a>
+              
+              <a
+                href="https://meetings.hubspot.com/alexmurillo?embed=true&uuid=a3c3303f-ec76-4403-8994-2815af888d2d"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex flex-col gap-1.5 bg-gradient-to-r from-coral via-red-500/90 to-red-600 hover:from-coral-light hover:to-red-400 text-white p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-coral/30 hover:-translate-y-1 transition-all duration-300 border border-coral/20 backdrop-blur-sm max-w-sm"
+              >
+                <div className="font-bold text-lg leading-tight">
+                  Consultoría para automatizar tu negocio con WhatsApp Business API
+                </div>
+                <div className="text-sm opacity-90 leading-relaxed">
+                  Te ayudamos a diseñar flujos, integraciones y procesos de venta, soporte y seguimiento para convertir WhatsApp en un canal real de automatización comercial.
+                </div>
+                <ArrowRight className="w-5 h-5 mt-1 group-hover:translate-x-1 transition-transform" />
+              </a>
             </motion.div>
           </div>
         </div>
