@@ -269,7 +269,7 @@ export default function Home() {
                   href="https://meetings.hubspot.com/alexmurillo?embed=true&uuid=a3c3303f-ec76-4403-8994-2815af888d2d"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 bg-gradient-to-r from-coral to-red-500 hover:from-coral-light hover:to-red-400 text-white px-6 py-3.5 rounded-xl text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-coral/25 hover:-translate-y-0.5 transition-all duration-300 border border-white/20"
+                  className="group inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/25"
                 >
                   Agenda tu cita
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -278,9 +278,10 @@ export default function Home() {
                   href="https://wa.me/573105317126"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/8 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/12"
+                  className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
                 >
                   Hablar por WhatsApp
+                  <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
