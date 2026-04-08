@@ -17,6 +17,7 @@ import {
   Mic,
   Headphones,
   ArrowRight,
+  Calendar,
   CheckCircle2,
   Users,
   Globe,
@@ -271,6 +272,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/25"
                 >
+                  <Calendar className="w-4 h-4" />
                   Agenda tu cita
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
