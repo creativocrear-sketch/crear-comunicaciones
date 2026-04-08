@@ -266,6 +266,15 @@ export default function Home() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
+                  href="https://meetings.hubspot.com/alexmurillo?embed=true&uuid=a3c3303f-ec76-4403-8994-2815af888d2d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 bg-gradient-to-r from-coral to-red-500 hover:from-coral-light hover:to-red-400 text-white px-6 py-3.5 rounded-xl text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-coral/25 hover:-translate-y-0.5 transition-all duration-300 border border-white/20"
+                >
+                  Agenda tu cita
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a
                   href="https://wa.me/573105317126"
                   target="_blank"
                   rel="noopener noreferrer"
