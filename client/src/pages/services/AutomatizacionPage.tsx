@@ -105,8 +105,6 @@ export default function AutomatizacionPage() {
             <p className="mt-4 italic text-sm text-black text-center">
               {t('automatizacion tariffs note', 'services')}
             </p>
-            <p className="text-xs text-gray-500 text-center mt-2">
-              Nota: Todos los valores son en dólares y más impuestos.
             </p>
           </div>
         </motion.div>
