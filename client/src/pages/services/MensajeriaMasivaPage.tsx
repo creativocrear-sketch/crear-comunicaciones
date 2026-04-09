@@ -162,7 +162,32 @@ export default function MensajeriaMasivaPage() {
               {t('mensajeria sms types title', 'services')}
             </h2>
             <p className="text-navy/55">
-              {t('mensajeria sms types description', 'services')}
+              Estos servicios se hacen desde una plataforma web de fácil uso e intuitiva que te permite enviar mensajes de texto a todos los móviles que desees.
+
+SMS Estándar
+Mensajes de texto de hasta 160 caracteres. Ideal para notificaciones, alertas, confirmaciones y comunicaciones directas con alta tasa de apertura.
+
+Ver precios
+SMS Doble Vía
+Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicación bidireccional con tu audiencia.
+
+SMS de hasta 1120 Caracteres
+Mensajes extendidos para cuando necesitas comunicar más información. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.
+
+Emails
+Campañas de email masivo con diseños personalizables. Ideal para newsletters, promociones y comunicaciones de largo formato con seguimiento detallado de aperturas.
+
+Ver precios
+WhatsApp
+Mensajes a través de WhatsApp Business API. Perfecto para comunicación directa, notificaciones interactivas y atención al cliente en el canal preferido de tus clientes.
+
+Ver precios
+Mensajes de Voz
+Llamadas automatizadas con mensajes de voz pregrabados. Ideal para alertas urgentes, recordatorios importantes y comunicaciones que requieren atención inmediata.
+
+Ver precios
+Validación de correos
+Verifica la calidad de tus bases de datos de correo electrónico
             </p>
           </div>
 
