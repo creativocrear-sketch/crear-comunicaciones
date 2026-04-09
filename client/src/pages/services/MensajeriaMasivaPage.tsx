@@ -212,7 +212,7 @@ export default function MensajeriaMasivaPage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.1 + i * 0.1 }}
-                  className="bg-white rounded-2xl p-7 border border-navy/5 hover:shadow-lg transition-all hover:-translate-y-1"
+                  className="group bg-white rounded-2xl p-7 border border-navy/5 hover:shadow-lg transition-all hover:-translate-y-1"
                 >
                   <div className="w-12 h-12 rounded-xl bg-coral/10 flex items-center justify-center mb-4">
                     <type.icon className="w-6 h-6 text-coral" />
@@ -223,13 +223,15 @@ export default function MensajeriaMasivaPage() {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {t(type.descriptionKey, 'services')}
                   </p>
-                  <Link 
-                    href={type.link} 
-                    className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-semibold mt-4 transition-colors"
-                  >
-                    Ver precios
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  <div className="group">
+                    <Link 
+                      href={type.link} 
+                      className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-semibold mt-4 transition-colors opacity-0 group-hover:opacity-100"
+                    >
+                      Ver precios
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </motion.div>
               )
             ))}
