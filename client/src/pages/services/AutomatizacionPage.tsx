@@ -52,7 +52,11 @@ export default function AutomatizacionPage() {
         >
           <div className="max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-black mb-6 text-center">
+<<<<<<< HEAD
               {t('automatizacion tariffs title', 'services')}
+=======
+              Tarifas de Consultoría
+>>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
             </h3>
             <div className="overflow-x-auto">
               <table
@@ -67,6 +71,7 @@ export default function AutomatizacionPage() {
                 <thead>
                   <tr style={{ backgroundColor: "#2D3A8C" }}>
                     <th className="p-4 text-left font-medium text-white text-sm">
+<<<<<<< HEAD
                       {t('tipo de servicio', 'services')}
                     </th>
                     <th className="p-4 text-left font-medium text-white text-sm">
@@ -74,10 +79,20 @@ export default function AutomatizacionPage() {
                     </th>
                     <th className="p-4 text-left font-medium text-white text-sm leading-snug">
                       {t('valor por hora o fracción', 'services')}
+=======
+                      Tipo de servicio
+                    </th>
+                    <th className="p-4 text-left font-medium text-white text-sm">
+                      Descripción
+                    </th>
+                    <th className="p-4 text-left font-medium text-white text-sm leading-snug">
+                      Valor por hora o fracción
+>>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
                     </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-100">
+<<<<<<< HEAD
                   {translations[language].services['automatizacion tariffs table'].map((item, index) => (
                     <tr key={index}>
                       <td className="p-4 text-gray-900 text-sm">{item.type}</td>
@@ -87,11 +102,38 @@ export default function AutomatizacionPage() {
                       <td className="p-4 text-gray-900 text-sm">{item.price}</td>
                     </tr>
                   ))}
+=======
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría comercial</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Orientación estratégica y comercial sobre servicios, procesos o soluciones.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$35 USD</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría técnica y comercial</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Sesiones con análisis técnico especializado y participación de ingeniería.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$55 USD</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Soporte operativo básico</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Ejecución de tareas puntuales de apoyo operativo.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$14 USD</td>
+                  </tr>
+>>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
                 </tbody>
               </table>
             </div>
             <p className="mt-4 italic text-sm text-black text-center">
+<<<<<<< HEAD
               {t('automatizacion tariffs note', 'services')}
+=======
+              Nota: Todos los valores son en dólares y más impuestos.
+>>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
             </p>
           </div>
         </motion.div>
@@ -105,4 +147,8 @@ export default function AutomatizacionPage() {
       ]}
     />
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
