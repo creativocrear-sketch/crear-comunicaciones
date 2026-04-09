@@ -25,41 +25,47 @@ import { translations } from "@/contexts/LanguageContext";
 
 const serviceTypes = [
   {
-    titleKey: 'mensajeria sms standard title',
-    descriptionKey: 'mensajeria sms standard description',
+    title: 'SMS Estándar',
+    description: 'Mensajes de texto de hasta 160 caracteres. Ideal para notificaciones, alertas, confirmaciones y comunicaciones directas con alta tasa de apertura.',
     icon: MessageSquare,
-    link: "/servicios/sms-estandar"
+    link: "/sms"
   },
   {
-    titleKey: 'mensajeria sms doble via title',
-    descriptionKey: 'mensajeria sms doble via description',
+    title: 'SMS Doble Vía',
+    description: 'Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicación bidireccional con tu audiencia.',
     icon: ArrowRight,
-    link: "/servicios/sms-doble-via"
+    link: "/sms"
   },
   {
-    titleKey: 'mensajeria sms largo title',
-    descriptionKey: 'mensajeria sms largo description',
+    title: 'SMS de hasta 1120 Caracteres',
+    description: 'Mensajes extendidos para cuando necesitas comunicar más información. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.',
     icon: Zap,
-    link: "/servicios/sms-largo"
+    link: "/sms"
   },
   {
-    titleKey: 'mensajeria emails title',
-    descriptionKey: 'mensajeria emails description',
+    title: 'Emails',
+    description: 'Campañas de email masivo con diseños personalizables. Ideal para newsletters, promociones y comunicaciones de largo formato con seguimiento detallado de aperturas.',
     icon: MessageSquare,
-    link: "/servicios/emails"
+    link: "/email"
   },
   {
-    titleKey: 'mensajeria whatsapp title',
-    descriptionKey: 'mensajeria whatsapp description',
+    title: 'WhatsApp',
+    description: 'Mensajes a través de WhatsApp Business API. Perfecto para comunicación directa, notificaciones interactivas y atención al cliente en el canal preferido de tus clientes.',
     icon: MessageSquare,
-    link: "/servicios/whatsapp"
+    link: "/whatsapp"
   },
   {
-    titleKey: 'mensajeria voz title',
-    descriptionKey: 'mensajeria voz description',
+    title: 'Mensajes de Voz',
+    description: 'Llamadas automatizadas con mensajes de voz pregrabados. Ideal para alertas urgentes, recordatorios importantes y comunicaciones que requieren atención inmediata.',
     icon: MessageSquare,
-    link: "/servicios/mensajes-voz"
+    link: "/voz"
   },
+  {
+    title: 'Validación de correos',
+    description: 'Verifica la calidad de tus bases de datos de correo electrónico',
+    icon: MessageSquare,
+    link: "/validacioncorreos"
+  }
 ];
 
 const features = [
@@ -162,39 +168,14 @@ export default function MensajeriaMasivaPage() {
               {t('mensajeria sms types title', 'services')}
             </h2>
             <p className="text-navy/55">
-              Estos servicios se hacen desde una plataforma web de fácil uso e intuitiva que te permite enviar mensajes de texto a todos los móviles que desees.
-
-SMS Estándar
-Mensajes de texto de hasta 160 caracteres. Ideal para notificaciones, alertas, confirmaciones y comunicaciones directas con alta tasa de apertura.
-
-Ver precios
-SMS Doble Vía
-Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicación bidireccional con tu audiencia.
-
-SMS de hasta 1120 Caracteres
-Mensajes extendidos para cuando necesitas comunicar más información. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.
-
-Emails
-Campañas de email masivo con diseños personalizables. Ideal para newsletters, promociones y comunicaciones de largo formato con seguimiento detallado de aperturas.
-
-Ver precios
-WhatsApp
-Mensajes a través de WhatsApp Business API. Perfecto para comunicación directa, notificaciones interactivas y atención al cliente en el canal preferido de tus clientes.
-
-Ver precios
-Mensajes de Voz
-Llamadas automatizadas con mensajes de voz pregrabados. Ideal para alertas urgentes, recordatorios importantes y comunicaciones que requieren atención inmediata.
-
-Ver precios
-Validación de correos
-Verifica la calidad de tus bases de datos de correo electrónico
+              Tipos de mensajería masiva
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {serviceTypes.map((type, i) => (
               <motion.div
-                key={type.titleKey}
+                key={type.title}
                 initial={{ opacity: 0, y: 30 }}
                 animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.1 }}
@@ -204,11 +185,18 @@ Verifica la calidad de tus bases de datos de correo electrónico
                   <type.icon className="w-6 h-6 text-coral" />
                 </div>
                 <h3 className="text-lg font-semibold text-navy mb-2">
-                  {t(type.titleKey, 'services')}
+                  {type.title}
                 </h3>
                 <p className="text-navy/55 text-sm leading-relaxed">
-                  {t(type.descriptionKey, 'services')}
+                  {type.description}
                 </p>
+                <Link 
+                  href={type.link} 
+                  className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-semibold mt-4 transition-colors"
+                >
+                  Ver precios
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </motion.div>
             ))}
           </div>
