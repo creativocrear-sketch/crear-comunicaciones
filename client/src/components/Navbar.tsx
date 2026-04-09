@@ -25,6 +25,7 @@ const pricing = [
   { name: "Email masivos", href: "/email" },
   { name: "SMS de voz masivos", href: "/voz" },
   { name: "Validación de correos", href: "/validacioncorreos" },
+  { name: "Consultoría", href: "/servicios/automatizacion" },
 ];
 
 export default function Navbar() {
