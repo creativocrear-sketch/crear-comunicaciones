@@ -252,6 +252,14 @@ interface Translations {
     'mensajeria sms doble via description': string;
     'mensajeria sms largo title': string;
     'mensajeria sms largo description': string;
+    'mensajeria emails title': string;
+    'mensajeria emails description': string;
+    'mensajeria whatsapp title': string;
+    'mensajeria whatsapp description': string;
+    'mensajeria voz title': string;
+    'mensajeria voz description': string;
+    'mensajeria validation title': string;
+    'mensajeria validation description': string;
     'mensajeria platform title': string;
     'mensajeria platform description': string;
     'mensajeria feature 1 title': string;
@@ -1418,6 +1426,14 @@ export const translations: Record<'es' | 'en', Translations> = {
       'mensajeria sms doble via description': 'Allows your customer to respond to you for free. Ideal for surveys, interactive confirmations and bidirectional communication with your audience.',
       'mensajeria sms largo title': 'SMS up to 1120 Characters',
       'mensajeria sms largo description': 'Extended messages for when you need to communicate more information. Perfect for detailed promotions, instructions and enriched content.',
+      'mensajeria emails title': 'Emails',
+      'mensajeria emails description': 'Mass email campaigns with customizable designs. Ideal for newsletters, promotions and long-format communications with detailed opening tracking.',
+      'mensajeria whatsapp title': 'WhatsApp',
+      'mensajeria whatsapp description': 'Direct communication with your customers through the most used messaging channel in the world. Ideal for customer service, sales and transactional notifications.',
+      'mensajeria voz title': 'Voice Messages',
+      'mensajeria voz description': 'Automated calls with pre-recorded voice messages. Ideal for urgent alerts, important reminders and communications that require immediate attention.',
+      'mensajeria validation title': 'Email Validation',
+      'mensajeria validation description': 'Verify the quality of your email databases',
       'mensajeria platform title': 'Our delivery platform',
       'mensajeria platform description': 'Segment your market according to your business marketing needs and reach your audience with precision.',
       'mensajeria feature 1 title': 'Effective delivery engine',
