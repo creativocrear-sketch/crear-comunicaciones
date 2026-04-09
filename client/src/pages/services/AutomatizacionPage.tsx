@@ -62,7 +62,7 @@ export default function AutomatizacionPage() {
           className="mt-12"
         >
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-bold text-white mb-6">Tarifas de Consultoría</h3>
+            <h3 className="text-xl font-bold text-white mb-6 text-center">Tarifas de Consultoría</h3>
             <div className="overflow-x-auto">
               <table className="w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg">
                 <thead>
