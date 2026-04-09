@@ -253,17 +253,10 @@ export default function Home() {
                   {t('servicio destacado', 'home')}
                 </span>
                 <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
-<<<<<<< HEAD
                   {t('consultoria whatsapp title', 'home')}
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
                   {t('consultoria whatsapp description', 'home')}
-=======
-                  Consultoría para automatizar tu negocio con WhatsApp Business API
-                </h3>
-                <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
-                  Te ayudamos a diseñar flujos, integraciones y procesos de venta, soporte y seguimiento para convertir WhatsApp en un canal real de automatización comercial.
->>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
                 </p>
               </div>
 
