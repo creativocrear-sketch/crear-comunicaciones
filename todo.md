@@ -1,6 +1,10 @@
-# TODO: Add Tarifas de Consultoría Table to AutomatizacionPage.tsx
+# TODO Language Toggle Full Translation
 
-- [x] Step 1: Edit client/src/pages/services/AutomatizacionPage.tsx - Add table section below benefits (post-ServiceLayout CTA).
-- [x] Step 2: Test page aesthetics/responsiveness.
-- [x] Step 3: Complete task.
+- [x] 1. Create utils/translations.ts
+- [x] 2. Update LanguageContext t()
 
+- [ ] 4. Edit ServiceLayout.tsx with t()
+- [ ] 5. Edit AutomatizacionPage.tsx with t()
+
+- [ ] 7. Git branch/commit/push/PR
+- [ ] 8. Vercel production
