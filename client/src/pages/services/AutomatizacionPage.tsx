@@ -62,36 +62,58 @@ export default function AutomatizacionPage() {
           className="mt-12"
         >
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">Tarifas de Consultoría</h3>
+            <h3 className="text-xl font-bold text-black mb-6 text-center">
+              Tarifas de Consultoría
+            </h3>
             <div className="overflow-x-auto">
-              <table className="w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg">
+              <table
+                className="w-full border-collapse rounded-xl overflow-hidden shadow-lg"
+                style={{ tableLayout: "fixed" }}
+              >
+                <colgroup>
+                  <col style={{ width: "22%" }} />
+                  <col style={{ width: "58%" }} />
+                  <col style={{ width: "20%" }} />
+                </colgroup>
                 <thead>
-                  <tr className="bg-gradient-to-r from-navy to-gray-800 text-white">
-                    <th className="p-4 text-left font-bold">Tipo de servicio</th>
-                    <th className="p-4 text-left font-bold">Descripción</th>
-                    <th className="p-4 text-right font-bold">Valor por hora o fracción</th>
+                  <tr style={{ backgroundColor: "#2D3A8C" }}>
+                    <th className="p-4 text-left font-medium text-white text-sm">
+                      Tipo de servicio
+                    </th>
+                    <th className="p-4 text-left font-medium text-white text-sm">
+                      Descripción
+                    </th>
+                    <th className="p-4 text-left font-medium text-white text-sm leading-snug">
+                      Valor por hora o fracción
+                    </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-100">
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="p-4 font-semibold text-gray-900">Asesoría comercial</td>
-                    <td className="p-4 text-gray-700">Orientación estratégica y comercial sobre servicios, procesos o soluciones.</td>
-                    <td className="p-4 text-right font-bold text-coral">$35 USD</td>
+                <tbody className="bg-white divide-y divide-gray-100">
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría comercial</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Orientación estratégica y comercial sobre servicios, procesos o soluciones.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$35 USD</td>
                   </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="p-4 font-semibold text-gray-900">Asesoría técnica y comercial</td>
-                    <td className="p-4 text-gray-700">Sesiones con análisis técnico especializado y participación de ingeniería.</td>
-                    <td className="p-4 text-right font-bold text-coral">$55 USD</td>
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría técnica y comercial</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Sesiones con análisis técnico especializado y participación de ingeniería.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$55 USD</td>
                   </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="p-4 font-semibold text-gray-900">Soporte operativo básico</td>
-                    <td className="p-4 text-gray-700">Ejecución de tareas puntuales de apoyo operativo.</td>
-                    <td className="p-4 text-right font-bold text-coral">$14 USD</td>
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Soporte operativo básico</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Ejecución de tareas puntuales de apoyo operativo.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$14 USD</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="mt-4 italic text-sm text-white/70 text-center">
+            <p className="mt-4 italic text-sm text-black text-center">
               Nota: Todos los valores son en dólares y más impuestos.
             </p>
           </div>
@@ -107,4 +129,3 @@ export default function AutomatizacionPage() {
     />
   );
 }
-

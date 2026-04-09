@@ -1,34 +1,16 @@
-/*
+/* 
  * Navbar  Crear Comunicaciones
- * Design: "Ondas de Comunicaci?n"  Azul noche, Rojo coral, Blanco
- * Men: Inicio | Servicios (dropdown) | Precios (dropdown: SMS, Email, Voz, Validacin) | Contacto
+ * Design: "Ondas de Comunicación"  Azul noche, Rojo coral, Blanco
+ * Men: Inicio | Servicios (dropdown) | Precios (dropdown: SMS, Email, Voz, Validación) | Contacto
  */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "../contexts/LanguageContext";
 
-const services = [
-  { name: "Chatbot", href: "/servicios/chatbot" },
-  { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-  { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
-  { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-  { name: "Catálogos de productos", href: "/servicios/catalogos-whatsapp" },
-  { name: "Mensajería masiva", href: "/servicios/mensajeria-masiva" },
-  { name: "Contact Center", href: "/servicios/contact-center" },
-  { name: "Consultoría de automatización", href: "/servicios/automatizacion" },
-  { name: "Asesoría en comunicación masiva", href: "/servicios/asesoria-comunicacion" },
-];
-
-const pricing = [
-  { name: "SMS masivos", href: "/sms" },
-  { name: "Email masivos", href: "/email" },
-  { name: "SMS de voz masivos", href: "/voz" },
-  { name: "Validación de correos", href: "/validacioncorreos" },
-  { name: "Consultoría", href: "/servicios/automatizacion" },
-];
-
-export default function Navbar() {
+const Navbar = () => {
+  const { language, toggleLanguage, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -51,14 +33,32 @@ export default function Navbar() {
     setMobilePricingOpen(false);
   }, [location]);
 
+  const services = [
+    { name: 'chatbot', href: "/servicios/chatbot" },
+    { name: 'ia para whatsapp', href: "/servicios/ia-whatsapp" },
+    { name: 'apps con whatsapp', href: "/servicios/apps-whatsapp" },
+    { name: 'omnicanalidad', href: "/servicios/omnicanalidad" },
+    { name: 'catálogos de productos', href: "/servicios/catalogos-whatsapp" },
+    { name: 'mensajería masiva', href: "/servicios/mensajeria-masiva" },
+    { name: 'contact center', href: "/servicios/contact-center" },
+    { name: 'consultoría de automatización', href: "/servicios/automatizacion" },
+    { name: 'asesoría en comunicación masiva', href: "/servicios/asesoria-comunicacion" },
+  ];
+
+  const pricing = [
+    { name: 'sms masivos', href: "/sms" },
+    { name: 'email masivos', href: "/email" },
+    { name: 'sms de voz masivos', href: "/voz" },
+    { name: 'validación de correos', href: "/validacioncorreos" },
+    { name: 'consultoría', href: "/servicios/automatizacion" },
+  ];
+
+  const languageButtonText = language === 'es' ? 'EN' : 'ES';
+
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-navy/95 backdrop-blur-md shadow-lg shadow-navy-dark/20"
-          : "bg-navy/80 backdrop-blur-sm"
-      }`}
-    >
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? "bg-navy/95 backdrop-blur-md shadow-lg shadow-navy-dark/20" : "bg-navy/80 backdrop-blur-sm"
+    }`}>
       <div className="container">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
             <NavLink href="/" active={location === "/"}>
-              Inicio
+              {t('inicio', 'navbar')}
             </NavLink>
 
             {/* Services Dropdown */}
@@ -83,12 +83,8 @@ export default function Navbar() {
               onMouseLeave={() => setServicesOpen(false)}
             >
               <button className="flex items-center gap-1 px-4 py-2 text-sm text-white/80 hover:text-white transition-colors font-medium">
-                Servicios
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    servicesOpen ? "rotate-180" : ""
-                  }`}
-                />
+                {t('servicios', 'navbar')}
+                <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
               </button>
               <AnimatePresence>
                 {servicesOpen && (
@@ -105,7 +101,7 @@ export default function Navbar() {
                         href={s.href}
                         className="block px-4 py-2.5 text-sm text-white/75 hover:text-white hover:bg-white/5 transition-colors"
                       >
-                        {s.name}
+                        {t(s.name, 'navbar')}
                       </Link>
                     ))}
                   </motion.div>
@@ -120,12 +116,8 @@ export default function Navbar() {
               onMouseLeave={() => setPricingOpen(false)}
             >
               <button className="flex items-center gap-1 px-4 py-2 text-sm text-white/80 hover:text-white transition-colors font-medium">
-                Precios
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    pricingOpen ? "rotate-180" : ""
-                  }`}
-                />
+                {t('precios', 'navbar')}
+                <ChevronDown className={`w-4 h-4 transition-transform ${pricingOpen ? "rotate-180" : ""}`} />
               </button>
               <AnimatePresence>
                 {pricingOpen && (
@@ -142,7 +134,7 @@ export default function Navbar() {
                         href={p.href}
                         className="block px-4 py-2.5 text-sm text-white/75 hover:text-white hover:bg-white/5 transition-colors"
                       >
-                        {p.name}
+                        {t(p.name, 'navbar')}
                       </Link>
                     ))}
                   </motion.div>
@@ -151,12 +143,12 @@ export default function Navbar() {
             </div>
 
             <NavLink href="/contacto" active={false}>
-              Contacto
+              {t('contacto', 'navbar')}
             </NavLink>
           </div>
 
-          {/* CTA */}
-          <div className="hidden lg:block">
+          {/* CTA + Language Toggle */}
+          <div className="hidden lg:flex items-center gap-3">
             <a
               href="https://wa.me/573105317126"
               target="_blank"
@@ -166,17 +158,36 @@ export default function Navbar() {
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
-              Contctanos
+              {t('contctanos', 'navbar')}
             </a>
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 text-white/80 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-all"
+              title="Toggle language"
+              aria-label="Toggle language"
+            >
+              <Globe className="w-4 h-4" />
+              <span className="text-sm font-medium uppercase">{languageButtonText}</span>
+            </button>
           </div>
 
           {/* Mobile Toggle */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-white p-2"
-          >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 text-white/80 hover:text-white p-1.5 rounded-lg hover:bg-white/10 transition-all text-sm"
+              title="Toggle language"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{languageButtonText}</span>
+            </button>
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="text-white p-2"
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -190,7 +201,9 @@ export default function Navbar() {
             className="lg:hidden bg-navy-light/95 backdrop-blur-md border-t border-white/10 overflow-hidden"
           >
             <div className="container py-4 space-y-1">
-              <MobileLink href="/">Inicio</MobileLink>
+              <MobileLink href="/">
+                {t('inicio', 'navbar')}
+              </MobileLink>
 
               {/* Mobile Services */}
               <div className="py-1">
@@ -198,12 +211,8 @@ export default function Navbar() {
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                   className="flex items-center justify-between w-full px-3 py-2.5 text-white/80 hover:text-white text-sm font-medium"
                 >
-                  Servicios
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform ${
-                      mobileServicesOpen ? "rotate-180" : ""
-                    }`}
-                  />
+                  {t('servicios', 'navbar')}
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 <AnimatePresence>
                   {mobileServicesOpen && (
@@ -219,7 +228,7 @@ export default function Navbar() {
                           href={s.href}
                           className="block px-3 py-2 text-sm text-white/60 hover:text-white transition-colors"
                         >
-                          {s.name}
+                          {t(s.name, 'navbar')}
                         </Link>
                       ))}
                     </motion.div>
@@ -233,12 +242,8 @@ export default function Navbar() {
                   onClick={() => setMobilePricingOpen(!mobilePricingOpen)}
                   className="flex items-center justify-between w-full px-3 py-2.5 text-white/80 hover:text-white text-sm font-medium"
                 >
-                  Precios
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform ${
-                      mobilePricingOpen ? "rotate-180" : ""
-                    }`}
-                  />
+                  {t('precios', 'navbar')}
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobilePricingOpen ? "rotate-180" : ""}`} />
                 </button>
                 <AnimatePresence>
                   {mobilePricingOpen && (
@@ -254,7 +259,7 @@ export default function Navbar() {
                           href={p.href}
                           className="block px-3 py-2 text-sm text-white/60 hover:text-white transition-colors"
                         >
-                          {p.name}
+                          {t(p.name, 'navbar')}
                         </Link>
                       ))}
                     </motion.div>
@@ -262,7 +267,9 @@ export default function Navbar() {
                 </AnimatePresence>
               </div>
 
-              <MobileLink href="/#contacto">Contacto</MobileLink>
+              <MobileLink href="/#contacto">
+                {t('contacto', 'navbar')}
+              </MobileLink>
 
               <div className="pt-3">
                 <a
@@ -271,7 +278,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   className="block text-center bg-coral hover:bg-coral-light text-white px-5 py-3 rounded-lg text-sm font-semibold transition-all"
                 >
-                  Contactanos por WhatsApp
+                  {t('contactanos por whatsapp', 'navbar')}
                 </a>
               </div>
             </div>
@@ -280,7 +287,7 @@ export default function Navbar() {
       </AnimatePresence>
     </nav>
   );
-}
+};
 
 function NavLink({
   href,
@@ -319,3 +326,6 @@ function MobileLink({
     </Link>
   );
 }
+
+export default Navbar;
+
