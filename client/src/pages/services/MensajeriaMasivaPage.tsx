@@ -64,7 +64,8 @@ const serviceTypes = [
     title: 'Validación de correos',
     description: 'Verifica la calidad de tus bases de datos de correo electrónico',
     icon: MessageSquare,
-    link: "/validacioncorreos"
+    link: "/validacioncorreos",
+    isBanner: true
   }
 ];
 
@@ -174,30 +175,63 @@ export default function MensajeriaMasivaPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {serviceTypes.map((type, i) => (
-              <motion.div
-                key={type.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.1 + i * 0.1 }}
-                className="bg-white rounded-2xl p-7 border border-navy/5 hover:shadow-lg transition-all hover:-translate-y-1"
-              >
-                <div className="w-12 h-12 rounded-xl bg-coral/10 flex items-center justify-center mb-4">
-                  <type.icon className="w-6 h-6 text-coral" />
-                </div>
-                <h3 className="text-lg font-semibold text-navy mb-2">
-                  {type.title}
-                </h3>
-                <p className="text-navy/55 text-sm leading-relaxed">
-                  {type.description}
-                </p>
-                <Link 
-                  href={type.link} 
-                  className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-semibold mt-4 transition-colors"
+              type.isBanner ? (
+                <motion.div
+                  key={type.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 0.1 + i * 0.1 }}
+                  className="col-span-full bg-gradient-to-r from-coral to-coral-light rounded-2xl p-8 border border-coral/20 hover:shadow-lg transition-all hover:-translate-y-1"
                 >
-                  Ver precios
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </motion.div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center">
+                        <type.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <div className="text-white">
+                        <h3 className="text-xl font-bold mb-2">
+                          {type.title}
+                        </h3>
+                        <p className="text-white/90 text-sm leading-relaxed max-w-md">
+                          {type.description}
+                        </p>
+                      </div>
+                    </div>
+                    <Link 
+                      href={type.link} 
+                      className="inline-flex items-center gap-2 bg-white text-coral px-6 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors"
+                    >
+                      Ver precios
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </motion.div>
+              ) : (
+                <motion.div
+                  key={type.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 0.1 + i * 0.1 }}
+                  className="bg-white rounded-2xl p-7 border border-navy/5 hover:shadow-lg transition-all hover:-translate-y-1"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-coral/10 flex items-center justify-center mb-4">
+                    <type.icon className="w-6 h-6 text-coral" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    {type.title}
+                  </h3>
+                  <p className="text-navy/55 text-sm leading-relaxed">
+                    {type.description}
+                  </p>
+                  <Link 
+                    href={type.link} 
+                    className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-semibold mt-4 transition-colors"
+                  >
+                    Ver precios
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </motion.div>
+              )
             ))}
           </div>
         </div>
