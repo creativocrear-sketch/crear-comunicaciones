@@ -58,7 +58,7 @@ export default function ServiceLayout({
         <div className="absolute bottom-0 left-0 right-0 opacity-10">
           <svg viewBox="0 0 1440 120" className="w-full">
             <path
-              d="M0,80 C360,120 720,40 1080,80 C1260,100 1380,90 1440,80 L1440,120 L0,120 Z"
+              d="M0,80 C360,120 1440,80 L1440,120 L0,120 Z"
               fill="white"
             />
           </svg>
@@ -148,10 +148,6 @@ export default function ServiceLayout({
                 </div>
               ))}
             </div>
-<<<<<<< HEAD
-=======
-            {/* tariffTable fue movido a la sección blanca de abajo */}
->>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
           </div>
         </div>
       </section>
@@ -161,17 +157,12 @@ export default function ServiceLayout({
       {/* CTA */}
       <section className="bg-pearl py-20">
         <div className="container">
-<<<<<<< HEAD
-          {tariffTable && <div className="mb-16">{tariffTable}</div>}
-=======
-
           {/* Tariff Table — encima del CTA, en la sección blanca */}
           {tariffTable && (
             <div className="mb-16">
               {tariffTable}
             </div>
           )}
->>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
 
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4">
