@@ -78,15 +78,13 @@ export default function AutomatizacionPage() {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-100">
-                  {translations[language].services['automatizacion tariffs table'].map((item, index) => (
-                    <tr key={index}>
-                      <td className="p-4 text-gray-900 text-sm">{item.type}</td>
-                      <td className="p-4 text-gray-600 text-sm">
-                        {item.description}
-                      </td>
-                      <td className="p-4 text-gray-900 text-sm">{item.price}</td>
-                    </tr>
-                  ))}
+                  <tr>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría comercial</td>
+                    <td className="p-4 text-gray-600 text-sm">
+                      Orientación estratégica y comercial sobre servicios, procesos o soluciones.
+                    </td>
+                    <td className="p-4 text-gray-900 text-sm">$35 USD</td>
+                  </tr>
                   <tr>
                     <td className="p-4 text-gray-900 text-sm">Asesoría técnica y comercial</td>
                     <td className="p-4 text-gray-600 text-sm">
@@ -101,7 +99,7 @@ export default function AutomatizacionPage() {
                     </td>
                     <td className="p-4 text-gray-900 text-sm">$14 USD</td>
                   </tr>
-</tbody>
+                </tbody>
               </table>
             </div>
             <p className="mt-4 italic text-sm text-black text-center">
