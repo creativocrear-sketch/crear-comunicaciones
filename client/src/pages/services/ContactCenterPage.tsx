@@ -1,62 +1,51 @@
 import ServiceLayout from "@/components/ServiceLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663365918901/5cTAowCCCqPMKFSnKNEHar/contact-center-service-5faVxkQhTvJSpXBnvnWLHp.webp";
 
 export default function ContactCenterPage() {
+  const { t, language } = useLanguage();
+
   return (
     <ServiceLayout
-      title="Contact Center"
-      subtitle="Centro de contacto profesional"
-      description="Implementamos y gestionamos tu centro de contacto con acompañamiento integral. Desde la infraestructura tecnológica hasta la capacitación de agentes, nos encargamos de todo para que tu operación de atención al cliente funcione de manera eficiente y profesional."
+      title={t('contact center title', 'services')}
+      subtitle={t('contact center subtitle', 'services')}
+      description={t('contact center description', 'services')}
       heroImage={HERO_IMG}
       features={[
         {
-          title: "Acompañamiento completo",
-          description:
-            "Hacemos todo el acompañamiento desde la planificación hasta la operación diaria. Diseñamos la estrategia, implementamos la tecnología y capacitamos a tu equipo.",
+          title: t('contact center feature 1 title', 'services'),
+          description: t('contact center feature 1 description', 'services'),
         },
         {
-          title: "Campañas de llamadas",
-          description:
-            "Diseñamos y ejecutamos campañas de llamadas salientes para cobranza, encuestas, convocatoria a eventos, televentas, confirmación de citas y más.",
+          title: t('contact center feature 2 title', 'services'),
+          description: t('contact center feature 2 description', 'services'),
         },
         {
-          title: "Recepción de llamadas",
-          description:
-            "Líneas de atención al cliente con IVR inteligente, distribución automática de llamadas, colas de espera y grabación para control de calidad.",
+          title: t('contact center feature 3 title', 'services'),
+          description: t('contact center feature 3 description', 'services'),
         },
         {
-          title: "Integración multicanal",
-          description:
-            "El contact center no solo maneja llamadas: integra WhatsApp, email, chat web y redes sociales para una experiencia unificada de atención.",
+          title: t('contact center feature 4 title', 'services'),
+          description: t('contact center feature 4 description', 'services'),
         },
         {
-          title: "Monitoreo en tiempo real",
-          description:
-            "Supervisión en vivo de la operación: llamadas activas, tiempos de espera, disponibilidad de agentes y métricas de rendimiento al instante.",
+          title: t('contact center feature 5 title', 'services'),
+          description: t('contact center feature 5 description', 'services'),
         },
         {
-          title: "Reportes y análisis",
-          description:
-            "Informes detallados de productividad, calidad de atención, tiempos de gestión, tasas de resolución y satisfacción del cliente.",
+          title: t('contact center feature 6 title', 'services'),
+          description: t('contact center feature 6 description', 'services'),
         },
       ]}
-      benefits={[
-        "Acompañamiento integral en toda la operación",
-        "Infraestructura tecnológica de última generación",
-        "Campañas de llamadas para cobranza y ventas",
-        "Capacitación profesional para tu equipo de agentes",
-        "Monitoreo y control de calidad en tiempo real",
-        "Escalabilidad según el volumen de tu operación",
-        "Integración con canales digitales (WhatsApp, email, chat)",
-        "Reducción de costos operativos con automatización",
-      ]}
-      ctaText="Implementar Contact Center"
+      benefits={translations[language].services['contact center benefits']}
+      ctaText={t('contact center cta', 'services')}
       relatedServices={[
-        { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-        { name: "ChatBot", href: "/servicios/chatbot" },
-        { name: "SMS de Voz Masivos", href: "/precios" },
+        { name: t('omnicanalidad', 'navbar'), href: "/servicios/omnicanalidad" },
+        { name: t('chatbot', 'navbar'), href: "/servicios/chatbot" },
+        { name: t('sms de voz masivos', 'navbar'), href: "/precios" },
       ]}
     />
   );

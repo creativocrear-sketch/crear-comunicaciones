@@ -1,58 +1,47 @@
 import ServiceLayout from "@/components/ServiceLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663365918901/5cTAowCCCqPMKFSnKNEHar/whatsapp-ai-service-2AxE4Z2qy5TuY7TsCWcGWd.webp";
 
 export default function IAWhatsappPage() {
+  const { t, language } = useLanguage();
+
   return (
     <ServiceLayout
-      title="IA para WhatsApp"
-      subtitle="Inteligencia artificial conversacional"
-      description="Potencia tu WhatsApp Business con inteligencia artificial de última generación. Nuestras soluciones de IA permiten que tu empresa ofrezca respuestas inteligentes, personalizadas y contextuales a través del canal de mensajería más utilizado del mundo."
+      title={t('ia whatsapp title', 'services')}
+      subtitle={t('ia whatsapp subtitle', 'services')}
+      description={t('ia whatsapp description', 'services')}
       heroImage={HERO_IMG}
       features={[
         {
-          title: "Comprensión del lenguaje natural",
-          description:
-            "La IA entiende lo que tus clientes escriben, sin importar cómo lo expresen. Reconoce intenciones, extrae información clave y responde de forma natural y coherente.",
+          title: t('ia whatsapp feature 1 title', 'services'),
+          description: t('ia whatsapp feature 1 description', 'services'),
         },
         {
-          title: "Automatización inteligente de ventas",
-          description:
-            "Desde la primera consulta hasta el cierre, la IA guía al cliente por el embudo de ventas: presenta productos, responde objeciones, calcula precios y agenda citas.",
+          title: t('ia whatsapp feature 2 title', 'services'),
+          description: t('ia whatsapp feature 2 description', 'services'),
         },
         {
-          title: "Aprendizaje continuo",
-          description:
-            "El sistema aprende de cada interacción para mejorar sus respuestas con el tiempo. Cuanto más se usa, más preciso y eficiente se vuelve.",
+          title: t('ia whatsapp feature 3 title', 'services'),
+          description: t('ia whatsapp feature 3 description', 'services'),
         },
         {
-          title: "Personalización por contexto",
-          description:
-            "La IA recuerda el historial de conversación y los datos del cliente para ofrecer respuestas personalizadas, recomendaciones relevantes y un trato único.",
+          title: t('ia whatsapp feature 4 title', 'services'),
+          description: t('ia whatsapp feature 4 description', 'services'),
         },
         {
-          title: "Integración con WhatsApp Business API",
-          description:
-            "Conexión directa con la API oficial de WhatsApp Business para garantizar estabilidad, seguridad y cumplimiento de las políticas de Meta.",
+          title: t('ia whatsapp feature 5 title', 'services'),
+          description: t('ia whatsapp feature 5 description', 'services'),
         },
         {
-          title: "Análisis de sentimiento",
-          description:
-            "Detecta el estado emocional del cliente en tiempo real para adaptar el tono de las respuestas y escalar a un agente humano cuando sea necesario.",
+          title: t('ia whatsapp feature 6 title', 'services'),
+          description: t('ia whatsapp feature 6 description', 'services'),
         },
       ]}
-      benefits={[
-        "Respuestas inteligentes y contextuales las 24 horas",
-        "Incremento significativo en la tasa de conversión",
-        "Reducción del tiempo de respuesta a segundos",
-        "Atención personalizada a escala masiva",
-        "Integración nativa con WhatsApp Business API",
-        "Reportes detallados de interacciones y rendimiento",
-        "Escalamiento automático a agentes humanos",
-        "Cumplimiento con políticas de privacidad y datos",
-      ]}
-      ctaText="Activar IA en mi WhatsApp"
+      benefits={translations[language].services['ia whatsapp benefits']}
+      ctaText={t('ia whatsapp cta', 'services')}
       relatedServices={[
         { name: "Chatbot", href: "/servicios/chatbot" },
         { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },

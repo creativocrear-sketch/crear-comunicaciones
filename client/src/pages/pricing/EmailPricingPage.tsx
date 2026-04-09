@@ -1,96 +1,94 @@
 import { Mail } from "lucide-react";
 import PricingLayout from "@/components/PricingLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 export default function EmailPricingPage() {
+  const { t, language } = useLanguage();
+
   return (
     <PricingLayout
-      title="Precios de Email Masivos"
-      subtitle="Planes de email marketing"
-      description="Crea y gestiona campañas de email marketing interactivas con diseño profesional, seguimiento avanzado y métricas detalladas para optimizar tus resultados."
+      title={t('email pricing title', 'services')}
+      subtitle={t('email pricing subtitle', 'services')}
+      description={t('email pricing description', 'services')}
       icon={Mail}
       futureUrl="crearcomunicaciones.net/email"
       tiers={[
         {
-          name: "Plan #1",
-          description: "De 150.001 a 250.000 emails",
+          name: t('email pricing plan 1', 'services'),
+          description: t('email pricing plan 1 desc', 'services'),
           price: "$8",
-          unit: "por email",
+          unit: t('email pricing unit', 'services'),
           features: [
-            "Máximo volumen",
-            "Infraestructura dedicada",
-            "SLA garantizado",
-            "Soporte por WhatsApp",
+            t('feature max volume', 'services'),
+            t('feature dedicated infrastructure', 'services'),
+            t('feature sla guaranteed', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #2",
-          description: "De 100.001 a 150.000 emails",
+          name: t('email pricing plan 2', 'services'),
+          description: t('email pricing plan 2 desc', 'services'),
           price: "$8.5",
-          unit: "por email",
+          unit: t('email pricing unit', 'services'),
           features: [
-            "Volumen muy alto",
-            "Infraestructura dedicada",
-            "SLA garantizado",
-            "Soporte por WhatsApp",
+            t('feature very high volume', 'services'),
+            t('feature dedicated infrastructure', 'services'),
+            t('feature sla guaranteed', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #3",
-          description: "De 50.001 a 100.000 emails",
+          name: t('email pricing plan 3', 'services'),
+          description: t('email pricing plan 3 desc', 'services'),
           price: "$10",
-          unit: "por email",
+          unit: t('email pricing unit', 'services'),
           features: [
-            "Contactos ilimitados",
-            "IP dedicada",
-            "Integración con CRM",
-            "Soporte por WhatsApp",
+            t('feature unlimited contacts', 'services'),
+            t('feature dedicated ip', 'services'),
+            t('feature crm integration', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #4",
-          description: "De 15.001 a 50.000 emails",
+          name: t('email pricing plan 4', 'services'),
+          description: t('email pricing plan 4 desc', 'services'),
           price: "$11.5",
-          unit: "por email",
+          unit: t('email pricing unit', 'services'),
           features: [
-            "Personalización dinámica",
-            "Hasta 25.000 contactos",
-            "Automatización de secuencias",
-            "Soporte por WhatsApp",
+            t('feature dynamic personalization', 'services'),
+            t('feature up to 25000 contacts', 'services'),
+            t('feature sequence automation', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
           highlighted: true,
         },
         {
-          name: "Plan #5",
-          description: "De 10.001 a 15.000 emails",
+          name: t('email pricing plan 5', 'services'),
+          description: t('email pricing plan 5 desc', 'services'),
           price: "$12",
-          unit: "por email",
+          unit: t('email pricing unit', 'services'),
           features: [
-            "Editor drag & drop",
-            "Hasta 5.000 contactos",
-            "Segmentación básica",
-            "Soporte por WhatsApp",
+            t('feature drag drop editor', 'services'),
+            t('feature up to 5000 contacts', 'services'),
+            t('feature basic segmentation', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #6",
-          description: "De 5.000 a 10.000 emails",
+          name: t('email pricing plan 6', 'services'),
+          description: t('email pricing plan 6 desc', 'services'),
           price: "$13",
-          unit: "por email",
+          unit: t('email pricing unit', 'services'),
           features: [
-            "Plantillas prediseñadas",
-            "Hasta 1.000 contactos",
-            "Estadísticas básicas",
-            "Soporte por WhatsApp",
+            t('feature predefined templates', 'services'),
+            t('feature up to 1000 contacts', 'services'),
+            t('feature basic statistics', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
       ]}
-      phrases={[
-        "El módulo de email te permite crear y gestionar campañas interactivas con un editor visual drag & drop que no requiere conocimientos de diseño ni programación.",
-        "Segmenta tu audiencia con filtros avanzados para enviar el mensaje correcto a la persona correcta en el momento adecuado, maximizando las tasas de apertura y conversión.",
-        "Realiza pruebas A/B de asuntos, contenido y horarios de envío para descubrir qué funciona mejor con tu audiencia y optimizar cada campaña de forma continua.",
-        "Obtén métricas detalladas de cada campaña: tasas de apertura, clics, rebotes, desuscripciones y conversiones, todo en un dashboard intuitivo y en tiempo real.",
-        "Automatiza secuencias de correos para nutrir leads, dar la bienvenida a nuevos suscriptores, recuperar carritos abandonados y mantener a tu audiencia comprometida.",
-      ]}
+      phrases={translations[language].services['email pricing phrases']}
     />
   );
 }

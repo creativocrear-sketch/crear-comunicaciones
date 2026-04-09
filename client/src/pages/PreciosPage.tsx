@@ -16,63 +16,62 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WaveDivider from "@/components/WaveDivider";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
-const massiveServices = [
-  {
-    icon: MessageSquare,
-    title: "SMS masivos",
-    description:
-      "Envía mensajes de texto masivos con alta tasa de apertura. Disponible en tres modalidades: SMS estándar, SMS doble vía y SMS de hasta 1120 caracteres.",
-    features: [
-      "SMS estándar de 160 caracteres",
-      "SMS doble vía para interacción",
-      "SMS largo de hasta 1120 caracteres",
-      "Plataforma web de fácil uso",
-      "Programación de envíos",
-      "Reportes de entrega en tiempo real",
-      "Personalización de mensajes",
-      "API para integración con sistemas",
-    ],
-    color: "bg-coral",
-  },
-  {
-    icon: Mail,
-    title: "Email masivos",
-    description:
-      "Campañas de email marketing interactivas con diseño profesional, seguimiento avanzado y métricas detalladas para optimizar tus resultados.",
-    features: [
-      "Editor de plantillas drag & drop",
-      "Personalización dinámica de contenido",
-      "Segmentación avanzada de contactos",
-      "A/B testing de asuntos y contenido",
-      "Métricas: apertura, clics, rebotes",
-      "Automatización de secuencias",
-      "Cumplimiento anti-spam",
-      "Integración con CRM",
-    ],
-    color: "bg-blue-mid",
-  },
-  {
-    icon: Mic,
-    title: "SMS de voz masivos",
-    description:
-      "Mensajes de voz automatizados para cobranza, recordatorios, convocatorias y campañas masivas. Tu mensaje llega directamente como una llamada de voz.",
-    features: [
-      "Mensajes de voz pregrabados",
-      "Text-to-speech en español",
-      "Campañas de cobranza automatizadas",
-      "Recordatorios de citas y eventos",
-      "Convocatorias masivas",
-      "Reportes de llamadas completadas",
-      "Programación de horarios de envío",
-      "Interacción por teclado (DTMF)",
-    ],
-    color: "bg-coral",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function PreciosPage() {
+  const { t } = useLanguage();
   const reveal = useScrollReveal(0.1);
+
+  const massiveServices = [
+    {
+      icon: MessageSquare,
+      title: t('sms masivos title', 'massivePricing'),
+      description: t('sms masivos description', 'massivePricing'),
+      features: [
+        t('sms estandar', 'massivePricing'),
+        t('sms doble via', 'massivePricing'),
+        t('sms largo', 'massivePricing'),
+        t('plataforma web', 'massivePricing'),
+        t('programacion envios', 'massivePricing'),
+        t('reportes entrega', 'massivePricing'),
+        t('personalizacion mensajes', 'massivePricing'),
+        t('api integracion', 'massivePricing'),
+      ],
+      color: "bg-coral",
+    },
+    {
+      icon: Mail,
+      title: t('email masivos title', 'massivePricing'),
+      description: t('email masivos description', 'massivePricing'),
+      features: [
+        t('editor plantillas', 'massivePricing'),
+        t('personalizacion dinamica', 'massivePricing'),
+        t('segmentacion avanzada', 'massivePricing'),
+        t('ab testing', 'massivePricing'),
+        t('metricas email', 'massivePricing'),
+        t('automatizacion secuencias', 'massivePricing'),
+        t('cumplimiento anti spam', 'massivePricing'),
+        "Integración con CRM",
+      ],
+      color: "bg-blue-mid",
+    },
+    {
+      icon: Mic,
+      title: t('sms voz masivos title', 'massivePricing'),
+      description: t('sms voz masivos description', 'massivePricing'),
+      features: [
+        t('voz natural', 'massivePricing'),
+        t('programacion voz', 'massivePricing'),
+        t('reportes voz', 'massivePricing'),
+        t('personalizacion voz', 'massivePricing'),
+        t('api voz', 'massivePricing'),
+        "Campañas de cobranza automatizadas",
+        "Recordatorios de citas y eventos",
+        "Interacción por teclado (DTMF)",
+      ],
+      color: "bg-coral",
+    },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -96,7 +95,7 @@ export default function PreciosPage() {
             className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Volver al inicio
+            {t('volver al inicio', 'layout')}
           </Link>
 
           <motion.div
@@ -106,10 +105,10 @@ export default function PreciosPage() {
             className="max-w-3xl"
           >
             <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-              Planes y precios
+              {t('planes', 'common')} y {t('precios', 'navbar')}
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
-              Envíos masivos para tu empresa
+              {t('nuestros servicios masivos', 'massivePricing')}
             </h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-2xl">
               SMS, Email y Mensajes de Voz masivos con las mejores tarifas del
@@ -154,7 +153,7 @@ export default function PreciosPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-coral hover:bg-coral-light text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all"
                     >
-                      Solicitar cotización
+                      {t('solicitar', 'common')}
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -162,7 +161,7 @@ export default function PreciosPage() {
                   {/* Features */}
                   <div className="p-8 lg:col-span-2 bg-pearl/50">
                     <h4 className="text-sm font-semibold text-navy/70 uppercase tracking-wider mb-4">
-                      Características incluidas
+                      {t('características', 'common')} incluidas
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {service.features.map((feature) => (
@@ -206,7 +205,7 @@ export default function PreciosPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-coral hover:bg-coral-light text-white px-7 py-3.5 rounded-xl text-sm font-semibold transition-all"
                 >
-                  Solicitar cotización
+                  {t('solicitar', 'common')}
                 </a>
                 <a
                   href="mailto:contacto@crearcomunicaciones.net"

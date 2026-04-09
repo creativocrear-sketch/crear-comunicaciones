@@ -1,62 +1,53 @@
 import ServiceLayout from "@/components/ServiceLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+// Import translations directly to access arrays
+import { translations } from "@/contexts/LanguageContext";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663365918901/5cTAowCCCqPMKFSnKNEHar/chatbot-service-MKngq4iXbBoJLwe2VSTrLN.webp";
 
 export default function ChatbotPage() {
+  const { t, language } = useLanguage();
+
   return (
     <ServiceLayout
-      title="Chatbot inteligente"
-      subtitle="Automatización conversacional"
-      description="Diseñamos y desarrollamos chatbots personalizados para los principales canales de comunicación de tu empresa: WhatsApp, Messenger, Telegram e Instagram. Automatiza la atención al cliente, genera leads y cierra ventas las 24 horas del día, los 7 días de la semana."
+      title={t('chatbot title', 'services')}
+      subtitle={t('chatbot subtitle', 'services')}
+      description={t('chatbot description', 'services')}
       heroImage={HERO_IMG}
       features={[
         {
-          title: "Multi-plataforma",
-          description:
-            "Un solo bot que funciona en WhatsApp, Facebook Messenger, Telegram e Instagram. Tus clientes te contactan por donde prefieran y reciben la misma experiencia de calidad.",
+          title: t('chatbot feature 1 title', 'services'),
+          description: t('chatbot feature 1 description', 'services'),
         },
         {
-          title: "Flujos conversacionales inteligentes",
-          description:
-            "Diseñamos árboles de decisión y flujos de conversación adaptados a tu negocio. El bot guía al usuario paso a paso hasta resolver su consulta o completar una acción.",
+          title: t('chatbot feature 2 title', 'services'),
+          description: t('chatbot feature 2 description', 'services'),
         },
         {
-          title: "Respuestas con IA",
-          description:
-            "Integración con inteligencia artificial para comprender el lenguaje natural de tus clientes y ofrecer respuestas contextuales, no solo respuestas predefinidas.",
+          title: t('chatbot feature 3 title', 'services'),
+          description: t('chatbot feature 3 description', 'services'),
         },
         {
-          title: "Transferencia a agente humano",
-          description:
-            "Cuando la consulta requiere atención personalizada, el bot transfiere la conversación a un agente humano de forma transparente, sin que el cliente pierda el contexto.",
+          title: t('chatbot feature 4 title', 'services'),
+          description: t('chatbot feature 4 description', 'services'),
         },
         {
-          title: "Métricas y reportes",
-          description:
-            "Panel de control con estadísticas en tiempo real: conversaciones atendidas, tasa de resolución, tiempos de respuesta y satisfacción del cliente.",
+          title: t('chatbot feature 5 title', 'services'),
+          description: t('chatbot feature 5 description', 'services'),
         },
         {
-          title: "Integración con CRM",
-          description:
-            "Conectamos el chatbot con tu sistema de gestión de clientes para registrar automáticamente leads, actualizar datos y disparar acciones de seguimiento.",
+          title: t('chatbot feature 6 title', 'services'),
+          description: t('chatbot feature 6 description', 'services'),
         },
       ]}
-      benefits={[
-        "Atención al cliente 24/7 sin interrupciones",
-        "Reducción de hasta el 70% en costos de atención",
-        "Respuesta inmediata a consultas frecuentes",
-        "Generación automática de leads calificados",
-        "Escalabilidad: atiende miles de conversaciones simultáneas",
-        "Mejora la satisfacción del cliente con respuestas rápidas",
-        "Libera a tu equipo para tareas de mayor valor",
-        "Implementación rápida y sin complicaciones técnicas",
-      ]}
-      ctaText="Solicitar mi Chatbot"
+      benefits={translations[language].services['chatbot benefits']}
+      ctaText={t('request chatbot', 'services')}
       relatedServices={[
-        { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-        { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-        { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
+        { name: t('ia whatsapp title', 'services'), href: "/servicios/ia-whatsapp" },
+        { name: t('omnicanalidad title', 'services'), href: "/servicios/omnicanalidad" },
+        { name: t('apps whatsapp title', 'services'), href: "/servicios/apps-whatsapp" },
       ]}
     />
   );

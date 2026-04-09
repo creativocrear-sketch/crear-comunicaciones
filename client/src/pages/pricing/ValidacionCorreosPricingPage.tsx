@@ -1,96 +1,94 @@
 import { CheckCircle2 } from "lucide-react";
 import PricingLayout from "@/components/PricingLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 export default function ValidacionCorreosPricingPage() {
+  const { t, language } = useLanguage();
+
   return (
     <PricingLayout
-      title="Precios de Validación de Correos"
-      subtitle="Limpieza y verificación de bases de datos"
-      description="Valida y limpia tu base de datos de correos electrónicos antes de enviar campañas. Reduce rebotes, protege tu reputación de envío y mejora la entregabilidad de tus emails."
+      title={t('validation pricing title', 'services')}
+      subtitle={t('validation pricing subtitle', 'services')}
+      description={t('validation pricing description', 'services')}
       icon={CheckCircle2}
       futureUrl="crearcomunicaciones.net/validacioncorreos"
       tiers={[
         {
-          name: "Plan #1",
-          description: "De 150.001 a 250.000 correos",
+          name: t('validation pricing plan 1', 'services'),
+          description: t('validation pricing plan 1 desc', 'services'),
           price: "$8",
-          unit: "por correo",
+          unit: t('validation pricing unit', 'services'),
           features: [
-            "Máximo volumen",
-            "SLA garantizado",
-            "API dedicada",
-            "Soporte por WhatsApp",
+            t('feature max volume', 'services'),
+            t('feature sla guaranteed', 'services'),
+            t('feature integration api validation', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #2",
-          description: "De 100.001 a 150.000 correos",
+          name: t('validation pricing plan 2', 'services'),
+          description: t('validation pricing plan 2 desc', 'services'),
           price: "$8.5",
-          unit: "por correo",
+          unit: t('validation pricing unit', 'services'),
           features: [
-            "Volumen muy alto",
-            "SLA garantizado",
-            "API dedicada",
-            "Soporte por WhatsApp",
+            t('feature very high volume', 'services'),
+            t('feature sla guaranteed', 'services'),
+            t('feature integration api validation', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #3",
-          description: "De 50.001 a 100.000 correos",
+          name: t('validation pricing plan 3', 'services'),
+          description: t('validation pricing plan 3 desc', 'services'),
           price: "$10",
-          unit: "por correo",
+          unit: t('validation pricing unit', 'services'),
           features: [
-            "Hasta 100.000 correos",
-            "Validación automática",
-            "Integración con CRM",
-            "Soporte por WhatsApp",
+            t('feature up to 100000 emails', 'services'),
+            t('feature automatic validation', 'services'),
+            t('feature crm integration', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #4",
-          description: "De 15.001 a 50.000 correos",
+          name: t('validation pricing plan 4', 'services'),
+          description: t('validation pricing plan 4 desc', 'services'),
           price: "$11.5",
-          unit: "por correo",
+          unit: t('validation pricing unit', 'services'),
           features: [
-            "Hasta 25.000 correos",
-            "Validación en tiempo real",
-            "API de integración",
-            "Soporte por WhatsApp",
+            t('feature up to 25000 emails', 'services'),
+            t('feature real time validation', 'services'),
+            t('feature integration api validation', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
           highlighted: true,
         },
         {
-          name: "Plan #5",
-          description: "De 10.001 a 15.000 correos",
+          name: t('validation pricing plan 5', 'services'),
+          description: t('validation pricing plan 5 desc', 'services'),
           price: "$12",
-          unit: "por correo",
+          unit: t('validation pricing unit', 'services'),
           features: [
-            "Hasta 5.000 correos",
-            "Detección de spam traps",
-            "Clasificación por riesgo",
-            "Soporte por WhatsApp",
+            t('feature up to 5000 emails', 'services'),
+            t('feature spam traps detection', 'services'),
+            t('feature risk classification', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #6",
-          description: "De 5.000 a 10.000 correos",
+          name: t('validation pricing plan 6', 'services'),
+          description: t('validation pricing plan 6 desc', 'services'),
           price: "$13",
-          unit: "por correo",
+          unit: t('validation pricing unit', 'services'),
           features: [
-            "Hasta 1.000 correos",
-            "Detección de inválidos",
-            "Reporte descargable",
-            "Soporte por WhatsApp",
+            t('feature up to 1000 emails validation', 'services'),
+            t('feature invalid detection', 'services'),
+            t('feature downloadable report', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
       ]}
-      phrases={[
-        "La validación de correos electrónicos elimina direcciones inválidas, inexistentes y de riesgo de tu base de datos, reduciendo la tasa de rebote y protegiendo tu reputación de envío.",
-        "Detectamos spam traps, correos temporales y direcciones de rol (info@, admin@) que pueden afectar negativamente la entregabilidad de tus campañas de email marketing.",
-        "Cada correo es clasificado por nivel de riesgo — válido, arriesgado o inválido — para que tomes decisiones informadas sobre a quién enviar y a quién no.",
-        "La validación en tiempo real a través de nuestra API permite verificar correos al momento del registro en tu sitio web, evitando que entren datos incorrectos a tu base desde el inicio.",
-        "Mantener una base de datos limpia no solo mejora tus métricas de email marketing, sino que reduce costos al no enviar a direcciones que nunca recibirán tu mensaje.",
-      ]}
+      phrases={translations[language].services['validation pricing phrases']}
     />
   );
 }

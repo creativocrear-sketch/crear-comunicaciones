@@ -1,96 +1,94 @@
 import { MessageSquare } from "lucide-react";
 import PricingLayout from "@/components/PricingLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 export default function SMSPricingPage() {
+  const { t, language } = useLanguage();
+
   return (
     <PricingLayout
-      title="Precios de SMS Masivos"
-      subtitle="Planes de mensajería de texto"
-      description="Envía mensajes de texto masivos con las mejores tarifas del mercado. Plataforma intuitiva, altas tasas de entrega y reportes en tiempo real."
+      title={t('sms pricing title', 'services')}
+      subtitle={t('sms pricing subtitle', 'services')}
+      description={t('sms pricing description', 'services')}
       icon={MessageSquare}
       futureUrl="crearcomunicaciones.net/sms"
       tiers={[
         {
-          name: "Plan #1",
-          description: "De 150.001 a 250.000 SMS",
+          name: t('sms pricing plan 1', 'services'),
+          description: t('sms pricing plan 1 desc', 'services'),
           price: "$8",
-          unit: "por SMS",
+          unit: t('sms pricing unit', 'services'),
           features: [
-            "Máximo volumen",
-            "Infraestructura dedicada",
-            "SLA garantizado",
-            "Soporte por WhatsApp",
+            t('feature max volume', 'services'),
+            t('feature dedicated infrastructure', 'services'),
+            t('feature sla guaranteed', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #2",
-          description: "De 100.001 a 150.000 SMS",
+          name: t('sms pricing plan 2', 'services'),
+          description: t('sms pricing plan 2 desc', 'services'),
           price: "$8.5",
-          unit: "por SMS",
+          unit: t('sms pricing unit', 'services'),
           features: [
-            "Volumen muy alto",
-            "Infraestructura dedicada",
-            "SLA garantizado",
-            "Soporte por WhatsApp",
+            t('feature very high volume', 'services'),
+            t('feature dedicated infrastructure', 'services'),
+            t('feature sla guaranteed', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #3",
-          description: "De 50.001 a 100.000 SMS",
+          name: t('sms pricing plan 3', 'services'),
+          description: t('sms pricing plan 3 desc', 'services'),
           price: "$10",
-          unit: "por SMS",
+          unit: t('sms pricing unit', 'services'),
           features: [
-            "Volumen alto",
-            "Código corto dedicado",
-            "Integración CRM",
-            "Soporte por WhatsApp",
+            t('feature high volume', 'services'),
+            t('feature dedicated short code', 'services'),
+            t('feature crm integration', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #4",
-          description: "De 15.001 a 50.000 SMS",
+          name: t('sms pricing plan 4', 'services'),
+          description: t('sms pricing plan 4 desc', 'services'),
           price: "$11.5",
-          unit: "por SMS",
+          unit: t('sms pricing unit', 'services'),
           features: [
-            "SMS hasta 1120 caracteres",
-            "API de integración",
-            "Estadísticas avanzadas",
-            "Soporte por WhatsApp",
+            t('feature sms up to 1120 chars', 'services'),
+            t('feature integration api', 'services'),
+            t('feature advanced statistics', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
           highlighted: true,
         },
         {
-          name: "Plan #5",
-          description: "De 10.001 a 15.000 SMS",
+          name: t('sms pricing plan 5', 'services'),
+          description: t('sms pricing plan 5 desc', 'services'),
           price: "$12",
-          unit: "por SMS",
+          unit: t('sms pricing unit', 'services'),
           features: [
-            "SMS estándar y doble vía",
-            "Programación de envíos",
-            "Segmentación de contactos",
-            "Soporte por WhatsApp",
+            t('feature standard two way sms', 'services'),
+            t('feature sending scheduling', 'services'),
+            t('feature contact segmentation', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
         {
-          name: "Plan #6",
-          description: "De 5.000 a 10.000 SMS",
+          name: t('sms pricing plan 6', 'services'),
+          description: t('sms pricing plan 6 desc', 'services'),
           price: "$13",
-          unit: "por SMS",
+          unit: t('sms pricing unit', 'services'),
           features: [
-            "Envío de SMS estándar",
-            "Panel de control básico",
-            "Reportes de entrega",
-            "Soporte por WhatsApp",
+            t('feature standard sms sending', 'services'),
+            t('feature basic control panel', 'services'),
+            t('feature delivery reports', 'services'),
+            t('feature whatsapp support', 'services'),
           ],
         },
       ]}
-      phrases={[
-        "Nuestros acuerdos comerciales con los operadores locales garantizan un alto impacto de su mensaje en el móvil del destinatario, con tasas de entrega superiores al 95%.",
-        "La plataforma de envío es completamente web, de fácil uso e intuitiva, lo que permite que cualquier miembro de tu equipo administre campañas sin necesidad de conocimientos técnicos.",
-        "Los SMS doble vía permiten que tu cliente te responda de forma gratuita, abriendo un canal de comunicación bidireccional que mejora la interacción y la satisfacción.",
-        "Programa tus campañas para envío inmediato o posterior, con la opción de esperar hasta 72 horas para que el mensaje se entregue cuando el móvil entre en cobertura.",
-        "Vincula redes sociales, páginas web, números de WhatsApp y mucho más dentro del mensaje de texto para llevar a tus clientes directamente a la acción que deseas.",
-      ]}
+      phrases={translations[language].services['sms pricing phrases']}
     />
   );
 }

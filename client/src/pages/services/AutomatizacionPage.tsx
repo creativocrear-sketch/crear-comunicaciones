@@ -1,58 +1,47 @@
 import ServiceLayout from "@/components/ServiceLayout";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663365918901/5cTAowCCCqPMKFSnKNEHar/hero-banner-Ln7jguus7DwoPjfTaHqM9R.webp";
 
 export default function AutomatizacionPage() {
+  const { t, language } = useLanguage();
+
   return (
     <ServiceLayout
-      title="Consultoría de Marketing de Automatización"
-      subtitle="Estrategia y acompañamiento experto"
-      description="Diseñamos e implementamos estrategias de marketing automatizado para tu empresa. Desde la planificación hasta la ejecución, te acompañamos en cada paso para que tus campañas de comunicación funcionen de forma inteligente, eficiente y sin intervención manual."
+      title={t('automatizacion title', 'services')}
+      subtitle={t('automatizacion subtitle', 'services')}
+      description={t('automatizacion description', 'services')}
       heroImage={HERO_IMG}
       features={[
         {
-          title: "Diagnóstico de comunicación",
-          description:
-            "Analizamos tus canales actuales de comunicación, flujos de trabajo y puntos de contacto con el cliente para identificar oportunidades de automatización que generen impacto real.",
+          title: t('automatizacion feature 1 title', 'services'),
+          description: t('automatizacion feature 1 description', 'services'),
         },
         {
-          title: "Diseño de flujos automatizados",
-          description:
-            "Creamos flujos de comunicación automatizados que se activan según el comportamiento del cliente: bienvenida, seguimiento, reactivación, postventa y más.",
+          title: t('automatizacion feature 2 title', 'services'),
+          description: t('automatizacion feature 2 description', 'services'),
         },
         {
-          title: "Integración de canales",
-          description:
-            "Conectamos todos tus canales — WhatsApp, SMS, Email, Voz — en una estrategia unificada donde cada canal cumple un rol específico en el recorrido del cliente.",
+          title: t('automatizacion feature 3 title', 'services'),
+          description: t('automatizacion feature 3 description', 'services'),
         },
         {
-          title: "Segmentación inteligente",
-          description:
-            "Definimos segmentos de audiencia basados en comportamiento, demografía e historial de interacción para que cada mensaje llegue a la persona correcta en el momento adecuado.",
+          title: t('automatizacion feature 4 title', 'services'),
+          description: t('automatizacion feature 4 description', 'services'),
         },
         {
-          title: "Implementación y capacitación",
-          description:
-            "No solo diseñamos la estrategia: la implementamos en tu plataforma y capacitamos a tu equipo para que pueda operar, ajustar y optimizar las automatizaciones de forma autónoma.",
+          title: t('automatizacion feature 5 title', 'services'),
+          description: t('automatizacion feature 5 description', 'services'),
         },
         {
-          title: "Medición y optimización continua",
-          description:
-            "Establecemos KPIs claros y realizamos seguimiento periódico para medir el rendimiento de cada automatización, identificar mejoras y escalar lo que funciona.",
+          title: t('automatizacion feature 6 title', 'services'),
+          description: t('automatizacion feature 6 description', 'services'),
         },
       ]}
-      benefits={[
-        "Estrategia personalizada para tu modelo de negocio",
-        "Automatización de campañas en múltiples canales",
-        "Reducción de tareas manuales y repetitivas",
-        "Mayor eficiencia en la comunicación con clientes",
-        "Aumento en tasas de conversión y retención",
-        "Capacitación completa para tu equipo",
-        "Seguimiento y optimización continua de resultados",
-        "Integración con tus herramientas y plataformas existentes",
-      ]}
+      benefits={translations[language].services['automatizacion benefits']}
       tariffTable={
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -63,7 +52,7 @@ export default function AutomatizacionPage() {
         >
           <div className="max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-black mb-6 text-center">
-              Tarifas de Consultoría
+              {t('automatizacion tariffs title', 'services')}
             </h3>
             <div className="overflow-x-auto">
               <table
@@ -78,53 +67,41 @@ export default function AutomatizacionPage() {
                 <thead>
                   <tr style={{ backgroundColor: "#2D3A8C" }}>
                     <th className="p-4 text-left font-medium text-white text-sm">
-                      Tipo de servicio
+                      {t('tipo de servicio', 'services')}
                     </th>
                     <th className="p-4 text-left font-medium text-white text-sm">
-                      Descripción
+                      {t('descripción', 'services')}
                     </th>
                     <th className="p-4 text-left font-medium text-white text-sm leading-snug">
-                      Valor por hora o fracción
+                      {t('valor por hora o fracción', 'services')}
                     </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-100">
-                  <tr>
-                    <td className="p-4 text-gray-900 text-sm">Asesoría comercial</td>
-                    <td className="p-4 text-gray-600 text-sm">
-                      Orientación estratégica y comercial sobre servicios, procesos o soluciones.
-                    </td>
-                    <td className="p-4 text-gray-900 text-sm">$35 USD</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 text-gray-900 text-sm">Asesoría técnica y comercial</td>
-                    <td className="p-4 text-gray-600 text-sm">
-                      Sesiones con análisis técnico especializado y participación de ingeniería.
-                    </td>
-                    <td className="p-4 text-gray-900 text-sm">$55 USD</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 text-gray-900 text-sm">Soporte operativo básico</td>
-                    <td className="p-4 text-gray-600 text-sm">
-                      Ejecución de tareas puntuales de apoyo operativo.
-                    </td>
-                    <td className="p-4 text-gray-900 text-sm">$14 USD</td>
-                  </tr>
+                  {translations[language].services['automatizacion tariffs table'].map((item, index) => (
+                    <tr key={index}>
+                      <td className="p-4 text-gray-900 text-sm">{item.type}</td>
+                      <td className="p-4 text-gray-600 text-sm">
+                        {item.description}
+                      </td>
+                      <td className="p-4 text-gray-900 text-sm">{item.price}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
             <p className="mt-4 italic text-sm text-black text-center">
-              Nota: Todos los valores son en dólares y más impuestos.
+              {t('automatizacion tariffs note', 'services')}
             </p>
           </div>
         </motion.div>
       }
-      ctaText="Solicitar consultoría"
+      ctaText={t('automatizacion cta', 'services')}
       relatedServices={[
-        { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-        { name: "Chatbot", href: "/servicios/chatbot" },
-        { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-        { name: "Mensajería masiva", href: "/servicios/mensajeria-masiva" },
+        { name: t('omnicanalidad', 'navbar'), href: "/servicios/omnicanalidad" },
+        { name: t('chatbot', 'navbar'), href: "/servicios/chatbot" },
+        { name: t('ia para whatsapp', 'navbar'), href: "/servicios/ia-whatsapp" },
+        { name: t('mensajería masiva', 'navbar'), href: "/servicios/mensajeria-masiva" },
       ]}
     />
   );

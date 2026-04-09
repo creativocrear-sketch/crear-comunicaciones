@@ -20,24 +20,23 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WaveDivider from "@/components/WaveDivider";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 const smsTypes = [
   {
-    title: "SMS Est?ndar",
-    description:
-      "Mensajes de texto de hasta 160 caracteres. Ideal para notificaciones, alertas, confirmaciones y comunicaciones directas con alta tasa de apertura.",
+    titleKey: 'mensajeria sms standard title',
+    descriptionKey: 'mensajeria sms standard description',
     icon: MessageSquare,
   },
   {
-    title: "SMS doble vía",
-    description:
-      "Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicaci?n bidireccional con tu audiencia.",
+    titleKey: 'mensajeria sms doble via title',
+    descriptionKey: 'mensajeria sms doble via description',
     icon: ArrowRight,
   },
   {
-    title: "SMS de hasta 1120 Caracteres",
-    description:
-      "Mensajes extendidos para cuando necesitas comunicar m?s informacin. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.",
+    titleKey: 'mensajeria sms largo title',
+    descriptionKey: 'mensajeria sms largo description',
     icon: Zap,
   },
 ];
@@ -45,53 +44,48 @@ const smsTypes = [
 const features = [
   {
     icon: Zap,
-    title: "Motor de entrega eficaz",
-    description:
-      "Nuestra soluci?n asegura una entrega eficaz de la comunicaci?n masiva. Llega a m?s clientes con un servicio de SMS m?s rpido y confiable.",
+    titleKey: 'mensajeria feature 1 title',
+    descriptionKey: 'mensajeria feature 1 description',
   },
   {
     icon: Shield,
-    title: "Altas tasas de entrega",
-    description:
-      "Acuerdos comerciales con los operadores locales garantizan un alto impacto de su mensaje en el m?vil del destinatario. Entregas cuando entre en cobertura o se encienda.",
+    titleKey: 'mensajeria feature 2 title',
+    descriptionKey: 'mensajeria feature 2 description',
   },
   {
     icon: BarChart3,
-    title: "Estadsticas en detalle",
-    description:
-      "Sigue en detalle las estadsticas del envo y el impacto sobre tu audiencia. Controla el presupuesto, ajusta los cambios y lanza de nuevo otras campa?as.",
+    titleKey: 'mensajeria feature 3 title',
+    descriptionKey: 'mensajeria feature 3 description',
   },
   {
     icon: Link2,
-    title: "Vnculos inteligentes",
-    description:
-      "Vincula redes sociales, pginas web, nmeros de WhatsApp y mucho m?s en el mensaje de texto. Llega de forma personalizada a cada uno de tus clientes.",
+    titleKey: 'mensajeria feature 4 title',
+    descriptionKey: 'mensajeria feature 4 description',
   },
   {
     icon: Clock,
-    title: "Programacin de campa?as",
-    description:
-      "Programa las campa?as desde nuestra plataforma web para que las enves de forma inmediata o posterior. Hasta 72 horas de espera para entrega en cobertura.",
+    titleKey: 'mensajeria feature 5 title',
+    descriptionKey: 'mensajeria feature 5 description',
   },
   {
     icon: Smartphone,
-    title: "Cdigo corto dedicado",
-    description:
-      "Los mensajes se env?an a trav?s de un cdigo corto programado. Administra tus propias campa?as de envo desde una plataforma web de fcil uso e intuitiva.",
+    titleKey: 'mensajeria feature 6 title',
+    descriptionKey: 'mensajeria feature 6 description',
   },
 ];
 
-const pricingLinks = [
-  { name: "Precios SMS", href: "/sms" },
-  { name: "Precios de email", href: "/email" },
-  { name: "Precios de voz", href: "/voz" },
-  { name: "Validaci?n de correos", href: "/validacioncorreos" },
-];
-
 export default function MensajeriaMasivaPage() {
+  const { t, language } = useLanguage();
   const typesReveal = useScrollReveal(0.1);
   const featuresReveal = useScrollReveal(0.1);
   const pricingReveal = useScrollReveal(0.1);
+
+  const pricingLinks = [
+    { nameKey: 0, href: "/sms" },
+    { nameKey: 1, href: "/email" },
+    { nameKey: 2, href: "/voz" },
+    { nameKey: 3, href: "/validacioncorreos" },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -115,7 +109,7 @@ export default function MensajeriaMasivaPage() {
             className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Volver al inicio
+            {t('volver al inicio', 'layout')}
           </Link>
 
           <motion.div
@@ -125,15 +119,13 @@ export default function MensajeriaMasivaPage() {
             className="max-w-3xl"
           >
             <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-              Expertos en comunicaci?n masiva
+              {t('mensajeria subtitle', 'services')}
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
-              Mensajer?a masiva
+              {t('mensajeria title', 'services')}
             </h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-2xl">
-              Lleva tus mensajes al siguiente nivel con una plataforma creada
-              para escalar en velocidad y capacidad de entrega. SMS, Email y
-              Mensajes de Voz para llegar a miles de personas en segundos.
+              {t('mensajeria hero', 'services')}
             </p>
           </motion.div>
         </div>
@@ -146,19 +138,17 @@ export default function MensajeriaMasivaPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-4">
-              Tipos de SMS disponibles
+              {t('mensajeria sms types title', 'services')}
             </h2>
             <p className="text-navy/55">
-              Estos servicios se hacen desde una plataforma web de fcil uso e
-              intuitiva que te permite enviar mensajes de texto a todos los
-              m?viles que desees.
+              {t('mensajeria sms types description', 'services')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {smsTypes.map((type, i) => (
               <motion.div
-                key={type.title}
+                key={type.titleKey}
                 initial={{ opacity: 0, y: 30 }}
                 animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.1 }}
@@ -168,10 +158,10 @@ export default function MensajeriaMasivaPage() {
                   <type.icon className="w-6 h-6 text-coral" />
                 </div>
                 <h3 className="text-lg font-semibold text-navy mb-2">
-                  {type.title}
+                  {t(type.titleKey, 'services')}
                 </h3>
                 <p className="text-navy/55 text-sm leading-relaxed">
-                  {type.description}
+                  {t(type.descriptionKey, 'services')}
                 </p>
               </motion.div>
             ))}
@@ -187,31 +177,28 @@ export default function MensajeriaMasivaPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Nuestra plataforma de env?os
+              {t('mensajeria platform title', 'services')}
             </h2>
             <p className="text-white/55">
-              Segmenta tu mercado de acuerdo a las necesidades de marketing de tu
-              negocio y alcanza a tu audiencia con precisin.
+              {t('mensajeria platform description', 'services')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
             {features.map((feature, i) => (
               <motion.div
-                key={feature.title}
+                key={feature.titleKey}
                 initial={{ opacity: 0, y: 20 }}
-                animate={
-                  featuresReveal.isVisible ? { opacity: 1, y: 0 } : {}
-                }
+                animate={featuresReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.08 }}
                 className="bg-white/5 rounded-2xl p-6 border border-white/10"
               >
                 <feature.icon className="w-8 h-8 text-coral mb-3" />
                 <h3 className="text-white font-semibold mb-2">
-                  {feature.title}
+                  {t(feature.titleKey, 'services')}
                 </h3>
                 <p className="text-white/55 text-sm leading-relaxed">
-                  {feature.description}
+                  {t(feature.descriptionKey, 'services')}
                 </p>
               </motion.div>
             ))}
@@ -226,21 +213,18 @@ export default function MensajeriaMasivaPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-4">
-              Consulta nuestros precios
+              {t('mensajeria pricing title', 'services')}
             </h2>
             <p className="text-navy/55 mb-10">
-              Tenemos planes adaptados a cada necesidad. Consulta las tarifas de
-              cada servicio o solicita una cotizacin personalizada.
+              {t('mensajeria pricing description', 'services')}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
               {pricingLinks.map((link, i) => (
                 <motion.div
-                  key={link.name}
+                  key={link.nameKey}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={
-                    pricingReveal.isVisible ? { opacity: 1, y: 0 } : {}
-                  }
+                  animate={pricingReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.1 + i * 0.08 }}
                 >
                   <Link
@@ -248,7 +232,7 @@ export default function MensajeriaMasivaPage() {
                     className="group block bg-pearl rounded-xl p-5 border border-navy/5 hover:shadow-lg hover:-translate-y-1 transition-all"
                   >
                     <span className="text-navy font-semibold group-hover:text-coral transition-colors">
-                      {link.name}
+                      {translations[language].services['mensajeria pricing links'][link.nameKey]}
                     </span>
                     <ArrowRight className="w-4 h-4 text-coral mt-2 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -269,7 +253,7 @@ export default function MensajeriaMasivaPage() {
               >
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              Solicitar cotizacin personalizada
+              {t('mensajeria pricing cta', 'services')}
             </a>
           </div>
         </div>

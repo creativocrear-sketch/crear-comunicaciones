@@ -30,108 +30,111 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WaveDivider from "@/components/WaveDivider";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663365918901/5cTAowCCCqPMKFSnKNEHar/hero-banner-Ln7jguus7DwoPjfTaHqM9R.webp";
 
-const services = [
-  {
-    icon: Bot,
-    title: "Chatbot",
-    desc: "Automatiza la atención al cliente con bots inteligentes en WhatsApp, Messenger, Telegram e Instagram.",
-    href: "/servicios/chatbot",
-    color: "bg-blue-mid/15 text-blue-mid",
-  },
-  {
-    icon: Brain,
-    title: "IA para WhatsApp",
-    desc: "Potencia tu WhatsApp Business con inteligencia artificial para respuestas contextuales y automatización avanzada.",
-    href: "/servicios/ia-whatsapp",
-    color: "bg-coral/15 text-coral",
-  },
-  {
-    icon: Smartphone,
-    title: "Apps con WhatsApp",
-    desc: "Desarrollamos aplicaciones personalizadas integradas con la API de WhatsApp Business para tu negocio.",
-    href: "/servicios/apps-whatsapp",
-    color: "bg-blue-mid/15 text-blue-mid",
-  },
-  {
-    icon: Layers,
-    title: "Omnicanalidad",
-    desc: "Unifica todos tus canales de comunicación en una sola plataforma con acompañamiento completo.",
-    href: "/servicios/omnicanalidad",
-    color: "bg-coral/15 text-coral",
-  },
-  {
-    icon: ShoppingCart,
-    title: "Catálogos de productos",
-    desc: "Conecta el catálogo de Meta con WhatsApp API para que tus clientes compren directamente desde el chat.",
-    href: "/servicios/catalogos-whatsapp",
-    color: "bg-blue-mid/15 text-blue-mid",
-  },
-  {
-    icon: MessageSquare,
-    title: "SMS masivos",
-    desc: "Envía miles de mensajes de texto con alta tasa de apertura. SMS estándar, doble vía y hasta 1120 caracteres.",
-    href: "/sms",
-    color: "bg-coral/15 text-coral",
-  },
-  {
-    icon: Mail,
-    title: "Email masivos",
-    desc: "Campañas de email marketing interactivas con seguimiento, métricas y personalización avanzada.",
-    href: "/email",
-    color: "bg-blue-mid/15 text-blue-mid",
-  },
-  {
-    icon: Mic,
-    title: "SMS de voz masivos",
-    desc: "Mensajes de voz automatizados para cobranza, recordatorios, convocatorias y campañas masivas.",
-    href: "/voz",
-    color: "bg-coral/15 text-coral",
-  },
-  {
-    icon: Headphones,
-    title: "Contact Center",
-    desc: "Solución completa de centro de contacto con acompañamiento integral para tu operación.",
-    href: "/servicios/contact-center",
-    color: "bg-blue-mid/15 text-blue-mid",
-  },
-  {
-    icon: Send,
-    title: "Mensajería masiva",
-    desc: "Plataforma completa para envíos masivos de SMS, Email y Voz con altas tasas de entrega y reportes en tiempo real.",
-    href: "/servicios/mensajeria-masiva",
-    color: "bg-coral/15 text-coral",
-  },
-  {
-    icon: Settings,
-    title: "Consultoría de automatización",
-    desc: "Diseñamos e implementamos estrategias de marketing automatizado con acompañamiento integral para tu empresa.",
-    href: "/servicios/automatizacion",
-    color: "bg-blue-mid/15 text-blue-mid",
-  },
-  {
-    icon: Megaphone,
-    title: "Asesoría en comunicación masiva",
-    desc: "Te asesoramos en campañas multicanal (SMS, Voz, Email, WhatsApp), organización de bases de datos y estrategia de envíos. Tus datos siempre son tuyos.",
-    href: "/servicios/asesoria-comunicacion",
-    color: "bg-coral/15 text-coral",
-  },
-];
-
-const stats = [
-  { value: "30+", label: "Años de experiencia", icon: Globe },
-  { value: "1000+", label: "Clientes satisfechos", icon: Users },
-  { value: "12", label: "Soluciones digitales", icon: Zap },
-];
-
 export default function Home() {
+  const { t, language } = useLanguage();
+
+  const stats = [
+    { value: "30+", label: t('años de experiencia', 'home'), icon: Globe },
+    { value: "1000+", label: t('clientes satisfechos', 'home'), icon: Users },
+    { value: "12", label: t('soluciones digitales', 'home'), icon: Zap },
+  ];
   const servicesReveal = useScrollReveal(0.1);
   const aboutReveal = useScrollReveal(0.1);
   const statsReveal = useScrollReveal(0.1);
   const ctaReveal = useScrollReveal(0.1);
+
+  const services = [
+    {
+      icon: Bot,
+      title: t('chatbot', 'navbar'),
+      desc: t('chatbot description', 'home'),
+      href: "/servicios/chatbot",
+      color: "bg-blue-mid/15 text-blue-mid",
+    },
+    {
+      icon: Brain,
+      title: t('ia para whatsapp', 'navbar'),
+      desc: t('ia whatsapp description', 'home'),
+      href: "/servicios/ia-whatsapp",
+      color: "bg-coral/15 text-coral",
+    },
+    {
+      icon: Smartphone,
+      title: t('apps con whatsapp', 'navbar'),
+      desc: t('apps whatsapp description', 'home'),
+      href: "/servicios/apps-whatsapp",
+      color: "bg-blue-mid/15 text-blue-mid",
+    },
+    {
+      icon: Layers,
+      title: t('omnicanalidad', 'navbar'),
+      desc: t('omnicanalidad description', 'home'),
+      href: "/servicios/omnicanalidad",
+      color: "bg-coral/15 text-coral",
+    },
+    {
+      icon: ShoppingCart,
+      title: t('catálogos de productos', 'navbar'),
+      desc: t('catalogos description', 'home'),
+      href: "/servicios/catalogos-whatsapp",
+      color: "bg-blue-mid/15 text-blue-mid",
+    },
+    {
+      icon: MessageSquare,
+      title: t('sms masivos', 'navbar'),
+      desc: t('mensajeria description', 'home'),
+      href: "/sms",
+      color: "bg-coral/15 text-coral",
+    },
+    {
+      icon: Mail,
+      title: t('email masivos', 'navbar'),
+      desc: t('mensajeria description', 'home'),
+      href: "/email",
+      color: "bg-blue-mid/15 text-blue-mid",
+    },
+    {
+      icon: Mic,
+      title: t('sms de voz masivos', 'navbar'),
+      desc: t('mensajeria description', 'home'),
+      href: "/voz",
+      color: "bg-coral/15 text-coral",
+    },
+    {
+      icon: Headphones,
+      title: t('contact center', 'navbar'),
+      desc: t('contact center description', 'home'),
+      href: "/servicios/contact-center",
+      color: "bg-blue-mid/15 text-blue-mid",
+    },
+    {
+      icon: Send,
+      title: t('mensajería masiva', 'navbar'),
+      desc: t('mensajeria description', 'home'),
+      href: "/servicios/mensajeria-masiva",
+      color: "bg-coral/15 text-coral",
+    },
+    {
+      icon: Settings,
+      title: t('consultoría de automatización', 'navbar'),
+      desc: t('automatizacion description', 'home'),
+      href: "/servicios/automatizacion",
+      color: "bg-blue-mid/15 text-blue-mid",
+    },
+    {
+      icon: Megaphone,
+      title: t('asesoría en comunicación masiva', 'navbar'),
+      desc: t('asesoria description', 'home'),
+      href: "/servicios/asesoria-comunicacion",
+      color: "bg-coral/15 text-coral",
+    },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -177,7 +180,7 @@ export default function Home() {
               transition={{ duration: 0.7 }}
             >
               <span className="inline-block bg-coral/20 text-coral-light px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-coral/20">
-                Desde 1993 conectando empresas
+                {t('desde 1993 conectando empresas', 'home')}
               </span>
             </motion.div>
 
@@ -187,8 +190,13 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             >
-              Somos su puente de{" "}
-              <span className="text-coral">comunicación</span> con el mundo
+              {t('somos su puente de comunicación con el mundo', 'home').split(' ').map((word, i) => 
+                word === 'comunicación' || word === 'communication' ? 
+                  <span key={i} className="text-coral">{word}</span> : 
+                  <span key={i}>{word}</span>
+              ).reduce((acc, curr, i) => 
+                i === 0 ? [curr] : [...acc, ' ', curr], []
+              )}
             </motion.h1>
 
             <motion.p
@@ -197,9 +205,7 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="text-lg sm:text-xl text-white/70 leading-relaxed mb-8 max-w-2xl"
             >
-              Soluciones de comunicación digital para empresas: chatbots, WhatsApp
-              API, omnicanalidad, envíos masivos y mucho más. Todo el
-              acompañamiento que necesitas.
+              {t('soluciones comunicacion digital', 'home')}
             </motion.p>
 
             <motion.div
@@ -221,7 +227,7 @@ export default function Home() {
                 >
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
-                Hablar con un asesor
+                {t('hablar con un asesor', 'home')}
               </a>
             </motion.div>
           </div>
@@ -244,13 +250,13 @@ export default function Home() {
               <div className="max-w-3xl">
                 <span className="inline-flex items-center gap-2 rounded-full border border-coral/30 bg-coral/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-coral-light">
                   <Settings className="w-3.5 h-3.5" />
-                  Servicio destacado
+                  {t('servicio destacado', 'home')}
                 </span>
                 <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
-                  Consultoría para automatizar tu negocio con WhatsApp Business API
+                  {t('consultoria whatsapp title', 'home')}
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
-                  Te ayudamos a diseñar flujos, integraciones y procesos de venta, soporte y seguimiento para convertir WhatsApp en un canal real de automatización comercial.
+                  {t('consultoria whatsapp description', 'home')}
                 </p>
               </div>
 
@@ -259,7 +265,7 @@ export default function Home() {
                   href="/servicios/automatizacion"
                   className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
                 >
-                  Ver consultoría
+                  {t('ver consultoria', 'home')}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
@@ -269,7 +275,7 @@ export default function Home() {
                   className="group inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/25"
                 >
                   <Calendar className="w-4 h-4" />
-                  Agenda tu cita
+                  {t('agenda tu cita', 'home')}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
@@ -278,7 +284,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
                 >
-                  Hablar por WhatsApp
+                  {t('hablar por whatsapp', 'home')}
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -291,7 +297,7 @@ export default function Home() {
               animate={servicesReveal.isVisible ? { opacity: 1 } : {}}
               className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3"
             >
-              Nuestras soluciones
+              {t('nuestras soluciones', 'home')}
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -301,7 +307,7 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="text-3xl sm:text-4xl font-bold text-black mb-4"
             >
-              Servicios que impulsan tu negocio
+              {t('servicios que impulsan tu negocio', 'home')}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -311,8 +317,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-lg"
             >
-              Desde chatbots inteligentes hasta campañas masivas, tenemos todo lo
-              que necesitas para conectar con tus clientes.
+              {t('services subtitle', 'home')}
             </motion.p>
           </div>
 
@@ -342,7 +347,7 @@ export default function Home() {
                     {service.desc}
                   </p>
                   <div className="mt-4 flex items-center gap-1 text-coral text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    Conocer más <ArrowRight className="w-3.5 h-3.5" />
+                    {t('ver más', 'common')} <ArrowRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
               </motion.div>
@@ -368,39 +373,26 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-                Sobre nosotros
+                {t('sobre nosotros', 'home')}
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Más de 30 años creando puentes de comunicación
+                {t('about title', 'home')}
               </h2>
               <p className="text-white/60 leading-relaxed mb-5">
-                Somos una agencia dedicada al marketing digital en todas sus
-                formas. Hacemos parte del mercado desde 1993, buscando ayudar
-                personas, emprendedores, pequeñas y grandes empresas a conseguir
-                lo que quieren.
+                {t('about description', 'home')}
               </p>
               <p className="text-white/60 leading-relaxed mb-8">
-                A través de estos años hemos avanzado para entregarles lo mejor:
-                en 2009 emergimos en telecomunicaciones, en 2015 comenzamos a
-                diseñar apps, y en 2021 iniciamos la producción de bots. Todo
-                para ofrecerles nuevos servicios que permitan llegar a más
-                personas.
+                {t('about evolution', 'home')}
               </p>
               <ul className="space-y-3">
-                {[
-                  "Acompañamiento integral en cada proyecto",
-                  "Tecnología de punta en comunicaciones",
-                  "Equipo experto en marketing digital",
-                  "Soluciones personalizadas para cada negocio",
-                ].map((item) => (
+                {translations[language].home['about features'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-coral shrink-0" />
-                    <span className="text-white/70 text-sm">{item}</span>
+                    <span className="text-white/80 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={aboutReveal.isVisible ? { opacity: 1, x: 0 } : {}}
@@ -444,13 +436,13 @@ export default function Home() {
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block text-coral font-semibold text-sm uppercase tracking-wider mb-3">
-              Comience hoy
+              {t('comience hoy', 'home')}
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-black mb-5">
-              Su primera asesoría virtual.
+              {t('su primera asesoría virtual', 'home')}
             </h2>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-              Nuestro equipo le diseñará una solución personalizada.
+              {t('nuestro equipo le diseñará', 'home')}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -467,29 +459,29 @@ export default function Home() {
                 >
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
-                Escribir por WhatsApp
+                {t('escribir por whatsapp', 'home')}
               </a>
               <a
                 href="mailto:alexmurillo@crearcomunicaciones.net"
                 className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-xl text-base font-semibold transition-all hover:-translate-y-0.5"
               >
                 <Mail className="w-5 h-5" />
-                Enviar un correo
+                {t('enviar un correo', 'home')}
               </a>
             </div>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600">
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-coral" />
-                Automatización
+                {t('automatización', 'home')}
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-coral" />
-                IA
+                {t('ia', 'home')}
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-coral" />
-                Programación
+                {t('programación', 'home')}
               </span>
             </div>
           </motion.div>

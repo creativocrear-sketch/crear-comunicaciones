@@ -1,62 +1,51 @@
 import ServiceLayout from "@/components/ServiceLayout";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/contexts/LanguageContext";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663365918901/5cTAowCCCqPMKFSnKNEHar/chatbot-service-MKngq4iXbBoJLwe2VSTrLN.webp";
 
 export default function CatalogosWhatsappPage() {
+  const { t, language } = useLanguage();
+
   return (
     <ServiceLayout
-      title="Catálogos de productos — WhatsApp"
-      subtitle="Tu tienda dentro de WhatsApp"
-      description="Conectamos el catálogo de productos de Meta con la API de WhatsApp Business para que tus clientes puedan explorar tu inventario, seleccionar productos y realizar pedidos directamente desde la conversación de WhatsApp. Una experiencia de compra fluida sin salir del chat."
+      title={t('catalogos title', 'services')}
+      subtitle={t('catalogos subtitle', 'services')}
+      description={t('catalogos description', 'services')}
       heroImage={HERO_IMG}
       features={[
         {
-          title: "Catálogo de Meta integrado",
-          description:
-            "Vinculamos tu catálogo de productos de Meta (Facebook/Instagram) directamente con WhatsApp Business API. Tus productos aparecen dentro del chat con fotos, descripciones y precios.",
+          title: t('catalogos feature 1 title', 'services'),
+          description: t('catalogos feature 1 description', 'services'),
         },
         {
-          title: "Carrito de compras en WhatsApp",
-          description:
-            "Tus clientes pueden agregar productos al carrito, modificar cantidades y enviar su pedido completo sin salir de la conversación de WhatsApp.",
+          title: t('catalogos feature 2 title', 'services'),
+          description: t('catalogos feature 2 description', 'services'),
         },
         {
-          title: "Sincronización automática",
-          description:
-            "Los cambios en tu catálogo de Meta se reflejan automáticamente en WhatsApp. Actualiza precios, disponibilidad y descripciones desde un solo lugar.",
+          title: t('catalogos feature 3 title', 'services'),
+          description: t('catalogos feature 3 description', 'services'),
         },
         {
-          title: "Mensajes de producto",
-          description:
-            "Envía productos individuales o colecciones completas como mensajes interactivos. El cliente puede ver detalles, imágenes y agregar al carrito con un toque.",
+          title: t('catalogos feature 4 title', 'services'),
+          description: t('catalogos feature 4 description', 'services'),
         },
         {
-          title: "Gestión de pedidos",
-          description:
-            "Recibe y gestiona los pedidos que llegan por WhatsApp. Confirmación automática, seguimiento del estado y notificaciones al cliente en cada etapa.",
+          title: t('catalogos feature 5 title', 'services'),
+          description: t('catalogos feature 5 description', 'services'),
         },
         {
-          title: "Análisis de ventas",
-          description:
-            "Reportes de productos más vistos, más vendidos, tasas de conversión y comportamiento de compra de tus clientes dentro de WhatsApp.",
+          title: t('catalogos feature 6 title', 'services'),
+          description: t('catalogos feature 6 description', 'services'),
         },
       ]}
-      benefits={[
-        "Tus clientes compran sin salir de WhatsApp",
-        "Catálogo siempre actualizado y sincronizado con Meta",
-        "Experiencia de compra conversacional y natural",
-        "Aumento en la tasa de conversión de ventas",
-        "Gestión centralizada de productos e inventario",
-        "Notificaciones automáticas de estado del pedido",
-        "Compatible con cualquier tipo de producto o servicio",
-        "Reducción de fricción en el proceso de compra",
-      ]}
-      ctaText="Activar mi catálogo"
+      benefits={translations[language].services['catalogos benefits']}
+      ctaText={t('catalogos cta', 'services')}
       relatedServices={[
-        { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-        { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
-        { name: "Chatbot", href: "/servicios/chatbot" },
+        { name: t('ia para whatsapp', 'navbar'), href: "/servicios/ia-whatsapp" },
+        { name: t('apps con whatsapp', 'navbar'), href: "/servicios/apps-whatsapp" },
+        { name: t('chatbot', 'navbar'), href: "/servicios/chatbot" },
       ]}
     />
   );

@@ -4,23 +4,26 @@
  */
 import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
-
-const serviceLinks = [
-  { name: "Chatbot", href: "/servicios/chatbot" },
-  { name: "IA para WhatsApp", href: "/servicios/ia-whatsapp" },
-  { name: "Apps con WhatsApp", href: "/servicios/apps-whatsapp" },
-  { name: "Omnicanalidad", href: "/servicios/omnicanalidad" },
-  { name: "Catálogos de WhatsApp", href: "/servicios/catalogos-whatsapp" },
-  { name: "Contact Center", href: "/servicios/contact-center" },
-];
-
-const massiveLinks = [
-  { name: "SMS masivos", href: "/precios" },
-  { name: "Email masivos", href: "/precios" },
-  { name: "SMS de voz masivos", href: "/precios" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
+  const serviceLinks = [
+    { name: t('chatbot', 'navbar'), href: "/servicios/chatbot" },
+    { name: t('ia para whatsapp', 'navbar'), href: "/servicios/ia-whatsapp" },
+    { name: t('apps con whatsapp', 'navbar'), href: "/servicios/apps-whatsapp" },
+    { name: t('omnicanalidad', 'navbar'), href: "/servicios/omnicanalidad" },
+    { name: t('catálogos de productos', 'navbar'), href: "/servicios/catalogos-whatsapp" },
+    { name: t('contact center', 'navbar'), href: "/servicios/contact-center" },
+  ];
+
+  const massiveLinks = [
+    { name: t('sms masivos', 'navbar'), href: "/precios" },
+    { name: t('email masivos', 'navbar'), href: "/precios" },
+    { name: t('sms de voz masivos', 'navbar'), href: "/precios" },
+  ];
+
   return (
     <footer className="relative bg-navy-dark overflow-hidden">
       {/* Wave top divider */}
@@ -45,9 +48,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-5">
-              Somos su puente de comunicación con el mundo. Más de 30 años
-              ayudando a empresas a conectar con sus clientes a través de
-              soluciones digitales innovadoras.
+              {t('descripcion footer', 'footer')}
             </p>
             <div className="flex gap-3">
               <a
@@ -89,7 +90,7 @@ export default function Footer() {
           {/* Servicios */}
           <div>
             <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
-              Servicios
+              {t('servicios', 'common')}
             </h4>
             <ul className="space-y-2.5">
               {serviceLinks.map((link) => (
@@ -108,7 +109,7 @@ export default function Footer() {
           {/* Envíos masivos */}
           <div>
             <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
-              Envíos masivos
+              {t('envios masivos', 'footer')}
             </h4>
             <ul className="space-y-2.5">
               {massiveLinks.map((link) => (
@@ -127,7 +128,7 @@ export default function Footer() {
           {/* Contacto */}
           <div>
             <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
-              Contacto
+              {t('contacto', 'common')}
             </h4>
             <ul className="space-y-3">
               <li>
@@ -167,8 +168,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/30 text-xs">
-            &copy; {new Date().getFullYear()} Crear Comunicaciones. Todos los
-            derechos reservados.
+            &copy; {new Date().getFullYear()} Crear Comunicaciones. {t('todos los derechos reservados', 'footer')}
           </p>
           <p className="text-white/30 text-xs">
             Cartago, Valle del Cauca, Colombia

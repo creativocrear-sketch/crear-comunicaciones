@@ -70,7 +70,7 @@ export default function ServiceLayout({
             className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            {t('volver al inicio')}
+            {t('volver al inicio', 'layout')}
           </Link>
 
           <motion.div
@@ -99,10 +99,10 @@ export default function ServiceLayout({
         <div className="container">
           <div className="max-w-3xl mx-auto mb-14 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4">
-              {t('características principales')}
+              {t('características principales', 'layout')}
             </h2>
             <p className="text-gray-600">
-              Descubre todo lo que esta solución puede hacer por tu negocio.
+              {t('descubre solucion', 'layout')}
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function ServiceLayout({
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-10 text-center">
-              {t('beneficios para tu empresa')}
+              {t('beneficios para tu empresa', 'layout')}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {benefits.map((benefit, i) => (
@@ -148,7 +148,6 @@ export default function ServiceLayout({
                 </div>
               ))}
             </div>
-            {tariffTable}
           </div>
         </div>
       </section>
@@ -162,11 +161,10 @@ export default function ServiceLayout({
 
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4">
-              {t('listo para comenzar')}
+              {t('listo para comenzar', 'layout')}
             </h2>
             <p className="text-gray-600 mb-8">
-              Contáctenos hoy y reciba una asesoría personalizada sin costo.
-              Nuestro equipo está listo para ayudarle.
+              {t('contactanos hoy', 'layout')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
@@ -185,7 +183,7 @@ export default function ServiceLayout({
                 className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-7 py-3.5 rounded-xl text-sm font-semibold transition-all hover:-translate-y-0.5"
               >
                 <Mail className="w-4 h-4" />
-                Enviar correo
+                {t('send email', 'services')}
               </a>
             </div>
           </div>
@@ -193,7 +191,7 @@ export default function ServiceLayout({
           {relatedServices.length > 0 && (
             <div className="mt-16 max-w-3xl mx-auto">
               <h3 className="text-lg font-semibold text-black mb-5 text-center">
-                Servicios relacionados
+                {t('related services', 'services')}
               </h3>
               <div className="flex flex-wrap justify-center gap-3">
                 {relatedServices.map((s) => (
