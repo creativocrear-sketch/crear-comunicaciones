@@ -62,7 +62,9 @@ export default function AutomatizacionPage() {
           className="mt-12"
         >
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">Tarifas de Consultoría</h3>
+            <h3 className="text-xl font-bold text-black mb-6 text-center">
+              Tarifas de Consultoría
+            </h3>
             <div className="overflow-x-auto">
               <table
                 className="w-full border-collapse rounded-xl overflow-hidden shadow-lg"
@@ -111,7 +113,7 @@ export default function AutomatizacionPage() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-4 italic text-sm text-white/70 text-center">
+            <p className="mt-4 italic text-sm text-black text-center">
               Nota: Todos los valores son en dólares y más impuestos.
             </p>
           </div>
