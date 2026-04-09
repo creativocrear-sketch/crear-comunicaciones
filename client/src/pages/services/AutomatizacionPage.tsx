@@ -52,11 +52,7 @@ export default function AutomatizacionPage() {
         >
           <div className="max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-black mb-6 text-center">
-<<<<<<< HEAD
               {t('automatizacion tariffs title', 'services')}
-=======
-              Tarifas de Consultoría
->>>>>>> f57a5b29c94d389314e2ea1220300088472b9004
             </h3>
             <div className="overflow-x-auto">
               <table
