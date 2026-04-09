@@ -166,10 +166,10 @@ export default function MensajeriaMasivaPage() {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-4">
-              {t('mensajeria sms types title', 'services')}
+              Tipos de mensajería masiva
             </h2>
             <p className="text-navy/55">
-              Tipos de mensajería masiva
+              Estos servicios se hacen desde una plataforma web de fácil uso e intuitiva que te permite enviar mensajes de texto a todos los móviles que desees.
             </p>
           </div>
 

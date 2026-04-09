@@ -807,6 +807,8 @@ export const translations: Record<'es' | 'en', Translations> = {
       'mensajeria sms doble via description': 'Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicación bidireccional con tu audiencia.',
       'mensajeria sms largo title': 'SMS de hasta 1120 Caracteres',
       'mensajeria sms largo description': 'Mensajes extendidos para cuando necesitas comunicar más información. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.',
+      'mensajeria emails title': 'Emails',
+      'mensajeria emails description': 'Campañas de email masivo con diseños personalizables. Ideal para newsletters, promociones y comunicaciones de largo formato con seguimiento detallado de aperturas.',
       'mensajeria whatsapp title': 'WhatsApp',
       'mensajeria whatsapp description': 'Mensajes a través de WhatsApp Business API. Perfecto para comunicación directa, notificaciones interactivas y atención al cliente en el canal preferido de tus clientes.',
       'mensajeria voz title': 'Mensajes de Voz',
