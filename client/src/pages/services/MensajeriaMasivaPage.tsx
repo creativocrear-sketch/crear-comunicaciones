@@ -23,21 +23,42 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/contexts/LanguageContext";
 
-const smsTypes = [
+const serviceTypes = [
   {
     titleKey: 'mensajeria sms standard title',
     descriptionKey: 'mensajeria sms standard description',
     icon: MessageSquare,
+    link: "/servicios/sms-estandar"
   },
   {
     titleKey: 'mensajeria sms doble via title',
     descriptionKey: 'mensajeria sms doble via description',
     icon: ArrowRight,
+    link: "/servicios/sms-doble-via"
   },
   {
     titleKey: 'mensajeria sms largo title',
     descriptionKey: 'mensajeria sms largo description',
     icon: Zap,
+    link: "/servicios/sms-largo"
+  },
+  {
+    titleKey: 'mensajeria emails title',
+    descriptionKey: 'mensajeria emails description',
+    icon: MessageSquare,
+    link: "/servicios/emails"
+  },
+  {
+    titleKey: 'mensajeria whatsapp title',
+    descriptionKey: 'mensajeria whatsapp description',
+    icon: MessageSquare,
+    link: "/servicios/whatsapp"
+  },
+  {
+    titleKey: 'mensajeria voz title',
+    descriptionKey: 'mensajeria voz description',
+    icon: MessageSquare,
+    link: "/servicios/mensajes-voz"
   },
 ];
 
@@ -146,7 +167,7 @@ export default function MensajeriaMasivaPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {smsTypes.map((type, i) => (
+            {serviceTypes.map((type, i) => (
               <motion.div
                 key={type.titleKey}
                 initial={{ opacity: 0, y: 30 }}
