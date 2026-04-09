@@ -811,6 +811,8 @@ export const translations: Record<'es' | 'en', Translations> = {
       'mensajeria whatsapp description': 'Mensajes a través de WhatsApp Business API. Perfecto para comunicación directa, notificaciones interactivas y atención al cliente en el canal preferido de tus clientes.',
       'mensajeria voz title': 'Mensajes de Voz',
       'mensajeria voz description': 'Llamadas automatizadas con mensajes de voz pregrabados. Ideal para alertas urgentes, recordatorios importantes y comunicaciones que requieren atención inmediata.',
+      'mensajeria validation title': 'Validación de correos',
+      'mensajeria validation description': 'Verifica la calidad de tus bases de datos de correo electrónico',
       'mensajeria platform title': 'Nuestra plataforma de envíos',
       'mensajeria platform description': 'Segmenta tu mercado de acuerdo a las necesidades de marketing de tu negocio y alcanza a tu audiencia con precisión.',
       'mensajeria feature 1 title': 'Motor de entrega eficaz',

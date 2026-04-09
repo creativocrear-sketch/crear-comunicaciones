@@ -25,44 +25,44 @@ import { translations } from "@/contexts/LanguageContext";
 
 const serviceTypes = [
   {
-    title: 'SMS Estándar',
-    description: 'Mensajes de texto de hasta 160 caracteres. Ideal para notificaciones, alertas, confirmaciones y comunicaciones directas con alta tasa de apertura.',
+    titleKey: 'mensajeria sms standard title',
+    descriptionKey: 'mensajeria sms standard description',
     icon: MessageSquare,
     link: "/sms"
   },
   {
-    title: 'SMS Doble Vía',
-    description: 'Permite que tu cliente te responda de forma gratuita. Ideal para encuestas, confirmaciones interactivas y comunicación bidireccional con tu audiencia.',
+    titleKey: 'mensajeria sms doble via title',
+    descriptionKey: 'mensajeria sms doble via description',
     icon: ArrowRight,
     link: "/sms"
   },
   {
-    title: 'SMS de hasta 1120 Caracteres',
-    description: 'Mensajes extendidos para cuando necesitas comunicar más información. Perfecto para promociones detalladas, instrucciones y contenido enriquecido.',
+    titleKey: 'mensajeria sms largo title',
+    descriptionKey: 'mensajeria sms largo description',
     icon: Zap,
     link: "/sms"
   },
   {
-    title: 'Emails',
-    description: 'Campañas de email masivo con diseños personalizables. Ideal para newsletters, promociones y comunicaciones de largo formato con seguimiento detallado de aperturas.',
+    titleKey: 'mensajeria emails title',
+    descriptionKey: 'mensajeria emails description',
     icon: MessageSquare,
     link: "/email"
   },
   {
-    title: 'WhatsApp',
-    description: 'Mensajes a través de WhatsApp Business API. Perfecto para comunicación directa, notificaciones interactivas y atención al cliente en el canal preferido de tus clientes.',
+    titleKey: 'mensajeria whatsapp title',
+    descriptionKey: 'mensajeria whatsapp description',
     icon: MessageSquare,
     link: "/whatsapp"
   },
   {
-    title: 'Mensajes de Voz',
-    description: 'Llamadas automatizadas con mensajes de voz pregrabados. Ideal para alertas urgentes, recordatorios importantes y comunicaciones que requieren atención inmediata.',
+    titleKey: 'mensajeria voz title',
+    descriptionKey: 'mensajeria voz description',
     icon: MessageSquare,
     link: "/voz"
   },
   {
-    title: 'Validación de correos',
-    description: 'Verifica la calidad de tus bases de datos de correo electrónico',
+    titleKey: 'mensajeria validation title',
+    descriptionKey: 'mensajeria validation description',
     icon: MessageSquare,
     link: "/validacioncorreos",
     isBanner: true
@@ -177,7 +177,7 @@ export default function MensajeriaMasivaPage() {
             {serviceTypes.map((type, i) => (
               type.isBanner ? (
                 <motion.div
-                  key={type.title}
+                  key={type.titleKey}
                   initial={{ opacity: 0, y: 30 }}
                   animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.1 + i * 0.1 }}
@@ -190,10 +190,10 @@ export default function MensajeriaMasivaPage() {
                       </div>
                       <div className="text-white">
                         <h3 className="text-xl font-bold mb-2">
-                          {type.title}
+                          {t(type.titleKey, 'services')}
                         </h3>
                         <p className="text-white/90 text-sm leading-relaxed max-w-md">
-                          {type.description}
+                          {t(type.descriptionKey, 'services')}
                         </p>
                       </div>
                     </div>
@@ -208,7 +208,7 @@ export default function MensajeriaMasivaPage() {
                 </motion.div>
               ) : (
                 <motion.div
-                  key={type.title}
+                  key={type.titleKey}
                   initial={{ opacity: 0, y: 30 }}
                   animate={typesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.1 + i * 0.1 }}
@@ -218,10 +218,10 @@ export default function MensajeriaMasivaPage() {
                     <type.icon className="w-6 h-6 text-coral" />
                   </div>
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    {type.title}
+                    {t(type.titleKey, 'services')}
                   </h3>
                   <p className="text-navy/55 text-sm leading-relaxed">
-                    {type.description}
+                    {t(type.descriptionKey, 'services')}
                   </p>
                   <Link 
                     href={type.link} 
