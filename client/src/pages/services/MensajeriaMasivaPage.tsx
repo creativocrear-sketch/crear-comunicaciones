@@ -217,10 +217,10 @@ export default function MensajeriaMasivaPage() {
                   <div className="w-12 h-12 rounded-xl bg-coral/10 flex items-center justify-center mb-4">
                     <type.icon className="w-6 h-6 text-coral" />
                   </div>
-                  <h3 className="text-lg font-semibold text-navy mb-2">
+                  <h3 className="text-lg font-semibold text-black mb-2">
                     {t(type.titleKey, 'services')}
                   </h3>
-                  <p className="text-navy/55 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {t(type.descriptionKey, 'services')}
                   </p>
                   <Link 
