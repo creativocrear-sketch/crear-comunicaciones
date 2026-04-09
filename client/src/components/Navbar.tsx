@@ -271,7 +271,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   className="block text-center bg-coral hover:bg-coral-light text-white px-5 py-3 rounded-lg text-sm font-semibold transition-all"
                 >
-                  Contctanos por WhatsApp
+                  Contactanos por WhatsApp
                 </a>
               </div>
             </div>
