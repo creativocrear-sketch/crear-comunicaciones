@@ -79,31 +79,34 @@ export default function AutomatizacionPage() {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-100">
                   <tr>
-                    <td className="p-4 text-gray-900 text-sm">{t('asesoría comercial', 'services')}</td>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría comercial</td>
                     <td className="p-4 text-gray-600 text-sm">
-                      {t('asesoría comercial description', 'services')}
+                      Orientación estratégica y comercial sobre servicios, procesos o soluciones.
                     </td>
-                    <td className="p-4 text-gray-900 text-sm">{t('asesoría comercial price', 'services')}</td>
+                    <td className="p-4 text-gray-900 text-sm">$35 USD</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-gray-900 text-sm">{t('asesoría técnica y comercial', 'services')}</td>
+                    <td className="p-4 text-gray-900 text-sm">Asesoría técnica y comercial</td>
                     <td className="p-4 text-gray-600 text-sm">
-                      {t('asesoría técnica y comercial description', 'services')}
+                      Sesiones con análisis técnico especializado y participación de ingeniería.
                     </td>
-                    <td className="p-4 text-gray-900 text-sm">{t('asesoría técnica y comercial price', 'services')}</td>
+                    <td className="p-4 text-gray-900 text-sm">$55 USD</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-gray-900 text-sm">{t('soporte operativo básico', 'services')}</td>
+                    <td className="p-4 text-gray-900 text-sm">Soporte operativo básico</td>
                     <td className="p-4 text-gray-600 text-sm">
-                      {t('soporte operativo básico description', 'services')}
+                      Ejecución de tareas puntuales de apoyo operativo.
                     </td>
-                    <td className="p-4 text-gray-900 text-sm">{t('soporte operativo básico price', 'services')}</td>
+                    <td className="p-4 text-gray-900 text-sm">$14 USD</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="mt-4 italic text-sm text-black text-center">
               {t('automatizacion tariffs note', 'services')}
+            </p>
+            <p className="text-xs text-gray-500 text-center mt-2">
+              Nota: Todos los valores son en dólares y más impuestos.
             </p>
           </div>
         </motion.div>
