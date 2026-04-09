@@ -64,28 +64,28 @@ export default function AutomatizacionPage() {
           <div className="max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-white mb-6">Tarifas de Consultoría</h3>
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse rounded-xl overflow-hidden bg-white/5 border border-white/10">
+              <table className="w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg">
                 <thead>
-                  <tr className="bg-navy/90">
-                    <th className="p-4 text-left font-semibold text-white">Tipo de servicio</th>
-                    <th className="p-4 text-left font-semibold text-white">Descripción</th>
-                    <th className="p-4 text-right font-semibold text-white">Valor por hora o fracción</th>
+                  <tr className="bg-gradient-to-r from-navy to-gray-800 text-white">
+                    <th className="p-4 text-left font-bold">Tipo de servicio</th>
+                    <th className="p-4 text-left font-bold">Descripción</th>
+                    <th className="p-4 text-right font-bold">Valor por hora o fracción</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr className="hover:bg-white/10 border-t border-white/10">
-                    <td className="p-4 font-medium text-white/90">Asesoría comercial</td>
-                    <td className="p-4 text-white/75">Orientación estratégica y comercial sobre servicios, procesos o soluciones.</td>
+                <tbody className="divide-y divide-gray-100">
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="p-4 font-semibold text-gray-900">Asesoría comercial</td>
+                    <td className="p-4 text-gray-700">Orientación estratégica y comercial sobre servicios, procesos o soluciones.</td>
                     <td className="p-4 text-right font-bold text-coral">$35 USD</td>
                   </tr>
-                  <tr className="hover:bg-white/10 border-t border-white/10">
-                    <td className="p-4 font-medium text-white/90">Asesoría técnica y comercial</td>
-                    <td className="p-4 text-white/75">Sesiones con análisis técnico especializado y participación de ingeniería.</td>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="p-4 font-semibold text-gray-900">Asesoría técnica y comercial</td>
+                    <td className="p-4 text-gray-700">Sesiones con análisis técnico especializado y participación de ingeniería.</td>
                     <td className="p-4 text-right font-bold text-coral">$55 USD</td>
                   </tr>
-                  <tr className="hover:bg-white/10 border-t border-white/10">
-                    <td className="p-4 font-medium text-white/90">Soporte operativo básico</td>
-                    <td className="p-4 text-white/75">Ejecución de tareas puntuales de apoyo operativo.</td>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="p-4 font-semibold text-gray-900">Soporte operativo básico</td>
+                    <td className="p-4 text-gray-700">Ejecución de tareas puntuales de apoyo operativo.</td>
                     <td className="p-4 text-right font-bold text-coral">$14 USD</td>
                   </tr>
                 </tbody>
