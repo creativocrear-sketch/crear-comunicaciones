@@ -201,7 +201,7 @@ export default function MensajeriaMasivaPage() {
                       href={type.link} 
                       className="inline-flex items-center gap-2 bg-white text-coral px-6 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors"
                     >
-                      Ver precios
+                      {t('mensajeria ver precios', 'services')}
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -228,7 +228,7 @@ export default function MensajeriaMasivaPage() {
                       href={type.link} 
                       className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-semibold mt-4 transition-colors opacity-0 group-hover:opacity-100"
                     >
-                      Ver precios
+                      {t('mensajeria ver precios', 'services')}
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>

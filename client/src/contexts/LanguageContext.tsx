@@ -259,6 +259,7 @@ interface Translations {
     'mensajeria voz description': string;
     'mensajeria validation title': string;
     'mensajeria validation description': string;
+    'mensajeria ver precios': string;
     'mensajeria platform title': string;
     'mensajeria platform description': string;
     'mensajeria feature 1 title': string;
@@ -822,6 +823,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'mensajeria voz description': 'Llamadas automatizadas con mensajes de voz pregrabados. Ideal para alertas urgentes, recordatorios importantes y comunicaciones que requieren atención inmediata.',
       'mensajeria validation title': 'Validación de correos',
       'mensajeria validation description': 'Verifica la calidad de tus bases de datos de correo electrónico',
+      'mensajeria ver precios': 'Ver precios',
       'mensajeria platform title': 'Nuestra plataforma de envíos',
       'mensajeria platform description': 'Segmenta tu mercado de acuerdo a las necesidades de marketing de tu negocio y alcanza a tu audiencia con precisión.',
       'mensajeria feature 1 title': 'Motor de entrega eficaz',
@@ -1433,6 +1435,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'mensajeria voz description': 'Automated calls with pre-recorded voice messages. Ideal for urgent alerts, important reminders and communications that require immediate attention.',
       'mensajeria validation title': 'Email Validation',
       'mensajeria validation description': 'Verify the quality of your email databases',
+      'mensajeria ver precios': 'See prices',
       'mensajeria platform title': 'Our delivery platform',
       'mensajeria platform description': 'Segment your market according to your business marketing needs and reach your audience with precision.',
       'mensajeria feature 1 title': 'Effective delivery engine',
