@@ -146,7 +146,7 @@ export default function ServiceLayout({
                 </div>
               ))}
             </div>
-            {tariffTable}
+            {/* tariffTable fue movido a la sección blanca de abajo */}
           </div>
         </div>
       </section>
@@ -156,6 +156,14 @@ export default function ServiceLayout({
       {/* CTA */}
       <section className="bg-pearl py-20">
         <div className="container">
+
+          {/* Tariff Table — encima del CTA, en la sección blanca */}
+          {tariffTable && (
+            <div className="mb-16">
+              {tariffTable}
+            </div>
+          )}
+
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4">
               ¿Listo para comenzar?
