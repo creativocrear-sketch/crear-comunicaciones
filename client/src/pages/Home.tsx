@@ -1,8 +1,8 @@
 /*
  * Home  Crear Comunicaciones
- * Design: "Ondas de Comunicaci?n"  Org?nico-Tecnol?gico
+ * Design: "Ondas de Comunicación"  Orgánico-Tecnológico
  * Paleta: Navy (#0F2044), Coral (#E03C31), Blanco, Gris perla (#E8ECF1)
- * Tipograf?a: Outfit
+ * Tipografía: Outfit
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -223,8 +223,6 @@ export default function Home() {
                 </svg>
                 Hablar con un asesor
               </a>
-              
-
             </motion.div>
           </div>
         </div>
@@ -238,6 +236,7 @@ export default function Home() {
        */}
       <section className="bg-pearl py-20 lg:py-28" id="servicios">
         <div className="container" ref={servicesReveal.ref}>
+          {/* Featured service card */}
           <div className="relative overflow-hidden rounded-[28px] border border-coral/20 bg-navy mb-10 sm:mb-12 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,60,49,0.34),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.06),transparent_58%)]" />
             <div className="absolute inset-y-0 left-0 w-2 bg-coral" />
@@ -248,13 +247,10 @@ export default function Home() {
                   Servicio destacado
                 </span>
                 <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
-                  Consultoría para automatizar tu negocio con WhatsApp Business
-                  API
+                  Consultoría para automatizar tu negocio con WhatsApp Business API
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
-                  Te ayudamos a diseñar flujos, integraciones y procesos de
-                  venta, soporte y seguimiento para convertir WhatsApp en un
-                  canal real de automatización comercial.
+                  Te ayudamos a diseñar flujos, integraciones y procesos de venta, soporte y seguimiento para convertir WhatsApp en un canal real de automatización comercial.
                 </p>
               </div>
 
@@ -504,3 +500,4 @@ export default function Home() {
     </div>
   );
 }
+
