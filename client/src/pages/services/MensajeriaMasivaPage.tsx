@@ -273,7 +273,6 @@ export default function MensajeriaMasivaPage() {
           </div>
         </div>
       </section>
-
       <WaveDivider from="#0F2044" to="#FFFFFF" />
 
       {/* Pricing Links */}
