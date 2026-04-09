@@ -21,6 +21,7 @@ interface ServiceLayoutProps {
   heroImage: string;
   features: Feature[];
   benefits: string[];
+  tariffTable?: React.ReactNode;
   ctaText?: string;
   relatedServices?: { name: string; href: string }[];
 }
@@ -32,6 +33,7 @@ export default function ServiceLayout({
   heroImage,
   features,
   benefits,
+  tariffTable,
   ctaText = "Solicitar información",
   relatedServices = [],
 }: ServiceLayoutProps) {
@@ -144,6 +146,7 @@ export default function ServiceLayout({
                 </div>
               ))}
             </div>
+            {tariffTable}
           </div>
         </div>
       </section>
