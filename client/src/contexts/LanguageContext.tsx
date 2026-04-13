@@ -634,7 +634,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'articulo 5 concepto 2 description': 'Cultura de experimentación donde el error es parte del proceso.',
       'articulo 5 concepto 3 title': 'Escucha del Entorno',
       'articulo 5 concepto 3 description': 'Monitoreo constante de la competencia y las nuevas tecnologías.',
-      'articulo 6 title': 'Primero construye tu avatar y los textos',
+      'articulo 6 title': 'Primero construye tu avatar',
       'articulo 6 subtitle': 'El paso inicial indispensable para cualquier campaña exitosa',
       'articulo 6 introduction': 'El éxito de cualquier campaña reside en el entendimiento del cliente ideal. Crear un avatar (buyer persona) es el paso inicial indispensable antes de redactar cualquier texto.',
       'articulo 6 concepto 1 title': 'Psicografía',
