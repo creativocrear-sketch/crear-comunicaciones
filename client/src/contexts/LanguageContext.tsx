@@ -21,6 +21,7 @@ interface Translations {
     'validación de correos': string;
     consultoría: string;
     'contactanos por whatsapp': string;
+    'contactanos': string;
   };
   home: {
     'somos su puente de comunicación con el mundo': string;
@@ -517,6 +518,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'validación de correos': 'Validación de correos',
       consultoría: 'Consultoría',
       'contactanos por whatsapp': 'Contáctanos por WhatsApp',
+      'contactanos': 'Contáctanos',
     },
     home: {
       'somos su puente de comunicación con el mundo': 'Somos su puente de comunicación con el mundo',
@@ -1129,6 +1131,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'validación de correos': 'Email validation',
       consultoría: 'Consulting',
       'contactanos por whatsapp': 'Contact us on WhatsApp',
+      'contactanos': 'Contact us',
     },
     home: {
       'somos su puente de comunicación con el mundo': 'We are your communication bridge to the world',
