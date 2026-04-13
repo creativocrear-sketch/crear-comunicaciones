@@ -145,6 +145,10 @@ const Navbar = () => {
             <NavLink href="/contacto" active={false}>
               {t('contacto', 'navbar')}
             </NavLink>
+
+            <NavLink href="/blog" active={location === "/blog"}>
+              {t('blog', 'navbar')}
+            </NavLink>
           </div>
 
           {/* CTA + Language Toggle */}
@@ -269,6 +273,10 @@ const Navbar = () => {
 
               <MobileLink href="/#contacto">
                 {t('contacto', 'navbar')}
+              </MobileLink>
+
+              <MobileLink href="/blog">
+                {t('blog', 'navbar')}
               </MobileLink>
 
               <div className="pt-3">
