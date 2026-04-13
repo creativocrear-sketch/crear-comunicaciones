@@ -164,41 +164,70 @@ export default function BlogPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={articlesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + index * 0.1 }}
-                className="bg-white rounded-[28px] overflow-hidden border border-coral/20 shadow-[0_20px_60px_rgba(15,32,68,0.12)] hover:shadow-[0_25px_70px_rgba(15,32,68,0.15)] transition-all hover:-translate-y-1"
+                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
               >
+                {/* Article Header Image */}
+                <div className={`h-48 bg-gradient-to-br ${article.color} relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="flex items-center gap-2 text-white/90 text-xs mb-2">
+                      <Calendar className="w-3 h-3" />
+                      <span>{article.date}</span>
+                      <span>·</span>
+                      <Clock className="w-3 h-3" />
+                      <span>{article.readTime}</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-2 line-clamp-2">
+                      {t(article.titleKey, 'blog')}
+                    </h3>
+                  </div>
+                  {/* Icon overlay */}
+                  <div className="absolute top-4 right-4 w-10 h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <article.icon className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+
+                {/* Article Content */}
                 <div className="p-6">
-                  {/* Icon */}
-                  <div className="w-12 h-12 rounded-xl bg-coral/15 flex items-center justify-center mb-4">
-                    <article.icon className="w-6 h-6 text-coral" />
+                  {/* Author */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-coral to-coral-light flex items-center justify-center">
+                      <User className="w-4 h-4 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-navy">{article.author}</p>
+                      <p className="text-xs text-gray-500">Autor</p>
+                    </div>
                   </div>
 
-                  {/* Content */}
-                  <h3 className="text-lg font-semibold text-navy mb-2">
-                    {t(article.titleKey, 'blog')}
-                  </h3>
-                  <div className="mb-4">
-                    <h4 className="text-xs font-semibold text-navy/70 mb-2 uppercase tracking-wider">
-                      {t('introduccion', 'blog')}
+                  {/* Introduction */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-semibold text-navy mb-2 flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-coral"></div>
+                      Introducción
                     </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
                       {t(article.introductionKey, 'blog')}
                     </p>
                   </div>
 
-                  {/* Conceptos Clave */}
-                  <div className="mb-4">
-                    <h4 className="text-xs font-semibold text-navy/70 mb-2 uppercase tracking-wider">
-                      {t('conceptos clave', 'blog')}
+                  {/* Key Concepts */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-semibold text-navy mb-3 flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-coral"></div>
+                      Conceptos Clave
                     </h4>
-                    <div className="space-y-2">
-                      {article.conceptKeys.map((concept, conceptIndex) => (
-                        <div key={conceptIndex} className="flex items-start gap-2">
-                          <div className="w-1.5 h-1.5 rounded-full bg-coral mt-1.5 flex-shrink-0"></div>
-                          <div>
-                            <h5 className="font-medium text-navy text-xs mb-1">
+                    <div className="space-y-3">
+                      {article.conceptKeys.slice(0, 3).map((concept, conceptIndex) => (
+                        <div key={conceptIndex} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                          <div className="w-6 h-6 rounded-full bg-coral/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div className="w-2 h-2 rounded-full bg-coral"></div>
+                          </div>
+                          <div className="flex-1">
+                            <h5 className="font-medium text-navy text-sm mb-1">
                               {t(concept.titleKey, 'blog')}
                             </h5>
-                            <p className="text-gray-500 text-xs leading-relaxed">
+                            <p className="text-gray-500 text-xs leading-relaxed line-clamp-2">
                               {t(concept.descriptionKey, 'blog')}
                             </p>
                           </div>
@@ -207,17 +236,8 @@ export default function BlogPage() {
                     </div>
                   </div>
 
-                  {/* Simple divider */}
-                  <div className="w-full h-px bg-navy/10 mb-4"></div>
-
-                  {/* Meta and Button */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3 text-xs text-navy/40">
-                      <span>{article.date}</span>
-                      <span>·</span>
-                      <span>{article.readTime}</span>
-                    </div>
-                    <Link 
+                  {/* Read More Button */}
+                  <Link 
                     href={
                       article.id === 1 ? "/blog/instagram-no-es-marketing" :
                       article.id === 2 ? "/blog/sin-redes-sociales" :
@@ -227,12 +247,11 @@ export default function BlogPage() {
                       article.id === 6 ? "/blog/primero-construye-tu-avatar" :
                       `/blog/articulo-${article.id}`
                     }
-                    className="inline-block bg-coral hover:bg-coral-light text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-coral to-coral-light hover:from-coral-light hover:to-coral text-white px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-coral/25 hover:-translate-y-0.5 w-full justify-center"
                   >
-                    {t('leer mas', 'blog')} 
-                    <ArrowRight className="w-3 h-3 ml-1 inline" />
+                    Leer artículo completo
+                    <ArrowRight className="w-4 h-4" />
                   </Link>
-                  </div>
                 </div>
               </motion.article>
             ))}
