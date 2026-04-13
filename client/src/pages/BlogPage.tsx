@@ -20,7 +20,7 @@ const articles = [
       { titleKey: 'articulo 1 concepto 3 title', descriptionKey: 'articulo 1 concepto 3 description' }
     ],
     icon: BookOpen,
-    color: 'from-navy to-navy-light',
+    color: 'from-purple-500 to-pink-500',
     date: '13-04-2026',
     readTime: '5 min',
     author: 'Equipo de Marketing'
@@ -36,7 +36,7 @@ const articles = [
       { titleKey: 'articulo 2 concepto 3 title', descriptionKey: 'articulo 2 concepto 3 description' }
     ],
     icon: TrendingUp,
-    color: 'from-coral to-coral-light',
+    color: 'from-blue-500 to-cyan-500',
     date: '13-04-2026',
     readTime: '7 min',
     author: 'Especialista en Ventas'
@@ -52,7 +52,7 @@ const articles = [
       { titleKey: 'articulo 3 concepto 3 title', descriptionKey: 'articulo 3 concepto 3 description' }
     ],
     icon: Users,
-    color: 'from-navy to-coral',
+    color: 'from-green-500 to-emerald-500',
     date: '13-04-2026',
     readTime: '6 min',
     author: 'Consultor de Marketing'
@@ -68,7 +68,7 @@ const articles = [
       { titleKey: 'articulo 4 concepto 3 title', descriptionKey: 'articulo 4 concepto 3 description' }
     ],
     icon: Database,
-    color: 'from-navy-light to-pearl',
+    color: 'from-orange-500 to-red-500',
     date: '13-04-2026',
     readTime: '8 min',
     author: 'Analista de Datos'
@@ -84,7 +84,7 @@ const articles = [
       { titleKey: 'articulo 5 concepto 3 title', descriptionKey: 'articulo 5 concepto 3 description' }
     ],
     icon: Zap,
-    color: 'from-coral-light to-navy',
+    color: 'from-indigo-500 to-purple-500',
     date: '13-04-2026',
     readTime: '5 min',
     author: 'Innovador Digital'
@@ -100,7 +100,7 @@ const articles = [
       { titleKey: 'articulo 6 concepto 3 title', descriptionKey: 'articulo 6 concepto 3 description' }
     ],
     icon: Target,
-    color: 'from-pearl to-navy',
+    color: 'from-pink-500 to-rose-500',
     date: '13-04-2026',
     readTime: '6 min',
     author: 'Estratega de Contenido'
