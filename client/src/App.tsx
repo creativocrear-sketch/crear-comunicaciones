@@ -21,6 +21,7 @@ import EmailPricingPage from "./pages/pricing/EmailPricingPage";
 import VozPricingPage from "./pages/pricing/VozPricingPage";
 import ValidacionCorreosPricingPage from "./pages/pricing/ValidacionCorreosPricingPage";
 import ContactoPage from "./pages/ContactoPage";
+import BlogPage from "./pages/BlogPage";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { useEffect } from "react";
 import { useLocation } from "wouter";
@@ -57,6 +58,8 @@ function Router() {
         <Route path="/validacioncorreos" component={ValidacionCorreosPricingPage} />
         {/* Contacto */}
         <Route path="/contacto" component={ContactoPage} />
+        {/* Blog */}
+        <Route path="/blog" component={BlogPage} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
