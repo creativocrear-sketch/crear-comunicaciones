@@ -11,22 +11,13 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const articles = [
   {
     id: 1,
-    title: 'Instagram no es marketing, es un canal',
-    subtitle: 'La diferencia fundamental entre estrategia y canal de distribución',
-    introduction: 'En el panorama digital actual, existe una confusión común: considerar a Instagram como una estrategia de marketing en sí misma. Este artículo desglosa por qué Instagram debe ser vista como un canal dentro de una estrategia más amplia.',
-    concepts: [
-      {
-        title: 'Canal de Distribución',
-        description: 'Instagram es el medio para mostrar productos, construir comunidad y dirigir tráfico.'
-      },
-      {
-        title: 'La Estrategia es el Mapa',
-        description: 'La estrategia define objetivos, público, propuesta de valor y mensajes clave.'
-      },
-      {
-        title: 'Integración',
-        description: 'El éxito radica en alinear las tácticas de Instagram con los objetivos comerciales generales.'
-      }
+    titleKey: 'articulo 1 title',
+    subtitleKey: 'articulo 1 subtitle',
+    introductionKey: 'articulo 1 introduction',
+    conceptKeys: [
+      { titleKey: 'articulo 1 concepto 1 title', descriptionKey: 'articulo 1 concepto 1 description' },
+      { titleKey: 'articulo 1 concepto 2 title', descriptionKey: 'articulo 1 concepto 2 description' },
+      { titleKey: 'articulo 1 concepto 3 title', descriptionKey: 'articulo 1 concepto 3 description' }
     ],
     icon: BookOpen,
     color: 'from-navy to-navy-light',
@@ -36,22 +27,13 @@ const articles = [
   },
   {
     id: 2,
-    title: 'Si no tienes redes sociales también puedes vender',
-    subtitle: 'Alternativas estratégicas para construir un negocio próspero',
-    introduction: 'La presión por estar en redes sociales es inmensa, pero no es el único camino. Es posible construir un negocio próspero utilizando canales alternativos y diversificados.',
-    concepts: [
-      {
-        title: 'SEO y Blogs',
-        description: 'Atracción de tráfico orgánico mediante contenido de valor.'
-      },
-      {
-        title: 'Email Marketing',
-        description: 'Comunicación directa y personalizada con altas tasas de conversión.'
-      },
-      {
-        title: 'Networking y Alianzas',
-        description: 'El valor del contacto directo y las colaboraciones estratégicas.'
-      }
+    titleKey: 'articulo 2 title',
+    subtitleKey: 'articulo 2 subtitle',
+    introductionKey: 'articulo 2 introduction',
+    conceptKeys: [
+      { titleKey: 'articulo 2 concepto 1 title', descriptionKey: 'articulo 2 concepto 1 description' },
+      { titleKey: 'articulo 2 concepto 2 title', descriptionKey: 'articulo 2 concepto 2 description' },
+      { titleKey: 'articulo 2 concepto 3 title', descriptionKey: 'articulo 2 concepto 3 description' }
     ],
     icon: TrendingUp,
     color: 'from-coral to-coral-light',
@@ -61,22 +43,13 @@ const articles = [
   },
   {
     id: 3,
-    title: 'El poder del mercadeo relacional',
-    subtitle: 'Construyendo vínculos duraderos para la rentabilidad a largo plazo',
-    introduction: 'A diferencia del marketing transaccional, el mercadeo relacional busca construir vínculos duraderos y significativos con los clientes para asegurar la rentabilidad a largo plazo.',
-    concepts: [
-      {
-        title: 'Confianza y Transparencia',
-        description: 'Cumplimiento de promesas como base del vínculo.'
-      },
-      {
-        title: 'Fidelización',
-        description: 'Es más rentable retener a un cliente existente que adquirir uno nuevo.'
-      },
-      {
-        title: 'Valor de Vida del Cliente (CLV)',
-        description: 'Incrementar el valor total que el cliente aporta a la empresa.'
-      }
+    titleKey: 'articulo 3 title',
+    subtitleKey: 'articulo 3 subtitle',
+    introductionKey: 'articulo 3 introduction',
+    conceptKeys: [
+      { titleKey: 'articulo 3 concepto 1 title', descriptionKey: 'articulo 3 concepto 1 description' },
+      { titleKey: 'articulo 3 concepto 2 title', descriptionKey: 'articulo 3 concepto 2 description' },
+      { titleKey: 'articulo 3 concepto 3 title', descriptionKey: 'articulo 3 concepto 3 description' }
     ],
     icon: Users,
     color: 'from-navy to-coral',
@@ -86,22 +59,13 @@ const articles = [
   },
   {
     id: 4,
-    title: 'La importancia de la base de datos',
-    subtitle: 'El activo más valioso de cualquier negocio moderno',
-    introduction: 'Los datos son el activo más valioso de cualquier negocio moderno. Una base de datos gestionada es el cerebro operativo que impulsa la toma de decisiones informada.',
-    concepts: [
-      {
-        title: 'Segmentación',
-        description: 'Personalización de ofertas según el comportamiento del cliente.'
-      },
-      {
-        title: 'Optimización',
-        description: 'Identificación de ineficiencias en los procesos y la cadena de suministro.'
-      },
-      {
-        title: 'Ventaja Competitiva',
-        description: 'Anticipación a las tendencias del mercado mediante el análisis de datos.'
-      }
+    titleKey: 'articulo 4 title',
+    subtitleKey: 'articulo 4 subtitle',
+    introductionKey: 'articulo 4 introduction',
+    conceptKeys: [
+      { titleKey: 'articulo 4 concepto 1 title', descriptionKey: 'articulo 4 concepto 1 description' },
+      { titleKey: 'articulo 4 concepto 2 title', descriptionKey: 'articulo 4 concepto 2 description' },
+      { titleKey: 'articulo 4 concepto 3 title', descriptionKey: 'articulo 4 concepto 3 description' }
     ],
     icon: Database,
     color: 'from-navy-light to-pearl',
@@ -111,22 +75,13 @@ const articles = [
   },
   {
     id: 5,
-    title: 'La importancia de mutar',
-    subtitle: 'Adaptación como clave de supervivencia en el entorno digital',
-    introduction: 'En un entorno volátil y complejo, la capacidad de adaptación o "mutación" es esencial para la supervivencia. La rigidez ante el cambio tecnológico o del consumidor es un riesgo crítico.',
-    concepts: [
-      {
-        title: 'Agilidad',
-        description: 'Adopción de metodologías que permitan iterar y pivotar rápidamente.'
-      },
-      {
-        title: 'Aprendizaje Continuo',
-        description: 'Cultura de experimentación donde el error es parte del proceso.'
-      },
-      {
-        title: 'Escucha del Entorno',
-        description: 'Monitoreo constante de la competencia y las nuevas tecnologías.'
-      }
+    titleKey: 'articulo 5 title',
+    subtitleKey: 'articulo 5 subtitle',
+    introductionKey: 'articulo 5 introduction',
+    conceptKeys: [
+      { titleKey: 'articulo 5 concepto 1 title', descriptionKey: 'articulo 5 concepto 1 description' },
+      { titleKey: 'articulo 5 concepto 2 title', descriptionKey: 'articulo 5 concepto 2 description' },
+      { titleKey: 'articulo 5 concepto 3 title', descriptionKey: 'articulo 5 concepto 3 description' }
     ],
     icon: Zap,
     color: 'from-coral-light to-navy',
@@ -136,22 +91,13 @@ const articles = [
   },
   {
     id: 6,
-    title: 'Primero construye tu avatar',
-    subtitle: 'El paso inicial indispensable para cualquier campaña exitosa',
-    introduction: 'El éxito de cualquier campaña reside en el entendimiento del cliente ideal. Crear un avatar (buyer persona) es el paso inicial indispensable antes de redactar cualquier texto.',
-    concepts: [
-      {
-        title: 'Psicografía',
-        description: 'Entender los valores, retos y "puntos de dolor" del cliente.'
-      },
-      {
-        title: 'Mensaje Relevante',
-        description: 'Los textos deben hablar directamente a las necesidades del avatar.'
-      },
-      {
-        title: 'Diferenciación',
-        description: 'Un conocimiento profundo permite ofrecer un valor único frente a la competencia.'
-      }
+    titleKey: 'articulo 6 title',
+    subtitleKey: 'articulo 6 subtitle',
+    introductionKey: 'articulo 6 introduction',
+    conceptKeys: [
+      { titleKey: 'articulo 6 concepto 1 title', descriptionKey: 'articulo 6 concepto 1 description' },
+      { titleKey: 'articulo 6 concepto 2 title', descriptionKey: 'articulo 6 concepto 2 description' },
+      { titleKey: 'articulo 6 concepto 3 title', descriptionKey: 'articulo 6 concepto 3 description' }
     ],
     icon: Target,
     color: 'from-pearl to-navy',
@@ -197,13 +143,10 @@ export default function BlogPage() {
             className="max-w-3xl"
           >
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5">
-              {language === 'es' ? 'Blog de Marketing Digital' : 'Digital Marketing Blog'}
+              {t('title', 'blog')}
             </h1>
             <p className="text-white/65 text-lg leading-relaxed max-w-2xl">
-              {language === 'es' 
-                ? 'Descubre estrategias, tácticas y conocimientos para impulsar tu negocio en el entorno digital.'
-                : 'Discover strategies, tactics and insights to boost your business in the digital environment.'
-              }
+              {t('subtitle', 'blog')}
             </p>
           </motion.div>
         </div>
@@ -231,30 +174,30 @@ export default function BlogPage() {
 
                   {/* Content */}
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    {article.title}
+                    {t(article.titleKey, 'blog')}
                   </h3>
                   <p className="text-navy/55 text-sm mb-3">
-                    {article.subtitle}
+                    {t(article.subtitleKey, 'blog')}
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    {article.introduction}
+                    {t(article.introductionKey, 'blog')}
                   </p>
 
                   {/* Key concepts preview */}
                   <div className="mb-4">
                     <h4 className="text-xs font-semibold text-navy/70 mb-2 uppercase tracking-wider">
-                      {language === 'es' ? 'Conceptos clave' : 'Key concepts'}
+                      {t('conceptos clave', 'blog')}
                     </h4>
                     <div className="space-y-2">
-                      {article.concepts.slice(0, 2).map((concept, conceptIndex) => (
+                      {article.conceptKeys.slice(0, 2).map((concept, conceptIndex) => (
                         <div key={conceptIndex} className="flex items-start gap-2">
                           <div className="w-1.5 h-1.5 rounded-full bg-navy/30 mt-1.5 flex-shrink-0"></div>
                           <div>
                             <h5 className="font-medium text-navy text-xs mb-1">
-                              {concept.title}
+                              {t(concept.titleKey, 'blog')}
                             </h5>
                             <p className="text-gray-500 text-xs leading-relaxed">
-                              {concept.description}
+                              {t(concept.descriptionKey, 'blog')}
                             </p>
                           </div>
                         </div>
@@ -273,7 +216,7 @@ export default function BlogPage() {
                       <span>{article.readTime}</span>
                     </div>
                     <button className="bg-coral hover:bg-coral-light text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5">
-                      {language === 'es' ? 'Leer más' : 'Read more'} 
+                      {t('leer mas', 'blog')} 
                       <ArrowRight className="w-3 h-3 ml-1 inline" />
                     </button>
                   </div>

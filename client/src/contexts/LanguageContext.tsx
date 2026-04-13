@@ -24,6 +24,67 @@ interface Translations {
     'contactanos': string;
     'blog': string;
   };
+  blog: {
+    'title': string;
+    'subtitle': string;
+    'description': string;
+    'conceptos clave': string;
+    'leer mas': string;
+    'articulo 1 title': string;
+    'articulo 1 subtitle': string;
+    'articulo 1 introduction': string;
+    'articulo 1 concepto 1 title': string;
+    'articulo 1 concepto 1 description': string;
+    'articulo 1 concepto 2 title': string;
+    'articulo 1 concepto 2 description': string;
+    'articulo 1 concepto 3 title': string;
+    'articulo 1 concepto 3 description': string;
+    'articulo 2 title': string;
+    'articulo 2 subtitle': string;
+    'articulo 2 introduction': string;
+    'articulo 2 concepto 1 title': string;
+    'articulo 2 concepto 1 description': string;
+    'articulo 2 concepto 2 title': string;
+    'articulo 2 concepto 2 description': string;
+    'articulo 2 concepto 3 title': string;
+    'articulo 2 concepto 3 description': string;
+    'articulo 3 title': string;
+    'articulo 3 subtitle': string;
+    'articulo 3 introduction': string;
+    'articulo 3 concepto 1 title': string;
+    'articulo 3 concepto 1 description': string;
+    'articulo 3 concepto 2 title': string;
+    'articulo 3 concepto 2 description': string;
+    'articulo 3 concepto 3 title': string;
+    'articulo 3 concepto 3 description': string;
+    'articulo 4 title': string;
+    'articulo 4 subtitle': string;
+    'articulo 4 introduction': string;
+    'articulo 4 concepto 1 title': string;
+    'articulo 4 concepto 1 description': string;
+    'articulo 4 concepto 2 title': string;
+    'articulo 4 concepto 2 description': string;
+    'articulo 4 concepto 3 title': string;
+    'articulo 4 concepto 3 description': string;
+    'articulo 5 title': string;
+    'articulo 5 subtitle': string;
+    'articulo 5 introduction': string;
+    'articulo 5 concepto 1 title': string;
+    'articulo 5 concepto 1 description': string;
+    'articulo 5 concepto 2 title': string;
+    'articulo 5 concepto 2 description': string;
+    'articulo 5 concepto 3 title': string;
+    'articulo 5 concepto 3 description': string;
+    'articulo 6 title': string;
+    'articulo 6 subtitle': string;
+    'articulo 6 introduction': string;
+    'articulo 6 concepto 1 title': string;
+    'articulo 6 concepto 1 description': string;
+    'articulo 6 concepto 2 title': string;
+    'articulo 6 concepto 2 description': string;
+    'articulo 6 concepto 3 title': string;
+    'articulo 6 concepto 3 description': string;
+  };
   home: {
     'somos su puente de comunicación con el mundo': string;
     'servicios que impulsan tu negocio': string;
@@ -521,6 +582,67 @@ export const translations: Record<'es' | 'en', Translations> = {
       'contactanos por whatsapp': 'Contáctanos por WhatsApp',
       'contactanos': 'Contáctanos',
       'blog': 'Blog',
+    },
+    blog: {
+      'title': 'Blog de Marketing Digital',
+      'subtitle': 'Descubre estrategias, tácticas y conocimientos para impulsar tu negocio en el entorno digital.',
+      'description': 'Artículos de marketing digital para ayudarte a crecer',
+      'conceptos clave': 'Conceptos clave',
+      'leer mas': 'Leer más',
+      'articulo 1 title': 'Instagram no es marketing, es un canal',
+      'articulo 1 subtitle': 'La diferencia fundamental entre estrategia y canal de distribución',
+      'articulo 1 introduction': 'En el panorama digital actual, existe una confusión común: considerar a Instagram como una estrategia de marketing en sí misma. Este artículo desglosa por qué Instagram debe ser vista como un canal dentro de una estrategia más amplia.',
+      'articulo 1 concepto 1 title': 'Canal de Distribución',
+      'articulo 1 concepto 1 description': 'Instagram es el medio para mostrar productos, construir comunidad y dirigir tráfico.',
+      'articulo 1 concepto 2 title': 'La Estrategia es el Mapa',
+      'articulo 1 concepto 2 description': 'La estrategia define objetivos, público, propuesta de valor y mensajes clave.',
+      'articulo 1 concepto 3 title': 'Integración',
+      'articulo 1 concepto 3 description': 'El éxito radica en alinear las tácticas de Instagram con los objetivos comerciales generales.',
+      'articulo 2 title': 'Si no tienes redes sociales también puedes vender',
+      'articulo 2 subtitle': 'Alternativas estratégicas para construir un negocio próspero',
+      'articulo 2 introduction': 'La presión por estar en redes sociales es inmensa, pero no es el único camino. Es posible construir un negocio próspero utilizando canales alternativos y diversificados.',
+      'articulo 2 concepto 1 title': 'SEO y Blogs',
+      'articulo 2 concepto 1 description': 'Atracción de tráfico orgánico mediante contenido de valor.',
+      'articulo 2 concepto 2 title': 'Email Marketing',
+      'articulo 2 concepto 2 description': 'Comunicación directa y personalizada con altas tasas de conversión.',
+      'articulo 2 concepto 3 title': 'Networking y Alianzas',
+      'articulo 2 concepto 3 description': 'El valor del contacto directo y las colaboraciones estratégicas.',
+      'articulo 3 title': 'El poder del mercadeo relacional',
+      'articulo 3 subtitle': 'Construyendo vínculos duraderos para la rentabilidad a largo plazo',
+      'articulo 3 introduction': 'A diferencia del marketing transaccional, el mercadeo relacional busca construir vínculos duraderos y significativos con los clientes para asegurar la rentabilidad a largo plazo.',
+      'articulo 3 concepto 1 title': 'Confianza y Transparencia',
+      'articulo 3 concepto 1 description': 'Cumplimiento de promesas como base del vínculo.',
+      'articulo 3 concepto 2 title': 'Fidelización',
+      'articulo 3 concepto 2 description': 'Es más rentable retener a un cliente existente que adquirir uno nuevo.',
+      'articulo 3 concepto 3 title': 'Valor de Vida del Cliente (CLV)',
+      'articulo 3 concepto 3 description': 'Incrementar el valor total que el cliente aporta a la empresa.',
+      'articulo 4 title': 'La importancia de la base de datos',
+      'articulo 4 subtitle': 'El activo más valioso de cualquier negocio moderno',
+      'articulo 4 introduction': 'Los datos son el activo más valioso de cualquier negocio moderno. Una base de datos gestionada es el cerebro operativo que impulsa la toma de decisiones informada.',
+      'articulo 4 concepto 1 title': 'Segmentación',
+      'articulo 4 concepto 1 description': 'Personalización de ofertas según el comportamiento del cliente.',
+      'articulo 4 concepto 2 title': 'Optimización',
+      'articulo 4 concepto 2 description': 'Identificación de ineficiencias en los procesos y la cadena de suministro.',
+      'articulo 4 concepto 3 title': 'Ventaja Competitiva',
+      'articulo 4 concepto 3 description': 'Anticipación a las tendencias del mercado mediante el análisis de datos.',
+      'articulo 5 title': 'La importancia de mutar',
+      'articulo 5 subtitle': 'Adaptación como clave de supervivencia en el entorno digital',
+      'articulo 5 introduction': 'En un entorno volátil y complejo, la capacidad de adaptación o "mutación" es esencial para la supervivencia. La rigidez ante el cambio tecnológico o del consumidor es un riesgo crítico.',
+      'articulo 5 concepto 1 title': 'Agilidad',
+      'articulo 5 concepto 1 description': 'Adopción de metodologías que permitan iterar y pivotar rápidamente.',
+      'articulo 5 concepto 2 title': 'Aprendizaje Continuo',
+      'articulo 5 concepto 2 description': 'Cultura de experimentación donde el error es parte del proceso.',
+      'articulo 5 concepto 3 title': 'Escucha del Entorno',
+      'articulo 5 concepto 3 description': 'Monitoreo constante de la competencia y las nuevas tecnologías.',
+      'articulo 6 title': 'Primero construye tu avatar',
+      'articulo 6 subtitle': 'El paso inicial indispensable para cualquier campaña exitosa',
+      'articulo 6 introduction': 'El éxito de cualquier campaña reside en el entendimiento del cliente ideal. Crear un avatar (buyer persona) es el paso inicial indispensable antes de redactar cualquier texto.',
+      'articulo 6 concepto 1 title': 'Psicografía',
+      'articulo 6 concepto 1 description': 'Entender los valores, retos y "puntos de dolor" del cliente.',
+      'articulo 6 concepto 2 title': 'Mensaje Relevante',
+      'articulo 6 concepto 2 description': 'Los textos deben hablar directamente a las necesidades del avatar.',
+      'articulo 6 concepto 3 title': 'Diferenciación',
+      'articulo 6 concepto 3 description': 'Un conocimiento profundo permite ofrecer un valor único frente a la competencia.',
     },
     home: {
       'somos su puente de comunicación con el mundo': 'Somos su puente de comunicación con el mundo',
@@ -1135,6 +1257,67 @@ export const translations: Record<'es' | 'en', Translations> = {
       'contactanos por whatsapp': 'Contact us on WhatsApp',
       'contactanos': 'Contact us',
       'blog': 'Blog',
+    },
+    blog: {
+      'title': 'Digital Marketing Blog',
+      'subtitle': 'Discover strategies, tactics and insights to boost your business in the digital environment.',
+      'description': 'Digital marketing articles to help you grow',
+      'conceptos clave': 'Key concepts',
+      'leer mas': 'Read more',
+      'articulo 1 title': 'Instagram is not marketing, it is a channel',
+      'articulo 1 subtitle': 'The fundamental difference between strategy and distribution channel',
+      'articulo 1 introduction': 'In the current digital landscape, there is a common confusion: considering Instagram as a marketing strategy in itself. This article breaks down why Instagram should be seen as a channel within a broader strategy.',
+      'articulo 1 concepto 1 title': 'Distribution Channel',
+      'articulo 1 concepto 1 description': 'Instagram is the medium to showcase products, build community and drive traffic.',
+      'articulo 1 concepto 2 title': 'Strategy is the Map',
+      'articulo 1 concepto 2 description': 'Strategy defines objectives, audience, value proposition and key messages.',
+      'articulo 1 concepto 3 title': 'Integration',
+      'articulo 1 concepto 3 description': 'Success lies in aligning Instagram tactics with overall business objectives.',
+      'articulo 2 title': 'You can sell even without social media',
+      'articulo 2 subtitle': 'Strategic alternatives to build a prosperous business',
+      'articulo 2 introduction': 'The pressure to be on social media is immense, but it is not the only path. It is possible to build a prosperous business using alternative and diversified channels.',
+      'articulo 2 concepto 1 title': 'SEO and Blogs',
+      'articulo 2 concepto 1 description': 'Organic traffic attraction through valuable content.',
+      'articulo 2 concepto 2 title': 'Email Marketing',
+      'articulo 2 concepto 2 description': 'Direct and personalized communication with high conversion rates.',
+      'articulo 2 concepto 3 title': 'Networking and Alliances',
+      'articulo 2 concepto 3 description': 'The value of direct contact and strategic collaborations.',
+      'articulo 3 title': 'The power of relationship marketing',
+      'articulo 3 subtitle': 'Building lasting bonds for long-term profitability',
+      'articulo 3 introduction': 'Unlike transactional marketing, relationship marketing seeks to build lasting and meaningful bonds with customers to ensure long-term profitability.',
+      'articulo 3 concepto 1 title': 'Trust and Transparency',
+      'articulo 3 concepto 1 description': 'Fulfilling promises as the basis of the bond.',
+      'articulo 3 concepto 2 title': 'Retention',
+      'articulo 3 concepto 2 description': 'It is more profitable to retain an existing customer than to acquire a new one.',
+      'articulo 3 concepto 3 title': 'Customer Lifetime Value (CLV)',
+      'articulo 3 concepto 3 description': 'Increasing the total value that the customer contributes to the company.',
+      'articulo 4 title': 'The importance of the database',
+      'articulo 4 subtitle': 'The most valuable asset of any modern business',
+      'articulo 4 introduction': 'Data is the most valuable asset of any modern business. A managed database is the operational brain that drives informed decision-making.',
+      'articulo 4 concepto 1 title': 'Segmentation',
+      'articulo 4 concepto 1 description': 'Personalization of offers according to customer behavior.',
+      'articulo 4 concepto 2 title': 'Optimization',
+      'articulo 4 concepto 2 description': 'Identification of inefficiencies in processes and the supply chain.',
+      'articulo 4 concepto 3 title': 'Competitive Advantage',
+      'articulo 4 concepto 3 description': 'Anticipation of market trends through data analysis.',
+      'articulo 5 title': 'The importance of mutating',
+      'articulo 5 subtitle': 'Adaptation as key to survival in the digital environment',
+      'articulo 5 introduction': 'In a volatile and complex environment, the ability to adapt or "mutation" is essential for survival. Rigidity in the face of technological or consumer change is a critical risk.',
+      'articulo 5 concepto 1 title': 'Agility',
+      'articulo 5 concepto 1 description': 'Adoption of methodologies that allow iterating and pivoting quickly.',
+      'articulo 5 concepto 2 title': 'Continuous Learning',
+      'articulo 5 concepto 2 description': 'Culture of experimentation where error is part of the process.',
+      'articulo 5 concepto 3 title': 'Environmental Listening',
+      'articulo 5 concepto 3 description': 'Constant monitoring of competition and new technologies.',
+      'articulo 6 title': 'First build your avatar',
+      'articulo 6 subtitle': 'The essential initial step for any successful campaign',
+      'articulo 6 introduction': 'The success of any campaign lies in understanding the ideal customer. Creating an avatar (buyer persona) is the essential initial step before writing any text.',
+      'articulo 6 concepto 1 title': 'Psychographics',
+      'articulo 6 concepto 1 description': 'Understanding the values, challenges and "pain points" of the customer.',
+      'articulo 6 concepto 2 title': 'Relevant Message',
+      'articulo 6 concepto 2 description': 'Texts must speak directly to the avatar\'s needs.',
+      'articulo 6 concepto 3 title': 'Differentiation',
+      'articulo 6 concepto 3 description': 'Deep knowledge allows offering unique value compared to the competition.',
     },
     home: {
       'somos su puente de comunicación con el mundo': 'We are your communication bridge to the world',
