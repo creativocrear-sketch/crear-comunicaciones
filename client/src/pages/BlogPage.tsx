@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
-import { ArrowLeft, Calendar, Clock, User, BookOpen, TrendingUp, Database, Zap, Target, Users, BarChart3 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, Clock, User, BookOpen, TrendingUp, Database, Zap, Target, Users, BarChart3 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WaveDivider from '@/components/WaveDivider';
@@ -29,7 +29,7 @@ const articles = [
       }
     ],
     icon: BookOpen,
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-navy to-navy-light',
     date: '2024-01-15',
     readTime: '5 min',
     author: 'Equipo de Marketing'
@@ -54,7 +54,7 @@ const articles = [
       }
     ],
     icon: TrendingUp,
-    color: 'from-green-500 to-teal-500',
+    color: 'from-coral to-coral-light',
     date: '2024-01-10',
     readTime: '7 min',
     author: 'Especialista en Ventas'
@@ -79,7 +79,7 @@ const articles = [
       }
     ],
     icon: Users,
-    color: 'from-blue-500 to-indigo-500',
+    color: 'from-navy to-coral',
     date: '2024-01-05',
     readTime: '6 min',
     author: 'Consultor de Marketing'
@@ -104,7 +104,7 @@ const articles = [
       }
     ],
     icon: Database,
-    color: 'from-orange-500 to-red-500',
+    color: 'from-navy-light to-pearl',
     date: '2023-12-28',
     readTime: '8 min',
     author: 'Analista de Datos'
@@ -129,7 +129,7 @@ const articles = [
       }
     ],
     icon: Zap,
-    color: 'from-yellow-500 to-orange-500',
+    color: 'from-coral-light to-navy',
     date: '2023-12-20',
     readTime: '5 min',
     author: 'Innovador Digital'
@@ -154,7 +154,7 @@ const articles = [
       }
     ],
     icon: Target,
-    color: 'from-indigo-500 to-purple-500',
+    color: 'from-pearl to-navy',
     date: '2023-12-15',
     readTime: '6 min',
     author: 'Estratega de Contenido'
@@ -221,65 +221,62 @@ export default function BlogPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={articlesReveal.isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + index * 0.1 }}
-                className="bg-white rounded-2xl overflow-hidden border border-navy/5 hover:shadow-lg transition-all hover:-translate-y-1"
+                className="bg-white rounded-[28px] overflow-hidden border border-coral/20 shadow-[0_20px_60px_rgba(15,32,68,0.12)] hover:shadow-[0_25px_70px_rgba(15,32,68,0.15)] transition-all hover:-translate-y-1"
               >
-                {/* Header */}
-                <div className={`h-2 bg-gradient-to-r ${article.color}`} />
-                
                 <div className="p-6">
-                  {/* Meta */}
-                  <div className="flex items-center gap-4 text-sm text-navy/55 mb-4">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>{article.date}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      <span>{article.readTime}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <User className="w-4 h-4" />
-                      <span>{article.author}</span>
-                    </div>
-                  </div>
-
                   {/* Icon */}
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${article.color} flex items-center justify-center mb-4`}>
-                    <article.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-xl bg-coral/15 flex items-center justify-center mb-4">
+                    <article.icon className="w-6 h-6 text-coral" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-navy mb-2">
+                  <h3 className="text-lg font-semibold text-navy mb-2">
                     {article.title}
                   </h3>
-                  <p className="text-navy/55 text-sm mb-4">
+                  <p className="text-navy/55 text-sm mb-3">
                     {article.subtitle}
                   </p>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     {article.introduction}
                   </p>
 
-                  {/* Concepts */}
-                  <div className="space-y-3 mb-6">
-                    {article.concepts.map((concept, conceptIndex) => (
-                      <div key={conceptIndex} className="flex items-start gap-3">
-                        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${article.color} mt-1.5 flex-shrink-0`} />
-                        <div>
-                          <h4 className="font-semibold text-navy text-sm mb-1">
-                            {concept.title}
-                          </h4>
-                          <p className="text-gray-600 text-xs leading-relaxed">
-                            {concept.description}
-                          </p>
+                  {/* Key concepts preview */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-navy/70 mb-2 uppercase tracking-wider">
+                      {language === 'es' ? 'Conceptos clave' : 'Key concepts'}
+                    </h4>
+                    <div className="space-y-2">
+                      {article.concepts.slice(0, 2).map((concept, conceptIndex) => (
+                        <div key={conceptIndex} className="flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-navy/30 mt-1.5 flex-shrink-0"></div>
+                          <div>
+                            <h5 className="font-medium text-navy text-xs mb-1">
+                              {concept.title}
+                            </h5>
+                            <p className="text-gray-500 text-xs leading-relaxed">
+                              {concept.description}
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
 
-                  {/* Read More */}
-                  <button className={`w-full py-3 px-4 rounded-lg bg-gradient-to-r ${article.color} text-white font-semibold text-sm hover:shadow-lg transition-all hover:-translate-y-0.5`}>
-                    {language === 'es' ? 'Leer artículo completo' : 'Read full article'}
-                  </button>
+                  {/* Simple divider */}
+                  <div className="w-full h-px bg-navy/10 mb-4"></div>
+
+                  {/* Meta and Button */}
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3 text-xs text-navy/40">
+                      <span>{article.date}</span>
+                      <span>·</span>
+                      <span>{article.readTime}</span>
+                    </div>
+                    <button className="bg-coral hover:bg-coral-light text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5">
+                      {language === 'es' ? 'Leer más' : 'Read more'} 
+                      <ArrowRight className="w-3 h-3 ml-1 inline" />
+                    </button>
+                  </div>
                 </div>
               </motion.article>
             ))}
