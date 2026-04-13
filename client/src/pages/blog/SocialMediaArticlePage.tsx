@@ -359,7 +359,7 @@ export default function SocialMediaArticlePage() {
                 {t('articulo 1 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/instagram-no-es-marketing"
+                href="/blog/instagram-no-es-marketing-digital"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}
@@ -380,7 +380,7 @@ export default function SocialMediaArticlePage() {
                 {t('articulo 3 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/mercadeo-relacional"
+                href="/blog/mercadeo-relacional-clientes"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}

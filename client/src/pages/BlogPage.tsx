@@ -219,12 +219,12 @@ export default function BlogPage() {
                     </div>
                     <Link 
                     href={
-                      article.id === 1 ? "/blog/instagram-no-es-marketing" :
-                      article.id === 2 ? "/blog/sin-redes-sociales" :
-                      article.id === 3 ? "/blog/mercadeo-relacional" :
-                      article.id === 4 ? "/blog/base-de-datos" :
-                      article.id === 5 ? "/blog/la-importancia-de-mutar" :
-                      article.id === 6 ? "/blog/primero-construye-tu-avatar" :
+                      article.id === 1 ? "/blog/instagram-no-es-marketing-digital" :
+                      article.id === 2 ? "/blog/vender-sin-redes-sociales-estrategias" :
+                      article.id === 3 ? "/blog/mercadeo-relacional-clientes" :
+                      article.id === 4 ? "/blog/importancia-base-datos-negocio" :
+                      article.id === 5 ? "/blog/importancia-mutacion-empresarial" :
+                      article.id === 6 ? "/blog/avatar-cliente-ideal" :
                       `/blog/articulo-${article.id}`
                     }
                     className="inline-block bg-coral hover:bg-coral-light text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5"

@@ -393,7 +393,7 @@ export default function AvatarPage() {
                 {t('articulo 4 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/importancia-base-de-datos"
+                href="/blog/importancia-base-datos-negocio"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}
@@ -414,7 +414,7 @@ export default function AvatarPage() {
                 {t('articulo 5 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/importancia-mutacion"
+                href="/blog/importancia-mutacion-empresarial"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}

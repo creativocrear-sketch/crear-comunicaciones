@@ -249,7 +249,7 @@ export default function MutationPage() {
                 {t('articulo 1 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/instagram-no-es-marketing"
+                href="/blog/instagram-no-es-marketing-digital"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}
@@ -270,7 +270,7 @@ export default function MutationPage() {
                 {t('articulo 2 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/sin-redes-sociales"
+                href="/blog/vender-sin-redes-sociales-estrategias"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}
