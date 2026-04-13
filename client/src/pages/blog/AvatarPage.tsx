@@ -240,11 +240,17 @@ export default function AvatarPage() {
                   </div>
                 </li>
               </ul>
-                    ? 'La construcción de un avatar no es un ejercicio de adivinación, sino un proceso basado en la investigación:'
-                    : 'Building an avatar is not an exercise in guesswork, but a process based on research:'
-                  }
-                </p>
-                <ul className="space-y-3 text-gray-600">
+            </div>
+
+            {/* Implementation Details */}
+            <div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {language === 'es' 
+                  ? 'La construcción de un avatar no es un ejercicio de adivinación, sino un proceso basado en la investigación:'
+                  : 'Building an avatar is not an exercise in guesswork, but a process based on research:'
+                }
+              </p>
+              <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
                     <div>
@@ -295,27 +301,25 @@ export default function AvatarPage() {
             </div>
 
             {/* Conclusion */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
-              <h2 className="text-2xl font-bold text-navy mb-6">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'Conclusión' : 'Conclusion'}
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'es' 
-                  ? 'El avatar de cliente no es un documento estático; debe ser revisado y actualizado periódicamente a medida que tu negocio y tu mercado evolucionan. Invertir tiempo y esfuerzo en definir a tu cliente ideal es la base sobre la cual se construye un negocio exitoso y sostenible. Al poner a tu avatar en el centro de todas tus decisiones, te aseguras de que cada esfuerzo esté alineado con las necesidades de quienes realmente importan: tus clientes.'
-                  : 'The customer avatar is not a static document; it should be reviewed and updated periodically as your business and market evolve. Investing time and effort in defining your ideal customer is the foundation upon which a successful and sustainable business is built. By putting your avatar at the center of all your decisions, you ensure that every effort is aligned with the needs of those who truly matter: your customers.'
+                  ? 'El avatar de cliente no es solo una herramienta de marketing, es la brújula que guía todas las decisiones de tu negocio. Cuando realmente entiendes a tu cliente ideal, cada aspecto de tu empresa - desde el desarrollo de productos hasta el servicio al cliente - se alinea perfectamente con sus necesidades y deseos. Las empresas que invierten tiempo y recursos en crear avatares detallados no solo venden más, sino que crean relaciones duraderas con clientes que se sienten verdaderamente comprendidos y valorados. En un mercado saturado, la comprensión profunda del cliente es la ventaja competitiva más poderosa que puedes tener.'
+                  : 'The customer avatar is not just a marketing tool, it is the compass that guides all your business decisions. When you truly understand your ideal customer, every aspect of your company - from product development to customer service - aligns perfectly with their needs and desires. Companies that invest time and resources in creating detailed avatars not only sell more, but create lasting relationships with customers who feel truly understood and valued. In a saturated market, deep customer understanding is the most powerful competitive advantage you can have.'
                 }
               </p>
             </div>
-          </motion.div>
 
-          {/* Share and Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12"
-          >
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
+            {/* Share and Action */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="pt-12 border-t border-gray-200"
+            >
               <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
@@ -349,7 +353,7 @@ export default function AvatarPage() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -384,13 +388,13 @@ export default function AvatarPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all"
             >
               <h3 className="text-lg font-semibold text-white mb-2">
-                {t('articulo 1 title', 'blog')}
+                {t('articulo 4 title', 'blog')}
               </h3>
               <p className="text-white/70 text-sm mb-4">
-                {t('articulo 1 subtitle', 'blog')}
+                {t('articulo 4 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/instagram-no-es-marketing"
+                href="/blog/importancia-base-de-datos"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}
@@ -405,13 +409,13 @@ export default function AvatarPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all"
             >
               <h3 className="text-lg font-semibold text-white mb-2">
-                {t('articulo 2 title', 'blog')}
+                {t('articulo 5 title', 'blog')}
               </h3>
               <p className="text-white/70 text-sm mb-4">
-                {t('articulo 2 subtitle', 'blog')}
+                {t('articulo 5 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/sin-redes-sociales"
+                href="/blog/importancia-mutacion"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}
