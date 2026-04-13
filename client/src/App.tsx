@@ -66,12 +66,12 @@ function Router() {
         <Route path="/contacto" component={ContactoPage} />
         {/* Blog */}
         <Route path="/blog" component={BlogPage} />
-        <Route path="/blog/instagram-no-es-marketing" component={InstagramArticlePage} />
-        <Route path="/blog/sin-redes-sociales" component={SocialMediaArticlePage} />
-        <Route path="/blog/mercadeo-relacional" component={RelationshipMarketingPage} />
-        <Route path="/blog/base-de-datos" component={DatabasePage} />
-        <Route path="/blog/la-importancia-de-mutar" component={MutationPage} />
-        <Route path="/blog/primero-construye-tu-avatar" component={AvatarPage} />
+        <Route path="/blog/instagram-no-es-marketing-digital" component={InstagramArticlePage} />
+        <Route path="/blog/vender-sin-redes-sociales-estrategias" component={SocialMediaArticlePage} />
+        <Route path="/blog/mercadeo-relacional-clientes" component={RelationshipMarketingPage} />
+        <Route path="/blog/importancia-base-datos-negocio" component={DatabasePage} />
+        <Route path="/blog/importancia-mutacion-empresarial" component={MutationPage} />
+        <Route path="/blog/avatar-cliente-ideal" component={AvatarPage} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
