@@ -196,84 +196,18 @@ export default function MutationPage() {
                 </li>
               </ul>
             </div>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Equipos diversos aportan diferentes perspectivas y facilitan la identificación de nuevas oportunidades y soluciones.'
-                      : 'Diverse teams bring different perspectives and facilitate the identification of new opportunities and solutions.'
-                    }
-                  </p>
-                </div>
-
-                {/* Strategy 7 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '7. Escucha Activa del Entorno:' : '7. Active Environmental Listening:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Monitorear constantemente las tendencias del mercado, las necesidades de los clientes y los movimientos de la competencia.'
-                      : 'Constantly monitor market trends, customer needs, and competitor movements.'
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* Conclusion */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
-              <h2 className="text-2xl font-bold text-navy mb-6">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'Conclusión' : 'Conclusion'}
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'es' 
-                  ? 'La mutación es la clave para la resiliencia y el éxito a largo plazo. Aquellos que abrazan el cambio, que están dispuestos a cuestionar sus propios paradigmas y a reinventarse, serán los que no solo sobrevivan, sino que prosperen en el futuro. No se trata de cambiar por cambiar, sino de evolucionar con propósito, manteniendo la esencia pero adaptando la forma para seguir siendo relevante y valioso en un mundo en constante transformación.'
-                  : 'Mutation is the key to resilience and long-term success. Those who embrace change, who are willing to question their own paradigms and reinvent themselves, will be those who not only survive but thrive in the future. It\'s not about changing for the sake of changing, but about evolving with purpose, maintaining the essence while adapting the form to remain relevant and valuable in a constantly transforming world.'
+                  ? 'La mutación no es opcional en el mundo actual; es una condición fundamental para la supervivencia y el crecimiento. Aquellas organizaciones y individuos que abrazan el cambio, que se reinventan constantemente y que ven la transformación como una oportunidad en lugar de una amenaza, serán los que prosperen en el siglo XXI. La capacidad de mutar se ha convertido en la habilidad más valiosa en un mundo donde el único futuro seguro es el cambio constante. Como dijo Darwin: "No sobrevive el más fuerte, ni el más inteligente, sino el que mejor se adapta al cambio".'
+                  : 'Mutation is not optional in the current world; it is a fundamental condition for survival and growth. Those organizations and individuals who embrace change, who constantly reinvent themselves, and who see transformation as an opportunity rather than a threat, will be those who thrive in the 21st century. The ability to mutate has become the most valuable skill in a world where the only certain future is constant change. As Darwin said: "It is not the strongest who survive, nor the most intelligent, but the one that best adapts to change".'
                 }
               </p>
-            </div>
-          </motion.div>
-
-          {/* Share and Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12"
-          >
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-                <div className="flex items-center gap-4">
-                  <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
-                    <Share2 className="w-5 h-5" />
-                    {language === 'es' ? 'Compartir' : 'Share'}
-                  </button>
-                  <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
-                    <Heart className="w-5 h-5" />
-                    {language === 'es' ? 'Me gusta' : 'Like'}
-                  </button>
-                  <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
-                    <MessageCircle className="w-5 h-5" />
-                    {language === 'es' ? 'Comentar' : 'Comment'}
-                  </button>
-                </div>
-                <div className="flex gap-4">
-                  <Link
-                    href="/blog"
-                    className="inline-flex items-center gap-2 text-navy hover:text-coral transition-colors font-medium"
-                  >
-                    <ArrowLeft className="w-4 h-4" />
-                    {language === 'es' ? 'Volver al blog' : 'Back to blog'}
-                  </Link>
-                  <a
-                    href="https://wa.me/573105317126"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-coral hover:bg-coral-light text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5"
-                  >
-                    {language === 'es' ? 'Hablar con un experto' : 'Talk to an expert'}
-                  </a>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>
