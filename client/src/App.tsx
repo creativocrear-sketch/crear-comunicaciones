@@ -26,6 +26,7 @@ import InstagramArticlePage from "./pages/blog/InstagramArticlePage";
 import SocialMediaArticlePage from "./pages/blog/SocialMediaArticlePage";
 import RelationshipMarketingPage from "./pages/blog/RelationshipMarketingPage";
 import DatabasePage from "./pages/blog/DatabasePage";
+import MutationPage from "./pages/blog/MutationPage";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { useEffect } from "react";
 import { useLocation } from "wouter";
@@ -68,6 +69,7 @@ function Router() {
         <Route path="/blog/sin-redes-sociales" component={SocialMediaArticlePage} />
         <Route path="/blog/mercadeo-relacional" component={RelationshipMarketingPage} />
         <Route path="/blog/base-de-datos" component={DatabasePage} />
+        <Route path="/blog/la-importancia-de-mutar" component={MutationPage} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
