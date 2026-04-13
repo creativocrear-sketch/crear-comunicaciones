@@ -21,7 +21,7 @@ const articles = [
     ],
     icon: BookOpen,
     color: 'from-navy to-navy-light',
-    date: '2024-01-15',
+    date: '13-04-2026',
     readTime: '5 min',
     author: 'Equipo de Marketing'
   },
@@ -37,7 +37,7 @@ const articles = [
     ],
     icon: TrendingUp,
     color: 'from-coral to-coral-light',
-    date: '2024-01-10',
+    date: '13-04-2026',
     readTime: '7 min',
     author: 'Especialista en Ventas'
   },
@@ -53,7 +53,7 @@ const articles = [
     ],
     icon: Users,
     color: 'from-navy to-coral',
-    date: '2024-01-05',
+    date: '13-04-2026',
     readTime: '6 min',
     author: 'Consultor de Marketing'
   },
@@ -69,7 +69,7 @@ const articles = [
     ],
     icon: Database,
     color: 'from-navy-light to-pearl',
-    date: '2023-12-28',
+    date: '13-04-2026',
     readTime: '8 min',
     author: 'Analista de Datos'
   },
@@ -85,7 +85,7 @@ const articles = [
     ],
     icon: Zap,
     color: 'from-coral-light to-navy',
-    date: '2023-12-20',
+    date: '13-04-2026',
     readTime: '5 min',
     author: 'Innovador Digital'
   },
@@ -101,7 +101,7 @@ const articles = [
     ],
     icon: Target,
     color: 'from-pearl to-navy',
-    date: '2023-12-15',
+    date: '13-04-2026',
     readTime: '6 min',
     author: 'Estratega de Contenido'
   }
