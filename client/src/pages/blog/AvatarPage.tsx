@@ -297,7 +297,6 @@ export default function AvatarPage() {
                     </div>
                   </li>
                 </ul>
-              </div>
             </div>
 
             {/* Conclusion */}
