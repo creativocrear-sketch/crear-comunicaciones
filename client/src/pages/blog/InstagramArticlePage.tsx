@@ -14,9 +14,9 @@ export default function InstagramArticlePage() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Article Header */}
-      <section className="relative bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 pt-28 pb-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      {/* Hero Section */}
+      <section className="relative bg-navy pt-28 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy" />
         <div className="absolute bottom-0 left-0 right-0 opacity-10">
           <svg viewBox="0 0 1440 120" className="w-full">
             <path
