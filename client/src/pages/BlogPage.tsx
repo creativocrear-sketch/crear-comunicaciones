@@ -176,9 +176,36 @@ export default function BlogPage() {
                   <h3 className="text-lg font-semibold text-navy mb-2">
                     {t(article.titleKey, 'blog')}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    {t(article.introductionKey, 'blog')}
-                  </p>
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-navy/70 mb-2 uppercase tracking-wider">
+                      {t('introduccion', 'blog')}
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {t(article.introductionKey, 'blog')}
+                    </p>
+                  </div>
+
+                  {/* Conceptos Clave */}
+                  <div className="mb-4">
+                    <h4 className="text-xs font-semibold text-navy/70 mb-2 uppercase tracking-wider">
+                      {t('conceptos clave', 'blog')}
+                    </h4>
+                    <div className="space-y-2">
+                      {article.conceptKeys.map((concept, conceptIndex) => (
+                        <div key={conceptIndex} className="flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-coral mt-1.5 flex-shrink-0"></div>
+                          <div>
+                            <h5 className="font-medium text-navy text-xs mb-1">
+                              {t(concept.titleKey, 'blog')}
+                            </h5>
+                            <p className="text-gray-500 text-xs leading-relaxed">
+                              {t(concept.descriptionKey, 'blog')}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
                   {/* Simple divider */}
                   <div className="w-full h-px bg-navy/10 mb-4"></div>
