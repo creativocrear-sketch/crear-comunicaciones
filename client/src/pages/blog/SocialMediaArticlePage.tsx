@@ -172,195 +172,31 @@ export default function SocialMediaArticlePage() {
                         }
                       </span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Un blog bien mantenido establece autoridad y credibilidad en el nicho.'
-                          : 'A well-maintained blog establishes authority and credibility in the niche.'
-                        }
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Strategy 2 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '2. Email Marketing:' : '2. Email Marketing:'}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Construir una lista de suscriptores a través de formularios en el sitio web, ofertas de contenido exclusivo (e-books, webinars) o eventos.'
-                          : 'Build a subscriber list through website forms, exclusive content offers (e-books, webinars), or events.'
-                        }
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'El email marketing permite una comunicación directa, personalizada y altamente efectiva, con tasas de conversión a menudo superiores a las de las redes sociales.'
-                          : 'Email marketing allows direct, personalized, and highly effective communication, with conversion rates often superior to those of social media.'
-                        }
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Strategy 3 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '3. Publicidad Pagada (Google Ads, Publicidad Display):' : '3. Paid Advertising (Google Ads, Display Advertising):'}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Invertir en anuncios en motores de búsqueda (SEM) o en redes de display. Esto permite alcanzar a usuarios con intención de compra o interés específico en el momento adecuado.'
-                          : 'Invest in search engine ads (SEM) or display networks. This allows reaching users with purchase intent or specific interest at the right time.'
-                        }
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'La segmentación avanzada y el control del presupuesto hacen de la publicidad pagada una herramienta muy potente.'
-                          : 'Advanced segmentation and budget control make paid advertising a very powerful tool.'
-                        }
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Strategy 4 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '4. Relaciones Públicas y Medios Tradicionales:' : '4. Public Relations and Traditional Media:'}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Obtener cobertura en medios de comunicación relevantes (prensa, radio, televisión, revistas especializadas). Esto genera credibilidad y alcance a audiencias más amplias.'
-                          : 'Get coverage in relevant media (press, radio, television, specialized magazines). This generates credibility and reach to broader audiences.'
-                        }
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Participar en entrevistas, escribir columnas de opinión o enviar comunicados de prensa.'
-                          : 'Participate in interviews, write opinion columns, or send press releases.'
-                        }
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Strategy 5 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '5. Eventos y Networking:' : '5. Events and Networking:'}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Participar en ferias comerciales, conferencias, talleres o eventos de la industria. Esto permite el contacto directo con clientes potenciales y socios estratégicos.'
-                          : 'Participate in trade fairs, conferences, workshops, or industry events. This allows direct contact with potential clients and strategic partners.'
-                        }
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'El networking personal sigue siendo una de las formas más efectivas de construir relaciones y generar referencias.'
-                          : 'Personal networking remains one of the most effective ways to build relationships and generate referrals.'
-                        }
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Strategy 6 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '6. Marketing de Referencia y Boca a Boca:' : '6. Referral Marketing and Word of Mouth:'}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Ofrecer un producto o servicio excepcional que motive a los clientes satisfechos a recomendarlo. Implementar programas de referidos.'
-                          : 'Offer an exceptional product or service that motivates satisfied customers to recommend it. Implement referral programs.'
-                        }
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'El boca a boca positivo es una de las formas de marketing más poderosas y orgánicas.'
-                          : 'Positive word of mouth is one of the most powerful and organic forms of marketing.'
-                        }
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Strategy 7 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '7. Alianzas Estratégicas y Colaboraciones:' : '7. Strategic Alliances and Collaborations:'}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                      <span>
-                        {language === 'es' 
-                          ? 'Asociarse con otras empresas o influencers (no necesariamente en redes sociales) que compartan el mismo público objetivo para promociones cruzadas o proyectos conjuntos.'
-                          : 'Partner with other companies or influencers (not necessarily on social media) who share the same target audience for cross-promotions or joint projects.'
-                        }
-                      </span>
-                    </li>
                   </ul>
                 </div>
               </div>
             </div>
 
             {/* Conclusion */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
-              <h2 className="text-2xl font-bold text-navy mb-6">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'Conclusión' : 'Conclusion'}
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'es' 
-                  ? 'Si bien las redes sociales pueden ser un activo valioso, no son un requisito indispensable para el éxito comercial. Al diversificar las estrategias de marketing y enfocarse en canales donde el público objetivo realmente se encuentra y es receptivo, las empresas pueden construir una base sólida de clientes y generar ventas de manera sostenible. La clave está en entender al cliente, ofrecer valor y elegir los canales más efectivos para llegar a ellos, independientemente de la popularidad del momento.'
-                  : 'While social media can be a valuable asset, they are not an essential requirement for business success. By diversifying marketing strategies and focusing on channels where the target audience truly is and is receptive, businesses can build a solid customer base and generate sales sustainably. The key is to understand the customer, offer value, and choose the most effective channels to reach them, regardless of current popularity.'
+                  ? 'No tener presencia en redes sociales no significa estar ausente del mercado digital. Existen numerosas alternativas efectivas que pueden generar resultados excepcionales cuando se implementan correctamente. La clave está en elegir los canales adecuados para tu público objetivo y ejecutar una estrategia coherente que integre múltiples tácticas. El éxito no depende de estar en todas las plataformas, sino de estar donde tus clientes te necesitan, con el mensaje correcto y en el momento adecuado.'
+                  : 'Not having a presence on social media does not mean being absent from the digital market. There are numerous effective alternatives that can generate exceptional results when implemented correctly. The key is to choose the right channels for your target audience and execute a coherent strategy that integrates multiple tactics. Success does not depend on being on all platforms, but on being where your customers need you, with the right message at the right time.'
                 }
               </p>
             </div>
-          </motion.div>
 
-          {/* Share and Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12"
-          >
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
+            {/* Share and Action */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="pt-12 border-t border-gray-200"
+            >
               <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
@@ -394,7 +230,7 @@ export default function SocialMediaArticlePage() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
