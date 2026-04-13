@@ -215,10 +215,13 @@ export default function BlogPage() {
                       <span>·</span>
                       <span>{article.readTime}</span>
                     </div>
-                    <button className="bg-coral hover:bg-coral-light text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5">
-                      {t('leer mas', 'blog')} 
-                      <ArrowRight className="w-3 h-3 ml-1 inline" />
-                    </button>
+                    <Link 
+                    href={article.id === 1 ? "/blog/instagram-no-es-marketing" : article.id === 2 ? "/blog/sin-redes-sociales" : `/blog/articulo-${article.id}`}
+                    className="inline-block bg-coral hover:bg-coral-light text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:shadow-lg hover:shadow-coral/20 hover:-translate-y-0.5"
+                  >
+                    {t('leer mas', 'blog')} 
+                    <ArrowRight className="w-3 h-3 ml-1 inline" />
+                  </Link>
                   </div>
                 </div>
               </motion.article>
