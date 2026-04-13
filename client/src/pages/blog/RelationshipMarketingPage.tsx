@@ -79,14 +79,14 @@ export default function RelationshipMarketingPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="prose prose-lg max-w-none"
+            className="space-y-12"
           >
             {/* Introduction */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-4">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'Introducción' : 'Introduction'}
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'es' 
                   ? 'En un mercado cada vez más competitivo y saturado, la diferenciación a través del producto o precio se vuelve efímera. Es aquí donde el mercadeo relacional emerge como una estrategia fundamental. A diferencia del marketing transaccional, que se enfoca en la venta única, el mercadeo relacional busca construir y mantener relaciones duraderas y significativas con los clientes. Este artículo explorará los principios, beneficios y la implementación efectiva de esta poderosa filosofía empresarial.'
                   : 'In an increasingly competitive and saturated market, differentiation through product or price becomes ephemeral. This is where relationship marketing emerges as a fundamental strategy. Unlike transactional marketing, which focuses on single sales, relationship marketing seeks to build and maintain lasting and meaningful relationships with customers. This article will explore the principles, benefits, and effective implementation of this powerful business philosophy.'
@@ -95,262 +95,155 @@ export default function RelationshipMarketingPage() {
             </div>
 
             {/* What is Relationship Marketing */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? '¿Qué es el Mercadeo Relacional?' : 'What is Relationship Marketing?'}
               </h2>
-              <div className="space-y-4 mb-8">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'El mercadeo relacional es una estrategia a largo plazo que se centra en la fidelización del cliente a través de la satisfacción, la confianza y el compromiso mutuo. Su objetivo principal no es solo cerrar una venta, sino establecer un vínculo emocional que convierta a los clientes en defensores de la marca. Se basa en la premisa de que retener a un cliente existente es significativamente más rentable que adquirir uno nuevo.'
-                    : 'Relationship marketing is a long-term strategy that focuses on customer loyalty through satisfaction, trust, and mutual commitment. Its main objective is not just to close a sale, but to establish an emotional bond that turns customers into brand advocates. It is based on the premise that retaining an existing customer is significantly more profitable than acquiring a new one.'
-                  }
-                </p>
-              </div>
-            </div>
-
-            {/* Pillars */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Pilares del Mercadeo Relacional:' : 'Pillars of Relationship Marketing:'}
-              </h2>
-              <div className="space-y-4">
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Confianza:' : 'Trust:'}</strong> {language === 'es' 
-                        ? 'Se construye a través de la transparencia, la honestidad y el cumplimiento de promesas.'
-                        : 'Built through transparency, honesty, and keeping promises.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Comunicación:' : 'Communication:'}</strong> {language === 'es' 
-                        ? 'Bidireccional y personalizada, escuchando activamente las necesidades y retroalimentación del cliente.'
-                        : 'Bidirectional and personalized, actively listening to customer needs and feedback.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Compromiso:' : 'Commitment:'}</strong> {language === 'es' 
-                        ? 'Implica ir más allá de la transacción, ofreciendo valor añadido y experiencias memorables.'
-                        : 'Involves going beyond the transaction, offering added value and memorable experiences.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Satisfacción:' : 'Satisfaction:'}</strong> {language === 'es' 
-                        ? 'Superar las expectativas del cliente en cada interacción.'
-                        : 'Exceeding customer expectations in every interaction.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Personalización:' : 'Personalization:'}</strong> {language === 'es' 
-                        ? 'Adaptar productos, servicios y comunicaciones a las necesidades individuales de cada cliente.'
-                        : 'Adapting products, services, and communications to the individual needs of each customer.'
-                      }
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Benefits */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Beneficios del Mercadeo Relacional' : 'Benefits of Relationship Marketing'}
-              </h2>
-              <div className="space-y-6">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'La implementación de una estrategia de mercadeo relacional ofrece múltiples ventajas para las empresas:'
-                    : 'The implementation of a relationship marketing strategy offers multiple advantages for businesses:'
-                  }
-                </p>
-
-                {/* Benefit 1 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '1. Mayor Retención de Clientes:' : '1. Greater Customer Retention:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Los clientes satisfechos y comprometidos son menos propensos a cambiar a la competencia.'
-                      : 'Satisfied and committed customers are less likely to switch to competitors.'
-                    }
-                  </p>
-                </div>
-
-                {/* Benefit 2 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '2. Aumento del Valor de Vida del Cliente (CLV):' : '2. Increased Customer Lifetime Value (CLV):'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Al mantener a los clientes por más tiempo, se incrementa el valor total que aportan a la empresa a lo largo de su relación.'
-                      : 'By maintaining customers for longer, the total value they contribute to the company throughout their relationship increases.'
-                    }
-                  </p>
-                </div>
-
-                {/* Benefit 3 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '3. Reducción de Costos de Adquisición:' : '3. Reduction of Acquisition Costs:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Es más económico retener que adquirir. Un cliente fiel puede generar referencias, reduciendo la necesidad de grandes inversiones en marketing para nuevos clientes.'
-                      : 'It is more economical to retain than acquire. A loyal customer can generate referrals, reducing the need for large marketing investments for new customers.'
-                    }
-                  </p>
-                </div>
-
-                {/* Benefit 4 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '4. Incremento de Ventas y Referencias:' : '4. Increase in Sales and Referrals:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Los clientes leales tienden a comprar más y a recomendar la marca a sus conocidos, actuando como embajadores.'
-                      : 'Loyal customers tend to buy more and recommend the brand to their acquaintances, acting as ambassadors.'
-                    }
-                  </p>
-                </div>
-
-                {/* Benefit 5 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '5. Mejora de la Reputación de Marca:' : '5. Improvement of Brand Reputation:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Una base de clientes satisfechos y leales fortalece la imagen y credibilidad de la empresa.'
-                      : 'A base of satisfied and loyal customers strengthens the company\'s image and credibility.'
-                    }
-                  </p>
-                </div>
-
-                {/* Benefit 6 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '6. Retroalimentación Valiosa:' : '6. Valuable Feedback:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Las relaciones cercanas facilitan la obtención de insights directos de los clientes, lo que permite mejorar productos y servicios.'
-                      : 'Close relationships facilitate obtaining direct insights from customers, allowing for improvement of products and services.'
-                    }
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Implementation */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Implementación del Mercadeo Relacional' : 'Implementation of Relationship Marketing'}
-              </h2>
-              <div className="space-y-4">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'Para desarrollar una estrategia de mercadeo relacional efectiva, las empresas deben considerar:'
-                    : 'To develop an effective relationship marketing strategy, businesses should consider:'
-                  }
-                </p>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Conocer al Cliente:' : 'Know the Customer:'}</strong> {language === 'es' 
-                        ? 'Utilizar herramientas de CRM (Customer Relationship Management) para recopilar y analizar datos sobre las preferencias, comportamientos e historial de compra de los clientes.'
-                        : 'Use CRM tools to collect and analyze data about customer preferences, behaviors, and purchase history.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Personalizar la Experiencia:' : 'Personalize the Experience:'}</strong> {language === 'es' 
-                        ? 'Ofrecer comunicaciones, ofertas y soluciones adaptadas a cada segmento o individuo.'
-                        : 'Offer communications, offers, and solutions adapted to each segment or individual.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Construir Canales de Comunicación Abiertos:' : 'Build Open Communication Channels:'}</strong> {language === 'es' 
-                        ? 'Facilitar que los clientes expresen sus opiniones, quejas y sugerencias.'
-                        : 'Facilitate customers expressing their opinions, complaints, and suggestions.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Ofrecer un Servicio al Cliente Excepcional:' : 'Offer Exceptional Customer Service:'}</strong> {language === 'es' 
-                        ? 'Resolver problemas de manera eficiente y empática, y superar las expectativas en cada punto de contacto.'
-                        : 'Solve problems efficiently and empathetically, exceeding expectations at every touchpoint.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Crear Programas de Lealtad:' : 'Create Loyalty Programs:'}</strong> {language === 'es' 
-                        ? 'Recompensar a los clientes por su fidelidad a través de descuentos, acceso exclusivo o beneficios especiales.'
-                        : 'Reward customers for their loyalty through discounts, exclusive access, or special benefits.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Generar Contenido de Valor:' : 'Generate Valuable Content:'}</strong> {language === 'es' 
-                        ? 'Proporcionar información útil y relevante que no solo venda, sino que también eduque y entretenga.'
-                        : 'Provide useful and relevant information that not only sells but also educates and entertains.'
-                      }
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Conclusion */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Conclusión' : 'Conclusion'}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {language === 'es' 
-                  ? 'El mercadeo relacional no es una táctica, sino una filosofía empresarial que pone al cliente en el centro de todas las operaciones. Al invertir en la construcción de relaciones sólidas y duraderas, las empresas no solo aseguran la lealtad y la rentabilidad a largo plazo, sino que también cultivan una comunidad de defensores que impulsarán su crecimiento de manera orgánica y sostenible. En la economía actual, el poder de una relación genuina es el activo más valioso que una marca puede poseer.'
-                  : 'Relationship marketing is not a tactic, but a business philosophy that puts the customer at the center of all operations. By investing in building solid and lasting relationships, companies not only ensure loyalty and long-term profitability, but also cultivate a community of advocates who will drive their growth organically and sustainably. In the current economy, the power of a genuine relationship is the most valuable asset a brand can possess.'
+                  ? 'El mercadeo relacional es una estrategia a largo plazo que se centra en la fidelización del cliente a través de la satisfacción, la confianza y el compromiso mutuo. Su objetivo principal no es solo cerrar una venta, sino establecer un vínculo emocional que convierta a los clientes en defensores de la marca. Se basa en la premisa de que retener a un cliente existente es significativamente más rentable que adquirir uno nuevo.'
+                  : 'Relationship marketing is a long-term strategy that focuses on customer loyalty through satisfaction, trust, and mutual commitment. Its main objective is not just to close a sale, but to establish an emotional bond that turns customers into brand advocates. It is based on the premise that retaining an existing customer is significantly more profitable than acquiring a new one.'
                 }
               </p>
             </div>
-          </motion.div>
+
+            {/* Pillars */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 3 concepto 1 title', 'blog')}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {language === 'es' 
+                  ? 'El mercadeo relacional se fundamenta en pilares estratégicos que aseguran su efectividad y sostenibilidad a largo plazo.'
+                  : 'Relationship marketing is based on strategic pillars that ensure its effectiveness and long-term sustainability.'
+                }
+              </p>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Confianza y Transparencia:' : 'Trust and Transparency:'}</strong> {language === 'es' 
+                      ? 'Cumplimiento de promesas como base del vínculo.'
+                      : 'Keeping promises as the foundation of the bond.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Personalización:' : 'Personalization:'}</strong> {language === 'es' 
+                      ? 'Adaptar la experiencia y las ofertas a las necesidades individuales.'
+                      : 'Adapt the experience and offers to individual needs.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Retención:' : 'Retention:'}</strong> {language === 'es' 
+                      ? 'Es más rentable retener a un cliente existente que adquirir uno nuevo.'
+                      : 'It is more profitable to retain an existing customer than to acquire a new one.'
+                    }
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Benefits */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 3 concepto 2 title', 'blog')}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {language === 'es' 
+                  ? 'Los beneficios del mercadeo relacional se traducen directamente en resultados medibles para el negocio.'
+                  : 'The benefits of relationship marketing translate directly into measurable results for the business.'
+                }
+              </p>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Aumento del CLV:' : 'Increased CLV:'}</strong> {language === 'es' 
+                      ? 'Los clientes leales gastan más y con mayor frecuencia.'
+                      : 'Loyal customers spend more and more frequently.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Marketing de Boca a Boca:' : 'Word of Mouth Marketing:'}</strong> {language === 'es' 
+                      ? 'Clientes satisfechos se convierten en embajadores de la marca.'
+                      : 'Satisfied customers become brand ambassadors.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Ventaja Competitiva:' : 'Competitive Advantage:'}</strong> {language === 'es' 
+                      ? 'Las relaciones son difíciles de copiar por la competencia.'
+                      : 'Relationships are difficult for competitors to copy.'
+                    }
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Implementation */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 3 concepto 3 title', 'blog')}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {language === 'es' 
+                  ? 'La implementación efectiva del mercadeo relacional requiere estrategia, tecnología y compromiso organizacional.'
+                  : 'Effective implementation of relationship marketing requires strategy, technology, and organizational commitment.'
+                }
+              </p>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Sistemas CRM:' : 'CRM Systems:'}</strong> {language === 'es' 
+                      ? 'Utilizar tecnología para gestionar relaciones con clientes.'
+                      : 'Use technology to manage customer relationships.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Feedback Constante:' : 'Constant Feedback:'}</strong> {language === 'es' 
+                      ? 'Escuchar activamente y actuar sobre las sugerencias.'
+                      : 'Listen actively and act on suggestions.'
+                    }
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Conclusion */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {language === 'es' ? 'Conclusión' : 'Conclusion'}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {language === 'es' 
+                  ? 'El mercadeo relacional no es una táctica, sino una filosofía empresarial que transforma la manera en que las organizaciones interactúan con sus clientes. En un mundo donde las opciones son infinitas y la lealtad es escasa, construir relaciones auténticas y duraderas se convierte en la ventaja competitiva más poderosa. Las empresas que dominen el arte de cultivar relaciones significativas no solo sobrevivirán en el mercado actual, sino que prosperarán creando una base de clientes leales que actuarán como el motor más efectivo de su crecimiento sostenible.'
+                  : 'Relationship marketing is not a tactic, but a business philosophy that transforms the way organizations interact with their customers. In a world where options are infinite and loyalty is scarce, building authentic and lasting relationships becomes the most powerful competitive advantage. Companies that master the art of cultivating meaningful relationships will not only survive in the current market, but will thrive by creating a loyal customer base that will act as the most effective engine of their sustainable growth.'
+                }
+              </p>
+            </div>
 
           {/* Share and Action */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12"
-          >
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="pt-12 border-t border-gray-200"
+            >
               <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
@@ -384,7 +277,7 @@ export default function RelationshipMarketingPage() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -446,7 +339,7 @@ export default function RelationshipMarketingPage() {
                 {t('articulo 2 subtitle', 'blog')}
               </p>
               <Link
-                href="/blog/sin-redes-sociales"
+                href="/blog/vender-sin-redes-sociales"
                 className="inline-flex items-center gap-2 text-coral hover:text-coral-light text-sm font-medium transition-colors"
               >
                 {language === 'es' ? 'Leer artículo' : 'Read article'}

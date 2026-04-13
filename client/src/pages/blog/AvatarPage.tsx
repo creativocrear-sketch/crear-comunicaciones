@@ -79,14 +79,14 @@ export default function AvatarPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="prose prose-lg max-w-none"
+            className="space-y-12"
           >
             {/* Introduction */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-4">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'Introducción' : 'Introduction'}
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'es' 
                   ? 'En el corazón de cualquier estrategia de marketing y ventas exitosa reside un profundo entendimiento del cliente. Sin embargo, muchas empresas cometen el error de lanzar productos o campañas sin haber definido claramente a quién se dirigen. Aquí es donde entra en juego el concepto del avatar de cliente (también conocido como buyer persona). Este artículo explicará por qué la creación de un avatar detallado es el primer paso y el más crucial para construir un negocio que resuene con su audiencia y genere resultados.'
                   : 'At the heart of any successful marketing and sales strategy lies a deep understanding of the customer. However, many companies make the mistake of launching products or campaigns without clearly defining who they are targeting. This is where the concept of customer avatar (also known as buyer persona) comes into play. This article will explain why creating a detailed avatar is the first and most crucial step to building a business that resonates with its audience and generates results.'
@@ -95,195 +95,151 @@ export default function AvatarPage() {
             </div>
 
             {/* What is Avatar */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? '¿Qué es un Avatar de Cliente?' : 'What is a Customer Avatar?'}
               </h2>
-              <div className="space-y-4 mb-8">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'Un avatar de cliente es una representación semi-ficticia de tu cliente ideal, basada en datos reales y algunas suposiciones informadas sobre demografía, comportamiento, motivaciones y objetivos. Va mucho más allá de una simple segmentación demográfica (edad, género, ubicación) para profundizar en aspectos psicográficos y conductuales.'
-                    : 'A customer avatar is a semi-fictional representation of your ideal customer, based on real data and some informed assumptions about demographics, behavior, motivations, and goals. It goes far beyond simple demographic segmentation (age, gender, location) to delve into psychographic and behavioral aspects.'
-                  }
-                </p>
-              </div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {language === 'es' 
+                  ? 'Un avatar de cliente es una representación semi-ficticia de tu cliente ideal, basada en datos reales y algunas suposiciones informadas sobre demografía, comportamiento, motivaciones y objetivos. Va mucho más allá de una simple segmentación demográfica (edad, género, ubicación) para profundizar en aspectos psicográficos y conductuales.'
+                  : 'A customer avatar is a semi-fictional representation of your ideal customer, based on real data and some informed assumptions about demographics, behavior, motivations, and goals. It goes far beyond simple demographic segmentation (age, gender, location) to delve into psychographic and behavioral aspects.'
+                }
+              </p>
             </div>
 
             {/* Key Elements */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Elementos clave de un avatar de cliente:' : 'Key elements of a customer avatar:'}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 6 concepto 1 title', 'blog')}
               </h2>
-              <div className="space-y-4">
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Datos Demográficos:' : 'Demographic Data:'}</strong> {language === 'es' 
-                        ? 'Edad, género, nivel educativo, ocupación, nivel de ingresos, estado civil, ubicación.'
-                        : 'Age, gender, education level, occupation, income level, marital status, location.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Datos Psicográficos:' : 'Psychographic Data:'}</strong> {language === 'es' 
-                        ? 'Personalidad, valores, intereses, estilo de vida, actitudes, opiniones.'
-                        : 'Personality, values, interests, lifestyle, attitudes, opinions.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Comportamientos:' : 'Behaviors:'}</strong> {language === 'es' 
-                        ? 'Hábitos de compra, uso de tecnología, canales de comunicación preferidos, cómo buscan información.'
-                        : 'Purchase habits, technology use, preferred communication channels, how they search for information.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Objetivos y Aspiraciones:' : 'Goals and Aspirations:'}</strong> {language === 'es' 
-                        ? 'Qué quieren lograr en su vida personal o profesional.'
-                        : 'What they want to achieve in their personal or professional life.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Retos y Puntos de Dolor:' : 'Challenges and Pain Points:'}</strong> {language === 'es' 
-                        ? 'Qué problemas enfrentan, qué frustraciones tienen, qué obstáculos les impiden alcanzar sus objetivos.'
-                        : 'What problems they face, what frustrations they have, what obstacles prevent them from reaching their goals.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Objeciones:' : 'Objections:'}</strong> {language === 'es' 
-                        ? 'Qué dudas o preocupaciones podrían tener respecto a tu producto o servicio.'
-                        : 'What doubts or concerns they might have about your product or service.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Fuentes de Información:' : 'Information Sources:'}</strong> {language === 'es' 
-                        ? 'Dónde buscan soluciones o información (blogs, redes sociales, foros, revistas).'
-                        : 'Where they search for solutions or information (blogs, social media, forums, magazines).'
-                      }
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Datos Demográficos:' : 'Demographic Data:'}</strong> {language === 'es' 
+                      ? 'Edad, género, nivel educativo, ocupación, nivel de ingresos, estado civil, ubicación.'
+                      : 'Age, gender, education level, occupation, income level, marital status, location.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Psicografía:' : 'Psychographics:'}</strong> {language === 'es' 
+                      ? 'Valores, creencias, intereses, estilo de vida, personalidad.'
+                      : 'Values, beliefs, interests, lifestyle, personality.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Comportamiento:' : 'Behavior:'}</strong> {language === 'es' 
+                      ? 'Hábitos de compra, canales de comunicación preferidos, uso de tecnología.'
+                      : 'Buying habits, preferred communication channels, technology usage.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Objetivos y Desafíos:' : 'Goals and Challenges:'}</strong> {language === 'es' 
+                      ? 'Qué quieren lograr, qué problemas enfrentan, qué les impide progresar.'
+                      : 'What they want to achieve, what problems they face, what prevents them from progressing.'
+                    }
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            {/* Why Crucial */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? '¿Por qué es Crucial Construir tu Avatar Primero?' : 'Why is it Crucial to Build Your Avatar First?'}
+            {/* Benefits */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 6 concepto 2 title', 'blog')}
               </h2>
-              <div className="space-y-6">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'La creación de un avatar de cliente antes de cualquier otra acción estratégica ofrece beneficios fundamentales:'
-                    : 'Creating a customer avatar before any other strategic action offers fundamental benefits:'
-                  }
-                </p>
-
-                {/* Benefit 1 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '1. Claridad en la Estrategia de Marketing:' : '1. Clarity in Marketing Strategy:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Permite crear mensajes de marketing altamente relevantes y personalizados que hablen directamente a las necesidades y deseos de tu audiencia. Sabrás qué decir, cómo decirlo y dónde decirlo.'
-                      : 'Allows creating highly relevant and personalized marketing messages that speak directly to your audience\'s needs and desires. You\'ll know what to say, how to say it, and where to say it.'
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Marketing Preciso:' : 'Precise Marketing:'}</strong> {language === 'es' 
+                      ? 'Mensajes y campañas que resuenan específicamente con tu audiencia ideal.'
+                      : 'Messages and campaigns that specifically resonate with your ideal audience.'
                     }
-                  </p>
-                </div>
-
-                {/* Benefit 2 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '2. Desarrollo de Productos y Servicios Relevantes:' : '2. Development of Relevant Products and Services:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Al entender los puntos de dolor y las aspiraciones de tu avatar, puedes desarrollar productos o servicios que realmente resuelvan sus problemas y satisfagan sus necesidades, aumentando las probabilidades de éxito.'
-                      : 'By understanding your avatar\'s pain points and aspirations, you can develop products or services that truly solve their problems and meet their needs, increasing success probabilities.'
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Desarrollo de Productos:' : 'Product Development:'}</strong> {language === 'es' 
+                      ? 'Crear productos y servicios que realmente resuelvan problemas reales.'
+                      : 'Create products and services that actually solve real problems.'
                     }
-                  </p>
-                </div>
-
-                {/* Benefit 3 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '3. Optimización de Canales de Comunicación:' : '3. Optimization of Communication Channels:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Sabrás dónde encontrar a tu cliente ideal (qué redes sociales usa, qué blogs lee, a qué eventos asiste), permitiéndote invertir tus recursos de marketing de manera más eficiente.'
-                      : 'You\'ll know where to find your ideal customer (which social networks they use, which blogs they read, which events they attend), allowing you to invest your marketing resources more efficiently.'
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Ventas Efectivas:' : 'Effective Sales:'}</strong> {language === 'es' 
+                      ? 'Equipos de ventas que entienden profundamente las necesidades del cliente.'
+                      : 'Sales teams that deeply understand customer needs.'
                     }
-                  </p>
-                </div>
-
-                {/* Benefit 4 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '4. Mejora de la Experiencia del Cliente:' : '4. Improvement of Customer Experience:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Cada interacción, desde el primer contacto hasta el servicio postventa, puede ser diseñada pensando en las preferencias y expectativas de tu avatar, creando una experiencia más satisfactoria.'
-                      : 'Every interaction, from first contact to after-sales service, can be designed thinking about your avatar\'s preferences and expectations, creating a more satisfying experience.'
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Retención de Clientes:' : 'Customer Retention:'}</strong> {language === 'es' 
+                      ? 'Estrategias de fidelización basadas en lo que realmente valoran tus clientes.'
+                      : 'Loyalty strategies based on what your customers really value.'
                     }
-                  </p>
-                </div>
-
-                {/* Benefit 5 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '5. Aumento de la Tasa de Conversión:' : '5. Increase in Conversion Rate:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Al dirigirte a las personas adecuadas con el mensaje correcto, la probabilidad de que se conviertan en clientes aumenta significativamente.'
-                      : 'By targeting the right people with the right message, the probability of them becoming customers increases significantly.'
-                    }
-                  </p>
-                </div>
-
-                {/* Benefit 6 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '6. Diferenciación de la Competencia:' : '6. Differentiation from Competition:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Un conocimiento profundo de tu cliente te permite ofrecer un valor único que tus competidores quizás no estén abordando.'
-                      : 'Deep knowledge of your customer allows you to offer unique value that your competitors may not be addressing.'
-                    }
-                  </p>
-                </div>
-              </div>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            {/* How to Build */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Cómo Construir tu Avatar' : 'How to Build Your Avatar'}
+            {/* Implementation */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 6 concepto 3 title', 'blog')}
               </h2>
-              <div className="space-y-4">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Investigación de Mercado:' : 'Market Research:'}</strong> {language === 'es' 
+                      ? 'Analizar datos demográficos, encuestas, entrevistas con clientes existentes.'
+                      : 'Analyze demographic data, surveys, interviews with existing customers.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Análisis de Competencia:' : 'Competitor Analysis:'}</strong> {language === 'es' 
+                      ? 'Estudiar a quién atienden tus competidores y cómo lo hacen.'
+                      : 'Study who your competitors serve and how they do it.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Datos Internos:' : 'Internal Data:'}</strong> {language === 'es' 
+                      ? 'Analizar tus mejores clientes actuales para encontrar patrones comunes.'
+                      : 'Analyze your best current customers to find common patterns.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Validación:' : 'Validation:'}</strong> {language === 'es'} 
+                      ? 'Probar tu avatar con clientes reales y ajustar según el feedback.'
+                      : 'Test your avatar with real customers and adjust based on feedback.'
+                    }
+                  </div>
+                </li>
+              </ul>
                     ? 'La construcción de un avatar no es un ejercicio de adivinación, sino un proceso basado en la investigación:'
                     : 'Building an avatar is not an exercise in guesswork, but a process based on research:'
                   }

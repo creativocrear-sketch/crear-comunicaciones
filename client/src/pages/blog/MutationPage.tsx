@@ -79,14 +79,14 @@ export default function MutationPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="prose prose-lg max-w-none"
+            className="space-y-12"
           >
             {/* Introduction */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-4">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'Introducción' : 'Introduction'}
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 {language === 'es' 
                   ? 'En un mundo caracterizado por el cambio constante y acelerado, la capacidad de mutar no es solo una ventaja competitiva, sino una necesidad para la supervivencia de cualquier organización o individuo. El concepto de mutación, tomado de la biología, se refiere a la adaptación y transformación frente a nuevas condiciones. En el ámbito empresarial y personal, implica la flexibilidad para evolucionar, innovar y reinventarse. Este artículo explorará por qué la mutación es crucial en la actualidad y cómo cultivarla para prosperar en entornos dinámicos.'
                   : 'In a world characterized by constant and accelerated change, the ability to mutate is not just a competitive advantage, but a necessity for the survival of any organization or individual. The concept of mutation, taken from biology, refers to adaptation and transformation in the face of new conditions. In the business and personal sphere, it implies flexibility to evolve, innovate, and reinvent oneself. This article will explore why mutation is crucial today and how to cultivate it to thrive in dynamic environments.'
@@ -95,159 +95,107 @@ export default function MutationPage() {
             </div>
 
             {/* Mutation Imperative */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
                 {language === 'es' ? 'El Imperativo de la Mutación en el Siglo XXI' : 'The Imperative of Mutation in the 21st Century'}
               </h2>
-              <div className="space-y-4 mb-8">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'La velocidad de los avances tecnológicos, los cambios en los patrones de consumo, las crisis económicas y sanitarias, y la globalización han creado un entorno VUCA (Volátil, Incierto, Complejo y Ambiguo) donde lo único constante es el cambio. En este escenario, la rigidez es una sentencia de muerte. Las empresas que se aferran a modelos de negocio obsoletos o a productos que ya no satisfacen las necesidades del mercado están destinadas a desaparecer.'
-                    : 'The speed of technological advances, changes in consumption patterns, economic and health crises, and globalization have created a VUCA (Volatile, Uncertain, Complex, and Ambiguous) environment where the only constant is change. In this scenario, rigidity is a death sentence. Companies that cling to obsolete business models or products that no longer meet market needs are destined to disappear.'
-                  }
-                </p>
-              </div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {language === 'es' 
+                  ? 'La velocidad de los avances tecnológicos, los cambios en los patrones de consumo, las crisis económicas y sanitarias, y la globalización han creado un entorno VUCA (Volátil, Incierto, Complejo y Ambiguo) donde lo único constante es el cambio. En este escenario, la rigidez es una sentencia de muerte. Las empresas que se aferran a modelos de negocio obsoletos o a productos que ya no satisfacen las necesidades del mercado están destinadas a desaparecer.'
+                  : 'The speed of technological advances, changes in consumption patterns, economic and health crises, and globalization have created a VUCA (Volatile, Uncertain, Complex, and Ambiguous) environment where the only constant is change. In this scenario, rigidity is a death sentence. Companies that cling to obsolete business models or products that no longer meet market needs are destined to disappear.'
+                }
+              </p>
             </div>
 
             {/* Driving Factors */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Factores que impulsan la necesidad de mutar:' : 'Factors driving the need to mutate:'}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 5 concepto 1 title', 'blog')}
               </h2>
-              <div className="space-y-4">
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Tecnología:' : 'Technology:'}</strong> {language === 'es' 
-                        ? 'La irrupción de la inteligencia artificial, el big data, la automatización y otras innovaciones que redefinen industrias enteras.'
-                        : 'The emergence of artificial intelligence, big data, automation, and other innovations that redefine entire industries.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Consumidor:' : 'Consumer:'}</strong> {language === 'es' 
-                        ? 'Un cliente más informado, exigente y con expectativas cambiantes, que busca experiencias personalizadas y valores alineados con los suyos.'
-                        : 'A more informed, demanding customer with changing expectations, seeking personalized experiences and values aligned with theirs.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Competencia:' : 'Competition:'}</strong> {language === 'es' 
-                        ? 'La aparición constante de nuevos jugadores y modelos de negocio disruptivos que desafían el status quo.'
-                        : 'The constant emergence of new players and disruptive business models that challenge the status quo.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Globalización:' : 'Globalization:'}</strong> {language === 'es' 
-                        ? 'La interconexión de mercados y culturas que exige una adaptabilidad a contextos diversos.'
-                        : 'The interconnection of markets and cultures that demands adaptability to diverse contexts.'
-                      }
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
-                    <div>
-                      <strong>{language === 'es' ? 'Crisis:' : 'Crises:'}</strong> {language === 'es' 
-                        ? 'Eventos inesperados (pandemias, recesiones) que obligan a una reconfiguración rápida y profunda.'
-                        : 'Unexpected events (pandemics, recessions) that force rapid and profound reconfiguration.'
-                      }
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Tecnología:' : 'Technology:'}</strong> {language === 'es' 
+                      ? 'La irrupción de la inteligencia artificial, el big data, la automatización y otras innovaciones que redefinen industrias enteras.'
+                      : 'The emergence of artificial intelligence, big data, automation, and other innovations that redefine entire industries.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Cambio de Consumidores:' : 'Consumer Change:'}</strong> {language === 'es' 
+                      ? 'Nuevas generaciones con diferentes valores, expectativas y hábitos de consumo.'
+                      : 'New generations with different values, expectations, and consumption habits.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Sostenibilidad:' : 'Sustainability:'}</strong> {language === 'es' 
+                      ? 'Presión social y regulatoria para adoptar prácticas más sostenibles.'
+                      : 'Social and regulatory pressure to adopt more sustainable practices.'
+                    }
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Globalización:' : 'Globalization:'}</strong> {language === 'es' 
+                      ? 'Competencia global que exige mayor eficiencia y adaptación cultural.'
+                      : 'Global competition that demands greater efficiency and cultural adaptation.'
+                    }
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            {/* Cultivating Mutation */}
-            <div className="bg-white rounded-[28px] p-8 shadow-[0_20px_60px_rgba(15,32,68,0.12)] mb-8">
-              <h2 className="text-2xl font-bold text-navy mb-6">
-                {language === 'es' ? 'Cómo Cultivar la Capacidad de Mutación' : 'How to Cultivate the Capacity for Mutation'}
+            {/* Mutation Strategies */}
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-6">
+                {t('articulo 5 concepto 2 title', 'blog')}
               </h2>
-              <div className="space-y-4">
-                <p className="text-gray-600 leading-relaxed">
-                  {language === 'es' 
-                    ? 'La mutación no es un evento aislado, sino un proceso continuo que requiere una mentalidad y una cultura específicas:'
-                    : 'Mutation is not an isolated event, but a continuous process that requires a specific mindset and culture:'
-                  }
-                </p>
-
-                {/* Strategy 1 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '1. Mentalidad de Aprendizaje Continuo:' : '1. Continuous Learning Mindset:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Fomentar la curiosidad, la experimentación y la disposición a desaprender para volver a aprender. Esto aplica tanto a individuos como a organizaciones.'
-                      : 'Foster curiosity, experimentation, and the willingness to unlearn to relearn. This applies to both individuals and organizations.'
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Innovación Continua:' : 'Continuous Innovation:'}</strong> {language === 'es' 
+                      ? 'Crear una cultura donde la innovación es constante y no ocasional.'
+                      : 'Create a culture where innovation is constant and not occasional.'
                     }
-                  </p>
-                </div>
-
-                {/* Strategy 2 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '2. Agilidad y Flexibilidad:' : '2. Agility and Flexibility:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Adoptar metodologías ágiles que permitan la rápida adaptación a los cambios, la iteración constante y la toma de decisiones descentralizada.'
-                      : 'Adopt agile methodologies that allow rapid adaptation to changes, constant iteration, and decentralized decision-making.'
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Agilidad Organizacional:' : 'Organizational Agility:'}</strong> {language === 'es' 
+                      ? 'Estructuras flexibles que permiten respuestas rápidas al cambio.'
+                      : 'Flexible structures that allow rapid responses to change.'
                     }
-                  </p>
-                </div>
-
-                {/* Strategy 3 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '3. Innovación Abierta:' : '3. Open Innovation:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Buscar ideas y soluciones tanto dentro como fuera de la organización, colaborando con startups, universidades o incluso competidores.'
-                      : 'Seek ideas and solutions both inside and outside the organization, collaborating with startups, universities, or even competitors.'
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Aprendizaje Continuo:' : 'Continuous Learning:'}</strong> {language === 'es' 
+                      ? 'Inversión en capacitación y desarrollo de habilidades futuras.'
+                      : 'Investment in training and development of future skills.'
                     }
-                  </p>
-                </div>
-
-                {/* Strategy 4 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '4. Cultura de Experimentación:' : '4. Culture of Experimentation:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Permitir el fracaso como parte del proceso de aprendizaje. Crear un entorno seguro donde se puedan probar nuevas ideas sin miedo a las repercusiones.'
-                      : 'Allow failure as part of the learning process. Create a safe environment where new ideas can be tested without fear of repercussions.'
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>{language === 'es' ? 'Experimentación:' : 'Experimentation:'}</strong> {language === 'es' 
+                      ? 'Fomentar la prueba de nuevas ideas sin miedo al fracaso.'
+                      : 'Encourage testing new ideas without fear of failure.'
                     }
-                  </p>
-                </div>
-
-                {/* Strategy 5 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '5. Visión Estratégica Adaptativa:' : '5. Adaptive Strategic Vision:'}
-                  </h3>
-                  <p className="text-gray-600">
-                    {language === 'es' 
-                      ? 'Tener una visión clara del futuro, pero estar dispuesto a ajustarla y pivotar cuando las circunstancias lo requieran.'
-                      : 'Have a clear vision of the future, but be willing to adjust and pivot when circumstances require it.'
-                    }
-                  </p>
-                </div>
-
-                {/* Strategy 6 */}
-                <div className="border-l-4 border-coral pl-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3">
-                    {language === 'es' ? '6. Diversidad e Inclusión:' : '6. Diversity and Inclusion:'}
-                  </h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
                   <p className="text-gray-600">
                     {language === 'es' 
                       ? 'Equipos diversos aportan diferentes perspectivas y facilitan la identificación de nuevas oportunidades y soluciones.'
