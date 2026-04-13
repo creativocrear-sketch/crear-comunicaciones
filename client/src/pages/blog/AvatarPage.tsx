@@ -233,7 +233,7 @@ export default function AvatarPage() {
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-coral mt-2 flex-shrink-0"></div>
                   <div>
-                    <strong>{language === 'es' ? 'Validación:' : 'Validation:'}</strong> {language === 'es'} 
+                    <strong>{language === 'es' ? 'Validación:' : 'Validation:'}</strong> {language === 'es' 
                       ? 'Probar tu avatar con clientes reales y ajustar según el feedback.'
                       : 'Test your avatar with real customers and adjust based on feedback.'
                     }
