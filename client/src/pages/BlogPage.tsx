@@ -136,7 +136,7 @@ const articles = [
   },
   {
     id: 6,
-    title: 'Primero construye tu avatar y los textos',
+    title: 'Primero construye tu avatar',
     subtitle: 'El paso inicial indispensable para cualquier campaña exitosa',
     introduction: 'El éxito de cualquier campaña reside en el entendimiento del cliente ideal. Crear un avatar (buyer persona) es el paso inicial indispensable antes de redactar cualquier texto.',
     concepts: [
