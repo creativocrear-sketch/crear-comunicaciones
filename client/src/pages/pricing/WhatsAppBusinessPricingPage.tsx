@@ -21,32 +21,54 @@ const WhatsAppBusinessPricingPage = () => {
   const { language } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-pearl">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-navy py-20">
-        <div className="container max-w-6xl mx-auto px-6">
+      <section className="relative bg-navy pt-28 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy" />
+        <div className="absolute bottom-0 left-0 right-0 opacity-10">
+          <svg viewBox="0 0 1440 120" className="w-full">
+            <path
+              d="M0,80 C360,120 720,40 1080,80 C1260,100 1380,90 1440,80 L1440,120 L0,120 Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <div className="container relative z-10 px-6">
+          <Link
+            href="/servicios/mensajeria-masiva"
+            className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-8 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            {language === 'es' ? 'Volver al inicio' : 'Back to home'}
+          </Link>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center"
+            className="max-w-3xl"
           >
-            <Link
-              href="/servicios/mensajeria-masiva"
-              className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-8 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              {language === 'es' ? 'Volver al inicio' : 'Back to home'}
-            </Link>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl bg-coral/20 flex items-center justify-center">
+                <MessageSquare className="w-6 h-6 text-coral" />
+              </div>
+              <span className="text-coral font-semibold text-sm uppercase tracking-wider">
+                {language === 'es' ? 'WhatsApp Business API' : 'WhatsApp Business API'}
+              </span>
+            </div>
+            
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {language === 'es' ? 'Planes de mensajería' : 'Messaging Plans'}
             </h1>
+            
             <h2 className="text-2xl md:text-3xl font-semibold text-coral mb-6">
               {language === 'es' ? 'Precios de WhatsApp Business API' : 'WhatsApp Business API Pricing'}
             </h2>
-            <p className="text-lg text-white/80 max-w-3xl mx-auto">
+            
+            <p className="text-lg text-white/80 leading-relaxed">
               {language === 'es' 
                 ? 'Soluciones de comunicación masiva y CRM a través de WhatsApp con precios competitivos y flexibles.'
                 : 'Mass communication and CRM solutions through WhatsApp with competitive and flexible pricing.'
