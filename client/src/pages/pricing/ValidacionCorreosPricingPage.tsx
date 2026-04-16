@@ -89,6 +89,7 @@ export default function ValidacionCorreosPricingPage() {
         },
       ]}
       phrases={translations[language].services['validation pricing phrases']}
+      customNoteText={t('validation pricing important note text', 'services')}
     />
   );
 }

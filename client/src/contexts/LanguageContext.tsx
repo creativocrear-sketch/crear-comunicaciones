@@ -532,6 +532,8 @@ interface Translations {
     'pricing get quote': string;
     'pricing important note': string;
     'pricing important note text': string;
+    'email pricing important note text': string;
+    'validation pricing important note text': string;
     'pricing why choose service title': string;
     'pricing need custom quote title': string;
     'pricing need custom quote description': string;
@@ -1229,6 +1231,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'pricing important note': 'Nota importante:',
       'pricing important note text': 'El precio que se relaciona es el valor unitario de cada SMS. Todos los valores más IVA. Precios para Colombia.',
       'email pricing important note text': 'El precio que se relaciona es el valor unitario de cada email. Todos los valores más IVA. Precios para Colombia.',
+      'validation pricing important note text': 'El precio que se relaciona es el valor unitario de cada correo. Todos los valores más IVA. Precios para Colombia.',
       'pricing why choose service title': '¿Por qué elegir este servicio?',
       'pricing need custom quote title': '¿Necesitas una cotización personalizada?',
       'pricing need custom quote description': 'Los precios varían según el volumen y el destino. Contáctanos para recibir una propuesta adaptada a tu empresa.',
@@ -1899,6 +1902,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'pricing important note': 'Important note:',
       'pricing important note text': 'The listed price is the unit value of each SMS. All prices plus VAT. Prices for Colombia.',
       'email pricing important note text': 'The listed price is the unit value of each email. All prices plus VAT. Prices for Colombia.',
+      'validation pricing important note text': 'The listed price is the unit value of each email. All prices plus VAT. Prices for Colombia.',
       'pricing why choose service title': 'Why choose this service?',
       'pricing need custom quote title': 'Need a custom quote?',
       'pricing need custom quote description': 'Prices vary according to volume and destination. Contact us to receive a proposal adapted to your company.',
