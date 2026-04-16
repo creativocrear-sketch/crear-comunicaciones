@@ -41,6 +41,7 @@ const Navbar = () => {
     { name: 'catálogos de productos', href: "/servicios/catalogos-whatsapp" },
     { name: 'mensajería masiva', href: "/servicios/mensajeria-masiva" },
     { name: 'contact center', href: "/servicios/contact-center" },
+    { name: 'validación de correos', href: "/validacioncorreos" },
     { name: 'consultoría de automatización', href: "/servicios/automatizacion" },
     { name: 'asesoría en comunicación masiva', href: "/servicios/asesoria-comunicacion" },
   ];
