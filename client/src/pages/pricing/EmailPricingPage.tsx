@@ -89,6 +89,7 @@ export default function EmailPricingPage() {
         },
       ]}
       phrases={translations[language].services['email pricing phrases']}
+      customNoteText={t('email pricing important note text', 'services')}
     />
   );
 }

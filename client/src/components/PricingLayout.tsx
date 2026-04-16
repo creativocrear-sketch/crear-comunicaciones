@@ -29,6 +29,7 @@ interface PricingLayoutProps {
   tiers: PricingTier[];
   phrases: string[];
   futureUrl: string;
+  customNoteText?: string;
 }
 
 export default function PricingLayout({
@@ -39,6 +40,7 @@ export default function PricingLayout({
   tiers,
   phrases,
   futureUrl,
+  customNoteText,
 }: PricingLayoutProps) {
   const { t } = useLanguage();
   const tiersReveal = useScrollReveal(0.1);
@@ -187,7 +189,7 @@ export default function PricingLayout({
           {/* Pricing Notes */}
           <div className="mt-12 max-w-3xl mx-auto text-center">
             <p className="text-gray-600 text-sm leading-relaxed">
-              <span className="font-semibold text-black">{t('pricing important note', 'services')}</span> {t('pricing important note text', 'services')}
+              <span className="font-semibold text-black">{t('pricing important note', 'services')}</span> {customNoteText || t('pricing important note text', 'services')}
             </p>
           </div>
         </div>
