@@ -321,18 +321,24 @@ export default function AvatarPage() {
             >
               <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
-                  <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
+                  <a
+                    href={`https://wa.me/?text=${encodeURIComponent(window.location.href)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors"
+                  >
+                    <MessageSquare className="w-5 h-5" />
+                    {language === 'es' ? 'WhatsApp' : 'WhatsApp'}
+                  </a>
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
+                  >
                     <Share2 className="w-5 h-5" />
-                    {language === 'es' ? 'Compartir' : 'Share'}
-                  </button>
-                  <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
-                    <Heart className="w-5 h-5" />
-                    {language === 'es' ? 'Me gusta' : 'Like'}
-                  </button>
-                  <button className="flex items-center gap-2 text-navy/60 hover:text-navy transition-colors">
-                    <MessageCircle className="w-5 h-5" />
-                    {language === 'es' ? 'Comentar' : 'Comment'}
-                  </button>
+                    {language === 'es' ? 'Facebook' : 'Facebook'}
+                  </a>
                 </div>
                 <div className="flex gap-4">
                   <Link
