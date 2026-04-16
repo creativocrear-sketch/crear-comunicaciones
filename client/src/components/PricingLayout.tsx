@@ -116,8 +116,8 @@ export default function PricingLayout({
                 transition={{ delay: 0.1 + i * 0.08 }}
                 className={`rounded-2xl p-6 text-center border transition-all hover:-translate-y-1 hover:shadow-lg ${
                   tier.highlighted
-                    ? "bg-navy text-white border-coral shadow-lg shadow-navy/20 scale-[1.02]"
-                    : "bg-white text-navy border-navy/8"
+                    ? "bg-white text-black border-coral shadow-lg shadow-navy/20 scale-[1.02]"
+                    : "bg-white text-black border-navy/8"
                 }`}
               >
                 <h3
@@ -129,7 +129,7 @@ export default function PricingLayout({
                 </h3>
                 <p
                   className={`text-xs mb-4 leading-relaxed ${
-                    tier.highlighted ? "text-white/60" : "text-navy/50"
+                    tier.highlighted ? "text-black/70" : "text-black/70"
                   }`}
                 >
                   {tier.description}
@@ -137,14 +137,14 @@ export default function PricingLayout({
                 <div className="mb-4">
                   <span
                     className={`text-3xl font-bold ${
-                      tier.highlighted ? "text-white" : "text-navy"
+                      tier.highlighted ? "text-black" : "text-black"
                     }`}
                   >
                     {tier.price}
                   </span>
                   <span
                     className={`text-sm ml-1 ${
-                      tier.highlighted ? "text-white/50" : "text-navy/40"
+                      tier.highlighted ? "text-black/60" : "text-black/60"
                     }`}
                   >
                     {tier.unit}
@@ -160,7 +160,7 @@ export default function PricingLayout({
                       />
                       <span
                         className={
-                          tier.highlighted ? "text-white/70" : "text-navy/60"
+                          tier.highlighted ? "text-black/80" : "text-black/80"
                         }
                       >
                         {f}
