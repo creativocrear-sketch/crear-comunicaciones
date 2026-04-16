@@ -61,12 +61,8 @@ const WhatsAppBusinessPricingPage = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {language === 'es' ? 'Planes de mensajería' : 'Messaging Plans'}
-            </h1>
-            
-            <h2 className="text-2xl md:text-3xl font-semibold text-coral mb-6">
               {language === 'es' ? 'Precios de WhatsApp Business API' : 'WhatsApp Business API Pricing'}
-            </h2>
+            </h1>
             
             <p className="text-lg text-white/80 leading-relaxed">
               {language === 'es' 
