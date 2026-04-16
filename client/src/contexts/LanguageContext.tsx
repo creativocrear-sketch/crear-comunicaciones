@@ -19,6 +19,7 @@ interface Translations {
     'email masivos': string;
     'sms de voz masivos': string;
     'validación de correos': string;
+    'whatsapp business api': string;
     consultoría: string;
     'contactanos por whatsapp': string;
     'contactanos': string;
@@ -578,6 +579,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'email masivos': 'Email masivos',
       'sms de voz masivos': 'SMS de voz masivos',
       'validación de correos': 'Validación de correos',
+      'whatsapp business api': 'WhatsApp Business API',
       consultoría: 'Consultoría',
       'contactanos por whatsapp': 'Contáctanos por WhatsApp',
       'contactanos': 'Contáctanos',
@@ -1253,6 +1255,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'email masivos': 'Bulk Email',
       'sms de voz masivos': 'Bulk Voice SMS',
       'validación de correos': 'Email validation',
+      'whatsapp business api': 'WhatsApp Business API',
       consultoría: 'Consulting',
       'contactanos por whatsapp': 'Contact us on WhatsApp',
       'contactanos': 'Contact us',

@@ -50,6 +50,7 @@ const Navbar = () => {
     { name: 'email masivos', href: "/email" },
     { name: 'sms de voz masivos', href: "/voz" },
     { name: 'validación de correos', href: "/validacioncorreos" },
+    { name: 'whatsapp business api', href: "/precios-whatsapp-business" },
     { name: 'consultoría', href: "/servicios/automatizacion" },
   ];
 
