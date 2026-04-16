@@ -272,7 +272,7 @@ const Navbar = () => {
                 </AnimatePresence>
               </div>
 
-              <MobileLink href="/#contacto">
+              <MobileLink href="/contacto">
                 {t('contacto', 'navbar')}
               </MobileLink>
 
