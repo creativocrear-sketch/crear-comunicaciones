@@ -52,7 +52,7 @@ const serviceTypes = [
     titleKey: 'mensajeria whatsapp title',
     descriptionKey: 'mensajeria whatsapp description',
     icon: MessageSquare,
-    link: "/whatsapp"
+    link: "/precios-whatsapp-business"
   },
   {
     titleKey: 'mensajeria voz title',

@@ -20,6 +20,7 @@ import SMSPricingPage from "./pages/pricing/SMSPricingPage";
 import EmailPricingPage from "./pages/pricing/EmailPricingPage";
 import VozPricingPage from "./pages/pricing/VozPricingPage";
 import ValidacionCorreosPricingPage from "./pages/pricing/ValidacionCorreosPricingPage";
+import WhatsAppBusinessPricingPage from "./pages/pricing/WhatsAppBusinessPricingPage";
 import ContactoPage from "./pages/ContactoPage";
 import BlogPage from "./pages/BlogPage";
 import InstagramArticlePage from "./pages/blog/InstagramArticlePage";
@@ -62,6 +63,7 @@ function Router() {
         <Route path="/email" component={EmailPricingPage} />
         <Route path="/voz" component={VozPricingPage} />
         <Route path="/validacioncorreos" component={ValidacionCorreosPricingPage} />
+        <Route path="/precios-whatsapp-business" component={WhatsAppBusinessPricingPage} />
         {/* Contacto */}
         <Route path="/contacto" component={ContactoPage} />
         {/* Blog */}
