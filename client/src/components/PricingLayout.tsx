@@ -118,7 +118,7 @@ export default function PricingLayout({
                 transition={{ delay: 0.1 + i * 0.08 }}
                 className={`rounded-2xl p-6 text-center border transition-all hover:-translate-y-1 hover:shadow-lg ${
                   tier.highlighted
-                    ? "bg-navy text-black border-coral shadow-lg shadow-navy/20 scale-[1.02]"
+                    ? "bg-white text-black border-coral shadow-lg shadow-navy/20 scale-[1.02]"
                     : "bg-white text-black border-navy/8"
                 }`}
               >
