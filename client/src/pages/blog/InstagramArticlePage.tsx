@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
-import { ArrowLeft, ArrowRight, Calendar, Clock, User, BookOpen, Share2, Heart, MessageCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Calendar, Clock, User, BookOpen, Share2, Heart, MessageCircle, MessageSquare } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WaveDivider from '@/components/WaveDivider';
