@@ -540,6 +540,47 @@ interface Translations {
     'pricing request quote': string;
     'pricing send email': string;
   };
+  privacy: {
+    title: string;
+    lastUpdated: string;
+    introduction: string;
+    section1Title: string;
+    section1_1Title: string;
+    section1_1Content: string;
+    section1_2Title: string;
+    section1_2Content: string;
+    section1_3Title: string;
+    section1_3Content: string;
+    section2Title: string;
+    section2_1Title: string;
+    section2_1Content: string;
+    section2_2Title: string;
+    section2_2Content: string;
+    section2_3Title: string;
+    section2_3Content: string;
+    section2_4Title: string;
+    section2_4Content: string;
+    section3Title: string;
+    section3_1Title: string;
+    section3_1Content: string;
+    section3_2Title: string;
+    section3_2Content: string;
+    section3_3Title: string;
+    section3_3Content: string;
+    section4Title: string;
+    section4Content: string;
+    section5Title: string;
+    section5_1Title: string;
+    section5_1Content: string;
+    section5_2Title: string;
+    section5_2Content: string;
+    section5_3Title: string;
+    section5_3Content: string;
+    section6Title: string;
+    section6Content: string;
+    section7Title: string;
+    section7Content: string;
+  };
   pricing: {
     'sms title': string;
     'sms description': string;
@@ -1238,6 +1279,47 @@ export const translations: Record<'es' | 'en', Translations> = {
       'pricing request quote': 'Solicitar cotización',
       'pricing send email': 'Enviar correo',
     },
+    privacy: {
+      title: 'Política de privacidad',
+      lastUpdated: 'Última actualización: 17-04-2026',
+      introduction: 'Crear Comunicaciones se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando utiliza nuestros servicios. Por favor, lea esta política de privacidad cuidadosamente. Si no está de acuerdo con los términos de esta política de privacidad, no acceda a la aplicación.',
+      section1Title: '1. Información que recopilamos',
+      section1_1Title: '1.1. Información personal',
+      section1_1Content: 'Podemos recopilar información que lo identifique personalmente, como su nombre, dirección de correo electrónico, número de teléfono y otra información de contacto, cuando se registra en nuestra aplicación, crea un perfil o se comunica con nosotros.',
+      section1_2Title: '1.2. Información de uso',
+      section1_2Content: 'Podemos recopilar información sobre su actividad en la aplicación, como el tipo de dispositivo que utiliza, su dirección IP, la versión del sistema operativo, los tiempos de acceso y la duración de la actividad, las páginas que visita, los clics, entre otros.',
+      section1_3Title: '1.3. Información de ubicación',
+      section1_3Content: 'Podemos recopilar y procesar información sobre su ubicación para proporcionar servicios personalizados si usted ha dado su consentimiento.',
+      section2Title: '2. Cómo usamos su información',
+      section2_1Title: '2.1. Para proporcionar y mejorar el servicio',
+      section2_1Content: 'Usamos la información que recopilamos para operar, mantener y mejorar nuestra aplicación, así como para desarrollar nuevos productos y servicios.',
+      section2_2Title: '2.2. Comunicaciones',
+      section2_2Content: 'Podemos usar su información de contacto para enviarle notificaciones, actualizaciones, boletines informativos y otras comunicaciones relevantes.',
+      section2_3Title: '2.3. Personalización',
+      section2_3Content: 'Podemos usar la información recopilada para personalizar su experiencia en la aplicación, mostrar contenido y anuncios personalizados.',
+      section2_4Title: '2.4. Seguridad',
+      section2_4Content: 'Podemos usar su información para proteger la seguridad de la aplicación y de nuestros usuarios.',
+      section3Title: '3. Divulgación de su información',
+      section3_1Title: '3.1. Proveedores de servicios',
+      section3_1Content: 'Podemos compartir su información con terceros proveedores de servicios que nos ayudan a operar y mejorar la aplicación.',
+      section3_2Title: '3.2. Requisitos legales',
+      section3_2Content: 'Podemos divulgar su información si así lo exige la ley o si creemos de buena fe que dicha acción es necesaria para cumplir con las leyes aplicables, responder a órdenes judiciales o proteger nuestros derechos y propiedad.',
+      section3_3Title: '3.3. Transferencias de negocios',
+      section3_3Content: 'En el caso de una fusión, adquisición, o venta de la totalidad o una parte de nuestros activos, su información puede ser transferida como parte de la transacción.',
+      section4Title: '4. Seguridad de la información',
+      section4Content: 'Nos comprometemos a proteger su información personal y tomamos medidas razonables para protegerla del acceso no autorizado, uso o divulgación. Sin embargo, ningún sistema de seguridad es impenetrable y no podemos garantizar la seguridad de nuestros sistemas al 100%.',
+      section5Title: '5. Sus derechos y opciones',
+      section5_1Title: '5.1. Acceso y actualización de información',
+      section5_1Content: 'Puede acceder y actualizar su información personal en cualquier momento a través de la configuración de su cuenta en la aplicación.',
+      section5_2Title: '5.2. Opciones de comunicaciones',
+      section5_2Content: 'Puede optar por no recibir comunicaciones promocionales siguiendo las instrucciones de cancelación de suscripción en dichos mensajes.',
+      section5_3Title: '5.3. Eliminación de información',
+      section5_3Content: 'Puede solicitar la eliminación de su información personal, aunque algunos datos pueden conservarse según lo requerido por la ley o para fines comerciales legítimos.',
+      section6Title: '6. Cambios a esta Política de privacidad',
+      section6Content: 'Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos sobre cualquier cambio publicando la nueva Política de Privacidad en esta página. Le recomendamos revisar esta política periódicamente para estar al tanto de cualquier cambio.',
+      section7Title: '7. Contáctenos',
+      section7Content: 'Si tiene preguntas o inquietudes sobre esta Política de Privacidad, puede contactarnos a través de contacto@crearcomunicaciones.net o WhatsApp +57 310 5317126.',
+    },
   },
   en: {
     navbar: {
@@ -1908,6 +1990,47 @@ export const translations: Record<'es' | 'en', Translations> = {
       'pricing need custom quote description': 'Prices vary according to volume and destination. Contact us to receive a proposal adapted to your company.',
       'pricing request quote': 'Request quote',
       'pricing send email': 'Send email',
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      lastUpdated: 'Last updated: 17-04-2026',
+      introduction: 'Crear Comunicaciones is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose and protect your information when you use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, do not access the application.',
+      section1Title: '1. Information we collect',
+      section1_1Title: '1.1. Personal information',
+      section1_1Content: 'We may collect information that identifies you personally, such as your name, email address, phone number and other contact information, when you register in our application, create a profile or communicate with us.',
+      section1_2Title: '1.2. Usage information',
+      section1_2Content: 'We may collect information about your activity in the application, such as the type of device you use, your IP address, the operating system version, access times and duration of activity, pages you visit, clicks, among others.',
+      section1_3Title: '1.3. Location information',
+      section1_3Content: 'We may collect and process information about your location to provide personalized services if you have given your consent.',
+      section2Title: '2. How we use your information',
+      section2_1Title: '2.1. To provide and improve the service',
+      section2_1Content: 'We use the information we collect to operate, maintain and improve our application, as well as to develop new products and services.',
+      section2_2Title: '2.2. Communications',
+      section2_2Content: 'We may use your contact information to send you notifications, updates, newsletters and other relevant communications.',
+      section2_3Title: '2.3. Personalization',
+      section2_3Content: 'We may use the collected information to personalize your experience in the application, show personalized content and ads.',
+      section2_4Title: '2.4. Security',
+      section2_4Content: 'We may use your information to protect the security of the application and our users.',
+      section3Title: '3. Disclosure of your information',
+      section3_1Title: '3.1. Service providers',
+      section3_1Content: 'We may share your information with third-party service providers who help us operate and improve the application.',
+      section3_2Title: '3.2. Legal requirements',
+      section3_2Content: 'We may disclose your information if required by law or if we believe in good faith that such action is necessary to comply with applicable laws, respond to court orders or protect our rights and property.',
+      section3_3Title: '3.3. Business transfers',
+      section3_3Content: 'In the event of a merger, acquisition, or sale of all or part of our assets, your information may be transferred as part of the transaction.',
+      section4Title: '4. Information security',
+      section4Content: 'We are committed to protecting your personal information and take reasonable measures to protect it from unauthorized access, use or disclosure. However, no security system is impenetrable and we cannot guarantee the security of our systems 100%.',
+      section5Title: '5. Your rights and options',
+      section5_1Title: '5.1. Access and update information',
+      section5_1Content: 'You can access and update your personal information at any time through your account settings in the application.',
+      section5_2Title: '5.2. Communications options',
+      section5_2Content: 'You can opt out of receiving promotional communications by following the unsubscribe instructions in such messages.',
+      section5_3Title: '5.3. Information deletion',
+      section5_3Content: 'You may request the deletion of your personal information, although some data may be retained as required by law or for legitimate commercial purposes.',
+      section6Title: '6. Changes to this Privacy Policy',
+      section6Content: 'We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We recommend reviewing this policy periodically to stay informed of any changes.',
+      section7Title: '7. Contact us',
+      section7Content: 'If you have questions or concerns about this Privacy Policy, you can contact us through contacto@crearcomunicaciones.net or WhatsApp +57 310 5317126.',
     },
   },
 };
