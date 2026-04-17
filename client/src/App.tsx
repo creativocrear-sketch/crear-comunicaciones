@@ -29,6 +29,7 @@ import RelationshipMarketingPage from "./pages/blog/RelationshipMarketingPage";
 import DatabasePage from "./pages/blog/DatabasePage";
 import MutationPage from "./pages/blog/MutationPage";
 import AvatarPage from "./pages/blog/AvatarPage";
+import PoliticaPrivacidadMetaPage from "./pages/PoliticaPrivacidadMetaPage";
 import WhatsAppButton from "./components/WhatsAppButton";
 import { useEffect } from "react";
 import { useLocation } from "wouter";
@@ -74,6 +75,7 @@ function Router() {
         <Route path="/blog/importancia-base-datos-negocio" component={DatabasePage} />
         <Route path="/blog/importancia-mutacion-empresarial" component={MutationPage} />
         <Route path="/blog/avatar-cliente-ideal" component={AvatarPage} />
+        <Route path="/politica-de-privacidad-para-una-app-meta" component={PoliticaPrivacidadMetaPage} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
