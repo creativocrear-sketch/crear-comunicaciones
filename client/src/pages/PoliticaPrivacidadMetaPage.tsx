@@ -66,9 +66,13 @@ export default function PoliticaPrivacidadMetaPage() {
               <h2 className="text-2xl font-bold text-navy mt-8 mb-4">{t.section3Title}</h2>
               
               <h3 className="text-xl font-semibold text-navy mt-6 mb-3">{t.section3_1Title}</h3>
-              <p className="mb-4">
-                {t.section3_1Content}
-              </p>
+              <div className="mb-4">
+                {t.section3_1Content.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="mb-4 last:mb-0">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
 
               <h3 className="text-xl font-semibold text-navy mt-6 mb-3">{t.section3_2Title}</h3>
               <p className="mb-4">
