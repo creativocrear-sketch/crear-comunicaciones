@@ -170,7 +170,7 @@ export default function Footer() {
           <p className="text-white/30 text-xs">
             &copy; {new Date().getFullYear()} Crear Comunicaciones. {t('todos los derechos reservados', 'footer')} |{' '}
             <Link
-              href="/politica-de-privacidad-para-una-app-meta"
+              href="/Politica-De-Privacidad"
               className="text-white/30 hover:text-coral transition-colors"
             >
               {t('politica de privacidad', 'footer')}
