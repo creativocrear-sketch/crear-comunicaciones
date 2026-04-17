@@ -213,6 +213,7 @@ interface Translations {
     'descripcion footer': string;
     'envios masivos': string;
     'todos los derechos reservados': string;
+    'politica de privacidad': string;
   };
   services: {
     'chatbot title': string;
@@ -809,6 +810,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'descripcion footer': 'Somos su puente de comunicación con el mundo. Más de 30 años ayudando a empresas a conectar con sus clientes a través de soluciones digitales innovadoras.',
       'envios masivos': 'Envíos masivos',
       'todos los derechos reservados': 'Todos los derechos reservados.',
+      'politica de privacidad': 'Política de privacidad',
     },
     massivePricing: {
       'nuestros servicios masivos': 'Nuestros servicios masivos',
@@ -1528,6 +1530,7 @@ export const translations: Record<'es' | 'en', Translations> = {
       'descripcion footer': 'We are your communication bridge to the world. Over 30 years helping companies connect with their customers through innovative digital solutions.',
       'envios masivos': 'Bulk messaging',
       'todos los derechos reservados': 'All rights reserved.',
+      'politica de privacidad': 'Privacy Policy',
     },
     massivePricing: {
       'nuestros servicios masivos': 'Our Bulk Messaging Services',

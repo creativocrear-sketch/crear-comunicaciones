@@ -168,7 +168,13 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/30 text-xs">
-            &copy; {new Date().getFullYear()} Crear Comunicaciones. {t('todos los derechos reservados', 'footer')}
+            &copy; {new Date().getFullYear()} Crear Comunicaciones. {t('todos los derechos reservados', 'footer')} |{' '}
+            <Link
+              href="/politica-de-privacidad-para-una-app-meta"
+              className="text-white/30 hover:text-coral transition-colors"
+            >
+              {t('politica de privacidad', 'footer')}
+            </Link>
           </p>
           <p className="text-white/30 text-xs">
             Cartago, Valle del Cauca, Colombia
