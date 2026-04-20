@@ -263,7 +263,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/servicios/automatizacion"
-                  className="inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy/8 hover:bg-navy/12 text-navy px-5 py-3 transition-all hover:-translate-y-0.5 hover:border-navy/25"
+                  className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
                 >
                   {t('ver consultoria', 'home')}
                   <ArrowRight className="w-4 h-4" />
@@ -272,7 +272,7 @@ export default function Home() {
                   href="https://meetings.hubspot.com/alexmurillo?embed=true&uuid=a3c3303f-ec76-4403-8994-2815af888d2d"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy/8 px-6 py-3.5 text-sm font-semibold text-navy transition-all hover:-translate-y-0.5 hover:bg-navy/12 hover:border-navy/25"
+                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-navy-light hover:border-navy/25"
                 >
                   <Calendar className="w-4 h-4" />
                   {t('agenda tu cita', 'home')}
@@ -282,7 +282,7 @@ export default function Home() {
                   href="https://wa.me/573105317126"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy/8 px-6 py-3.5 text-sm font-semibold text-navy transition-all hover:-translate-y-0.5 hover:bg-navy/12 hover:border-navy/25"
+                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-navy-light hover:border-navy/25"
                 >
                   <MessageSquare className="w-4 h-4" />
                   {t('escribeme por whatsapp', 'home')}
