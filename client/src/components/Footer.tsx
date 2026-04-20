@@ -31,7 +31,7 @@ export default function Footer() {
         <svg viewBox="0 0 1440 80" fill="none" className="w-full rotate-180">
           <path
             d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z"
-            fill="oklch(0.15 0.04 260)"
+            fill="#C1C3C2"
           />
         </svg>
       </div>
