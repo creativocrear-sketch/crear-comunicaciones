@@ -282,10 +282,10 @@ export default function Home() {
                   href="https://wa.me/573105317126"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-navy-light hover:border-navy/25"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-coral px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  {t('escribeme por whatsapp', 'home')}
+                  {t('escribeme por whatsapp', 'contact')}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
