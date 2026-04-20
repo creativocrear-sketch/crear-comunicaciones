@@ -359,7 +359,7 @@ export default function Home() {
 
       {/* Wave divider services  about */}
       <div className="bg-pearl">
-        <WaveDivider from="#F8F9FA" to="#F8F9FA" />
+        <WaveDivider from="#F8F9FA" to="#2842BB" />
       </div>
 
       {/* 
