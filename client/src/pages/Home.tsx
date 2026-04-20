@@ -243,19 +243,19 @@ export default function Home() {
       <section className="bg-pearl py-20 lg:py-28" id="servicios">
         <div className="container" ref={servicesReveal.ref}>
           {/* Featured service card */}
-          <div className="relative overflow-hidden rounded-[28px] border border-coral/20 bg-navy mb-10 sm:mb-12 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,60,49,0.34),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.06),transparent_58%)]" />
+          <div className="relative overflow-hidden rounded-[28px] border border-coral/20 bg-white mb-10 sm:mb-12 shadow-[0_20px_60px_rgba(15,32,68,0.12)]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,60,49,0.12),transparent_38%),linear-gradient(135deg,rgba(15,32,68,0.04),transparent_58%)]" />
             <div className="absolute inset-y-0 left-0 w-2 bg-coral" />
             <div className="relative flex flex-col gap-6 px-6 py-7 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
               <div className="max-w-3xl">
-                <span className="inline-flex items-center gap-2 rounded-full border border-coral/30 bg-coral/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-coral-light">
+                <span className="inline-flex items-center gap-2 rounded-full border border-coral/30 bg-coral/12 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-coral">
                   <Settings className="w-3.5 h-3.5" />
                   {t('servicio destacado', 'home')}
                 </span>
-                <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white leading-tight">
+                <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-navy leading-tight">
                   {t('consultoria whatsapp title', 'home')}
                 </h3>
-                <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-white/72">
+                <p className="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-gray-700">
                   {t('consultoria whatsapp description', 'home')}
                 </p>
               </div>
@@ -263,7 +263,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/servicios/automatizacion"
-                  className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
+                  className="inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy/8 hover:bg-navy/12 text-navy px-5 py-3 transition-all hover:-translate-y-0.5 hover:border-navy/25"
                 >
                   {t('ver consultoria', 'home')}
                   <ArrowRight className="w-4 h-4" />
@@ -272,7 +272,7 @@ export default function Home() {
                   href="https://meetings.hubspot.com/alexmurillo?embed=true&uuid=a3c3303f-ec76-4403-8994-2815af888d2d"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/12 hover:border-white/25"
+                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy/8 px-6 py-3.5 text-sm font-semibold text-navy transition-all hover:-translate-y-0.5 hover:bg-navy/12 hover:border-navy/25"
                 >
                   <Calendar className="w-4 h-4" />
                   {t('agenda tu cita', 'home')}
@@ -282,10 +282,11 @@ export default function Home() {
                   href="https://wa.me/573105317126"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-coral-light hover:shadow-lg hover:shadow-coral/25"
+                  className="group inline-flex items-center gap-2 rounded-xl border border-navy/15 bg-navy/8 px-6 py-3.5 text-sm font-semibold text-navy transition-all hover:-translate-y-0.5 hover:bg-navy/12 hover:border-navy/25"
                 >
-                  {t('hablar por whatsapp', 'home')}
-                  <ArrowRight className="w-4 h-4" />
+                  <MessageSquare className="w-4 h-4" />
+                  {t('escribeme por whatsapp', 'home')}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
