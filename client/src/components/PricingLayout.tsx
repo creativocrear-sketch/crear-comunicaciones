@@ -197,7 +197,7 @@ export default function PricingLayout({
 
       {/* Phrases / Info Section */}
       <div className="bg-pearl">
-        <WaveDivider from="#F8F9FA" to="#0F2044" />
+        <WaveDivider from="#F8F9FA" to="#2842BB" />
       </div>
       <section className="bg-navy py-20" ref={phrasesReveal.ref}>
         <div className="container">
