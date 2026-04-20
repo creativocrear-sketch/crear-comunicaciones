@@ -128,7 +128,7 @@ export default function ServiceLayout({
       </section>
 
       <div className="bg-white">
-        <WaveDivider from="#FFFFFF" to="#F5F5F5" />
+        <WaveDivider from="#FFFFFF" to="#2842BB" />
       </div>
 
       <section className="bg-navy py-20">
