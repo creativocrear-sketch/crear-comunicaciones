@@ -240,7 +240,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <WaveDivider from="#F8F9FA" to="#0F2044" />
+      <WaveDivider from="#F8F9FA" to="#2842BB" />
 
       {/* CTA Section */}
       <section className="bg-navy py-20">
